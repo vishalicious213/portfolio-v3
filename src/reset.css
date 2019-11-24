@@ -46,7 +46,7 @@ table {
 	border-spacing: 0;
 }
 
-// MAIN FORMATTING INFO
+/* MAIN FORMATTING INFO */
 
 @maxWidth: 980px;
 
@@ -59,18 +59,19 @@ h1, h2, h3 {
     text-transform: uppercase;
 	margin: 0px 0px 1rem;
 	padding-bottom: 1.5rem;
-	// max-width: @maxWidth;
+	/* // max-width: @maxWidth; */
 	border-bottom: 1px solid gray;
 }
 
 h1 {
 	font-size: 2rem;
 	font-weight: 800;
-	a {
+}
+
+	hi.a {
 		text-decoration: none;
 		color: white;
 	}
-}
 
 h3 {
 	font-size: 1rem;
@@ -83,7 +84,7 @@ p, li, .menu a, .keyTech {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-weight: 200;
 	line-height: 1.5;
-	// max-width: @maxWidth;
+	/* // max-width: @maxWidth; */
 }
 
 b {
@@ -96,5 +97,5 @@ b {
 	font-weight: 600;
 	letter-spacing: 0.1em;
 	margin-top: 2rem;
-	// width: 50%;
+	/* // width: 50%; */
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import './Header.css';
 // import styled from 'styled-components';
 import { StyledH1, Subheading, Social, HeaderContainer, PageHeader } from './styles';
 

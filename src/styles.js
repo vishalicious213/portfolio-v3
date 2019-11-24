@@ -7,8 +7,8 @@ const Colors = {
 
 const PageHeader = styled.section`
   background-color: ${Colors.PageHeaderBk};
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 `
 const HeaderContainer = styled.div`
     display: flex;
@@ -40,12 +40,11 @@ const Subheading = styled.p`
 const Social = styled.section`
     font-size: 1.25rem;
     width: 50%;
-    // margin-top: 1rem;
     display: flex;
     justify-content: space-evenly;
 
     a {
-        // text-decoration: none;
+        text-decoration: none;
         color: silver;
     }
 
