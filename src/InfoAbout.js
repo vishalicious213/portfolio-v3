@@ -25,6 +25,7 @@ const Container = styled.section`
             h3 img
             p img
         grid-column-gap: 3rem;
+        align-items: center;
     }
 
     h3 {

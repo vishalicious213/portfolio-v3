@@ -17,7 +17,7 @@ const Container = styled.section`
     display: flex;
     justify-content: center;
 
-    .Front {
+    .Back {
         width: 90%;
         display: grid;
         grid-template-columns: 3fr 1fr;
@@ -51,18 +51,18 @@ const Container = styled.section`
     }
 `
 
-function Frontend() {
+function Backend() {
     return (
         <div>
             <TopBorder></TopBorder>
             <Container>
-                <div className="Front">
+                <div className="Back">
                     <div className="sectionInfo">
-                        <h3>Front-End Development</h3>
-                        <p>The first unit at Lambda School has taught me the basics of semantic HTML and CSS, including the pains of inline-block, the mighty Flexbox and a start at responsive web design. We've since delved into JavaScript, the DOM and are learning React, with its virtual DOM, for component-driven front-end development.</p>
+                        <h3>Back-End Development</h3>
+                        <p>Once our JavaScript/React entanglement is complete, we move on to back-end development with NodeJS, Java, Python and RDBMS. This will be augmented with deep dives into algorithms, data structures, hash tables, blockchain, graphs and computer architecture.</p>
                     </div>
                     <div className="pictureFrame">
-                        <img src={require('./img/v1.jpg')}></img>
+                        <img src={require('./img/v2.jpg')}></img>
                     </div>
                 </div>
             </Container>
@@ -71,4 +71,4 @@ function Frontend() {
     )
 }
 
-export default Frontend;
+export default Backend;
