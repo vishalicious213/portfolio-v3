@@ -20,7 +20,7 @@ const HeaderContainer = styled.div`
 const StyledH1 = styled.h1`
     color: white;
     font-size: 2rem;
-    font-family: Raleway, Helvetics, sans-serif;
+    font-family: Raleway, Helvetica, sans-serif;
     // font-weight: 700;
     letter-spacing: .1rem;
     text-transform: uppercase;
@@ -32,7 +32,7 @@ const StyledH1 = styled.h1`
 const Subheading = styled.p`
     color: ${Colors.SubheadingTxt};
     font-size: .8rem;
-    font-family: Raleway, Helvetics, sans-serif;
+    font-family: Raleway, Helvetica, sans-serif;
     font-weight: 200;
     letter-spacing: .1rem;
     line-height: 2;

@@ -6,6 +6,7 @@ import Header from './Header';
 import AboutMeButtons from './AboutMeButtons';
 import AboutMeSwitch from './AboutMeSwitch';
 import Selected from './Selected';
+import ProjectButtons from './ProjectButtons';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       {/* <Frontend />
       <About /> */}
       <Selected />
+      <ProjectButtons />
     </div>
   );
 }

@@ -31,7 +31,7 @@ const Container = styled.section`
     h3 {
         color: white;
         font-size: 1.05rem;
-        font-family: Raleway, Helvetics, sans-serif;
+        font-family: Raleway, Helvetica, sans-serif;
         letter-spacing: .1rem;
         text-transform: uppercase;
         margin: 0px 0px 1px; // top r/l bot

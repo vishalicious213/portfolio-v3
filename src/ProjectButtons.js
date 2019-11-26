@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import AboutMeSwitch from './AboutMeSwitch';
 import styled from 'styled-components';
 
 const Container = styled.section`
@@ -29,14 +28,14 @@ const Container = styled.section`
     }
 `
 
-function AboutMeButtons() {
+function ProjectButtons() {
     return (
         <Container>
-            <button onClick={() => AboutMeSwitch('frontend')}>Front-End Development</button>
-            <button onClick={() => AboutMeSwitch('backend')}>Back-End Development</button>
-            <button onClick={() => AboutMeSwitch('about')}>About Me</button>
+            <button>Featured Projects</button>
+            <button>HTML / CSS Websites</button>
+            <button>JavaScript & React Sites</button>
         </Container>
     )
 }
 
-export default AboutMeButtons;
+export default ProjectButtons;
