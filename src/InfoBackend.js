@@ -4,12 +4,12 @@ import styled from 'styled-components';
 const TopBorder = styled.div`
     width: 100%;
     height: 3rem;
-    background: linear-gradient(to right bottom, #2d3040 49%, #4c5c96 50%);
+    background: linear-gradient(to left bottom, #2d3040 49%, #4c5c96 50%);
 `
 const BottomBorder = styled.div`
     width: 100%;
     height: 3rem;
-    background: linear-gradient(to right top, #2e3141 49%, #4c5c96 50%);
+    background: linear-gradient(to left top, #2e3141 49%, #4c5c96 50%);
 `
 const Container = styled.section`
     background-color: #4c5c96;

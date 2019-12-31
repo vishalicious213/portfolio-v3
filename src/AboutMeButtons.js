@@ -32,8 +32,6 @@ const Container = styled.section`
 `
 
 class AboutMeButtons extends Component {
-    // const [meButton, updateMeButton] = useState('frontend');
-    // state = {meButton: 'frontend'};
     constructor() {
         super();
         this.state = {render:'frontend'}
@@ -68,7 +66,7 @@ class AboutMeButtons extends Component {
                         this.handleClick.bind(this, 'about')
                     }>About Me</button>
                 </Container>
-                
+
                 {this._renderSubComp()}
             </div>
         )

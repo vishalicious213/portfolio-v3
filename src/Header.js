@@ -13,8 +13,8 @@ function Header() {
               <a href="https://github.com/vishalicious213" title="GitHub"><i className="fab fa-github"></i></a>
               <a href="https://neophyte.home.blog/" title="Wordpress"><i className="fab fa-wordpress"></i></a>
               <a href="https://twitter.com/vishalicious213" title="Twitter"><i className="fab fa-twitter"></i></a>
-              <a href="https://www.facebook.com/vish213" title="Facebook"><i className="fab fa-facebook-square"></i></a>
-              <a href="https://www.instagram.com/vishalicious213/" title="Instagram"><i className="fab fa-instagram"></i></a>
+              {/* <a href="https://www.facebook.com/vish213" title="Facebook"><i className="fab fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/vishalicious213/" title="Instagram"><i className="fab fa-instagram"></i></a> */}
               <a href="mailto:vishalicious213@gmail.com" title="Gmail"><i className="fas fa-envelope"></i></a>
           </Social>
         </HeaderContainer>
