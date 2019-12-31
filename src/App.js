@@ -4,6 +4,7 @@ import Header from './Header';
 import AboutMeButtons from './infoComponents/AboutMeButtons';
 import Selected from './Selected';
 import ProjectButtons from './projComponents/ProjectButtons';
+import GetInTouch from './GetInTouch'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <AboutMeButtons />
       <Selected />
       <ProjectButtons />
+      <GetInTouch />
     </div>
   );
 }
