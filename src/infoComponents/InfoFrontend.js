@@ -17,7 +17,7 @@ const Container = styled.section`
     display: flex;
     justify-content: center;
 
-    .About {
+    .Front {
         width: 90%;
         display: grid;
         grid-template-columns: 3fr 1fr;
@@ -51,18 +51,18 @@ const Container = styled.section`
     }
 `
 
-function About() {
+function Frontend() {
     return (
         <div>
             <TopBorder></TopBorder>
             <Container>
-                <div className="About">
+                <div className="Front">
                     <div className="sectionInfo">
-                        <h3>Father, Bass Enthusiast, Extreme Metaller</h3>
-                        <p>Intertwined with my coding interests are my roles as a father & husband, my study of electric bass (its not a guitar!) and my love of extreme metal, food, air frying and the Instant Pot.</p>
+                        <h3>Front-End Development</h3>
+                        <p>The first unit at Lambda School has taught me the basics of semantic HTML and CSS, including the pains of inline-block, the mighty Flexbox and a start at responsive web design. We've since delved into JavaScript, the DOM and are learning React, with its virtual DOM, for component-driven front-end development.</p>
                     </div>
                     <div className="pictureFrame">
-                        <img src={require('./img/v5.jpg')} alt="Older daughter playing guitar and younger daughter playing drums."></img>
+                        <img src={require('../img/v1.jpg')} alt="Vish's face, with black cap on."></img>
                     </div>
                 </div>
             </Container>
@@ -71,4 +71,4 @@ function About() {
     )
 }
 
-export default About;
+export default Frontend;
