@@ -62,7 +62,7 @@ function Frontend() {
                         <p>The first unit at Lambda School has taught me the basics of semantic HTML and CSS, including the pains of inline-block, the mighty Flexbox and a start at responsive web design. We've since delved into JavaScript, the DOM and are learning React, with its virtual DOM, for component-driven front-end development.</p>
                     </div>
                     <div className="pictureFrame">
-                        <img src={require('./img/v1.jpg')}></img>
+                        <img src={require('./img/v1.jpg')} alt="Vish's face, with black cap on."></img>
                     </div>
                 </div>
             </Container>

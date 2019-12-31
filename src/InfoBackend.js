@@ -62,7 +62,7 @@ function Backend() {
                         <p>Once our JavaScript/React entanglement is complete, we move on to back-end development with NodeJS, Java, Python and RDBMS. This will be augmented with deep dives into algorithms, data structures, hash tables, blockchain, graphs and computer architecture.</p>
                     </div>
                     <div className="pictureFrame">
-                        <img src={require('./img/v2.jpg')}></img>
+                        <img src={require('./img/v2.jpg')} alt="Back of Vish's head, holding baby over shoulder."></img>
                     </div>
                 </div>
             </Container>

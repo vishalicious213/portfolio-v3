@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const BottomBorder = styled.div`
-    width: 100%;
-    height: 3rem;
-    background: linear-gradient(to right top, #2e3141 49%, #4c5c96 50%);
-`
+// const BottomBorder = styled.div`
+//     width: 100%;
+//     height: 3rem;
+//     background: linear-gradient(to right top, #2e3141 49%, #4c5c96 50%);
+// `
 const Container = styled.section`
     background-color: #2d3040;
     padding: 1rem 1rem 0px;

@@ -62,7 +62,7 @@ function About() {
                         <p>Intertwined with my coding interests are my roles as a father & husband, my study of electric bass (its not a guitar!) and my love of extreme metal, food, air frying and the Instant Pot.</p>
                     </div>
                     <div className="pictureFrame">
-                        <img src={require('./img/v5.jpg')}></img>
+                        <img src={require('./img/v5.jpg')} alt="Older daughter playing guitar and younger daughter playing drums."></img>
                     </div>
                 </div>
             </Container>

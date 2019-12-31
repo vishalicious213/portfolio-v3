@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
-import AboutMeSwitch from './AboutMeSwitch';
+import React, { Component } from 'react';
 import styled from 'styled-components';
+import Frontend from './InfoFrontend';
+import Backend from './InfoBackend';
+import About from './InfoAbout';
 
 const Container = styled.section`
     background-color: #2d3040;
@@ -29,14 +31,48 @@ const Container = styled.section`
     }
 `
 
-function AboutMeButtons() {
-    return (
-        <Container>
-            <button onClick={() => AboutMeSwitch('frontend')}>Front-End Development</button>
-            <button onClick={() => AboutMeSwitch('backend')}>Back-End Development</button>
-            <button onClick={() => AboutMeSwitch('about')}>About Me</button>
-        </Container>
-    )
+class AboutMeButtons extends Component {
+    // const [meButton, updateMeButton] = useState('frontend');
+    // state = {meButton: 'frontend'};
+    constructor() {
+        super();
+        this.state = {render:'frontend'}
+    }
+
+    handleClick(infoSection, event){
+        console.log(infoSection);
+        this.setState({render:infoSection});
+    }
+
+    _renderSubComp(){
+        switch(this.state.render){
+            case 'frontend': return <Frontend />
+            case 'backend': return <Backend />
+            case 'about': return <About />
+        }
+    }
+
+    render() {
+        return (
+            <div>
+                <Container>
+                    <button onClick={
+                        this.handleClick.bind(this, 'frontend')
+                    }>Front-End Development</button>
+
+                    <button onClick={
+                        this.handleClick.bind(this, 'backend')
+                    }>Back-End Development</button>
+
+                    <button onClick={
+                        this.handleClick.bind(this, 'about')
+                    }>About Me</button>
+                </Container>
+                
+                {this._renderSubComp()}
+            </div>
+        )
+    }
 }
 
 export default AboutMeButtons;
