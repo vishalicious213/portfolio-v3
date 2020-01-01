@@ -45,7 +45,7 @@ const Card = styled.section`
 `
 const Screenshot = styled.div`
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: .1rem;
     border-radius: .25rem .25rem 0 0;
 `
 const Img = styled.img`
@@ -152,7 +152,7 @@ const TechBox = styled.div`
         width: 15%;
     `
         const HTMLIco = styled.li``
-        const CSSco = styled.li``
+        const CSSIco = styled.li``
         const LESSIco = styled.li``
         const WPIco = styled.li``
         const JSIco = styled.li``
@@ -162,38 +162,60 @@ const TechBox = styled.div`
         const AxiosImg = styled.img``
         const ReactIco = styled.li``
 
-function ProjectCard() {
+        // HTMLIco.classList.add("fab", "fa-html5");
+
+        DOMImg.src = "img/noun_DOM_13029.svg";
+        // DOMImg.style.verticalAlign = "middle";
+        AxiosImg.src = "img/axios Page 1.svg";
+        // AxiosImg.style.verticalAlign = "middle";
+
+        HTMLIco.title = 'HTML5';
+        CSSIco.title = "CSS3";
+        LESSIco.title = "LESS";
+        WPIco.title = "WordPress";
+        JSIco.title = "JavaScript";
+        DOMImg.title = "DOM";
+        AxiosImg.title = "axios";
+        ReactIco.title = "React";
+
+function ProjectCard(projectObj) {
     return (
         <Container>
             <Card>
                 <Screenshot>
-                    <Img src={require('../img/blog.jpg')} alt=""></Img>
+                    {/* <Img src={require('../img/blog.jpg')} alt=""></Img> */}
+                    {/* <Img src={require(`${projectObj.img}`)} alt=""></Img> */}
                     {/* <StyledImg className="image" src={require('../img/'+`${props.name}`+'.jpg')} alt=""></StyledImg> */}
                 </Screenshot>
                 <WorkInfo>
-                    <Title>Project Title</Title>
-                    <Type>Project Type</Type>
+                    <Title>{projectObj.name}</Title>
+                    {console.log('Title: ', projectObj.name)}
+                    <Type>{projectObj.type}</Type>
+                    {console.log('Type: ', projectObj.type)}
                     <Offsite>
-                        <Visit href=''>
+                        <Visit href={projectObj.visit}>
                             <VisitButton>></VisitButton>
                             <VisitText>VISIT SITE</VisitText>
                         </Visit>
-                        <View href=''>
+                        <View href={projectObj.view}>
                             <ViewButton>></ViewButton>
                             <ViewText>VIEW CODE</ViewText>
                         </View>
                     </Offsite>
                     <TechBox>
-                        <Descriptor>
-                            My programming blog details my experience learning how to think like a programmer, grasp computer science concepts and, of course, tackling coding projects.
-                        </Descriptor>
-                        <Tech>
-                        </Tech>
+                        <Descriptor>{projectObj.desc}</Descriptor>
+                        <Tech>{projectObj.stack}</Tech>
+                        {console.log('Stack: ', projectObj.stack)}
                     </TechBox>
                 </WorkInfo>
             </Card>
         </Container>
     )
 }
+
+featuredProjects.forEach(project => {
+    console.log(project);
+    ProjectCard(project);
+})
 
 export default ProjectCard;

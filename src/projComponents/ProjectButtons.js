@@ -1,5 +1,9 @@
-import React, { useState } from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
+// import ProjectCardJS from './ProjectCardJS';
+import Featured from './ProjectsFeatured';
+import HtmlCss from './ProjectsHTMLCSS';
+import JSReact from './ProjectsJSReact';
 
 const Container = styled.section`
     background-color: #2d3040;
@@ -28,14 +32,45 @@ const Container = styled.section`
     }
 `
 
-function ProjectButtons() {
-    return (
-        <Container>
-            <button>Featured Projects</button>
-            <button>HTML / CSS Websites</button>
-            <button>JavaScript & React Sites</button>
-        </Container>
-    )
-}
+class ProjectButtons extends Component {
+    constructor() {
+        super();
+        this.state = {render:'featured'}
+    }
 
+    handleClick(projSection, event){
+        console.log(projSection);
+        this.setState({render:projSection});
+    }
+
+    _renderSubComp(){
+        switch(this.state.render){
+            case 'featured': return <Featured />
+            case 'html-css': return <HtmlCss />
+            case 'JS-React': return <JSReact />
+        }
+    }
+
+    render() {
+        return (
+            <div>
+                <Container>
+                    <button onClick={
+                        this.handleClick.bind(this, 'featured')
+                    }>Featured Projects</button>
+
+                    <button onClick={
+                        this.handleClick.bind(this, 'html-css')
+                    }>HTML / CSS Websites</button>
+
+                    <button onClick={
+                        this.handleClick.bind(this, 'JS-React')
+                    }>JavaScript & React Sites</button>
+                </Container>
+
+                {this._renderSubComp()}
+            </div>
+        )
+    }
+}
 export default ProjectButtons;
