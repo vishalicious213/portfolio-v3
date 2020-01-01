@@ -95,6 +95,10 @@ const Offsite = styled.div`
             border: 2px solid #484A59;
             padding: .15rem .5rem;
             border-radius: 50%;
+
+            &:hover {
+                background-color: #484A59;
+            }
         `
         const VisitText = styled.span`
             color: white;
@@ -115,6 +119,10 @@ const Offsite = styled.div`
             border: 2px solid #484A59;
             padding: .15rem .5rem;
             border-radius: 50%;
+
+            &:hover {
+                background-color: #484A59;
+            }
         `
         const ViewText = styled.span`
             color: white;
@@ -124,6 +132,35 @@ const Offsite = styled.div`
             letter-spacing: 0.1em;
             margin-top: 2rem;
         `
+const TechBox = styled.div`
+    display: flex;
+    align-items: baseline;
+`
+    const Descriptor = styled.p`
+    	color: gainsboro;
+        font-size: 1rem;
+        font-family: "Source Sans Pro", Helvetica, sans-serif;
+        font-weight: 200;
+        line-height: 1.5;
+    `
+    const Tech = styled.ul`
+        border-left: 1px solid lightslategray;
+        font-size: 1.5rem;
+        margin-left: .5rem;
+        padding-left: .5rem;
+        text-align: center;
+        width: 15%;
+    `
+        const HTMLIco = styled.li``
+        const CSSco = styled.li``
+        const LESSIco = styled.li``
+        const WPIco = styled.li``
+        const JSIco = styled.li``
+        const DOMIco = styled.li``
+        const DOMImg = styled.img``
+        const AxiosIco = styled.li``
+        const AxiosImg = styled.img``
+        const ReactIco = styled.li``
 
 function ProjectCard() {
     return (
@@ -137,15 +174,22 @@ function ProjectCard() {
                     <Title>Project Title</Title>
                     <Type>Project Type</Type>
                     <Offsite>
-                        <Visit>
+                        <Visit href=''>
                             <VisitButton>></VisitButton>
                             <VisitText>VISIT SITE</VisitText>
                         </Visit>
-                        <View>
+                        <View href=''>
                             <ViewButton>></ViewButton>
                             <ViewText>VIEW CODE</ViewText>
                         </View>
                     </Offsite>
+                    <TechBox>
+                        <Descriptor>
+                            My programming blog details my experience learning how to think like a programmer, grasp computer science concepts and, of course, tackling coding projects.
+                        </Descriptor>
+                        <Tech>
+                        </Tech>
+                    </TechBox>
                 </WorkInfo>
             </Card>
         </Container>
