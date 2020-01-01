@@ -34,6 +34,14 @@ const Card = styled.section`
     &:hover {
         border: .5px solid silver;
     }
+
+    @media screen and (max-width: 1220px) {
+    width: 45%;
+    } // @media 1220
+
+    @media screen and (max-width: 840px) {
+        width: 100%;
+    } // @media 840
 `
 const Screenshot = styled.div`
     width: 100%;
@@ -67,7 +75,55 @@ const WorkInfo = styled.div`
         margin: 0px 0px 1rem;
         padding-bottom: 1rem;
     `
-
+const Offsite = styled.div`
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid lightslategray;
+`
+    const Visit = styled.a`
+        width: 48%;
+    `
+        const VisitButton = styled.span`
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-right: .5rem;
+            border: 2px solid #484A59;
+            padding: .15rem .5rem;
+            border-radius: 50%;
+        `
+        const VisitText = styled.span`
+            color: white;
+            margin-top: 0;
+            font-size: .8rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            margin-top: 2rem;
+        `
+    const View = styled.a`
+        width: 48%;
+    `
+        const ViewButton = styled.span`
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-right: .5rem;
+            border: 2px solid #484A59;
+            padding: .15rem .5rem;
+            border-radius: 50%;
+        `
+        const ViewText = styled.span`
+            color: white;
+            margin-top: 0;
+            font-size: .8rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            margin-top: 2rem;
+        `
 
 function ProjectCard() {
     return (
@@ -80,6 +136,16 @@ function ProjectCard() {
                 <WorkInfo>
                     <Title>Project Title</Title>
                     <Type>Project Type</Type>
+                    <Offsite>
+                        <Visit>
+                            <VisitButton>></VisitButton>
+                            <VisitText>VISIT SITE</VisitText>
+                        </Visit>
+                        <View>
+                            <ViewButton>></ViewButton>
+                            <ViewText>VIEW CODE</ViewText>
+                        </View>
+                    </Offsite>
                 </WorkInfo>
             </Card>
         </Container>
