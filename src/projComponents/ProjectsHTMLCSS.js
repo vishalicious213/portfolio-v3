@@ -11,9 +11,9 @@ const Container = styled.section`
         width: 90%;
     }
 
-    h3 {
+    h2, h3 {
         color: white;
-        font-size: 1.05rem;
+        font-size: 1.25rem;
         font-family: Raleway, Helvetica, sans-serif;
         letter-spacing: .1rem;
         text-transform: uppercase;
@@ -23,10 +23,21 @@ const Container = styled.section`
         text-align: left;
     }
 
-    p {
+    h3 {
+        font-size: 1.05rem;
+    }
+
+    p, div {
         color: gainsboro;
         text-align: left;
     }
+
+    .keyTech {
+            // border: 1px solid red;
+            display: grid;
+            grid-template-columns: 5rem auto;
+            grid-row-gap: .25rem;
+        }
 `
 
 class HtmlCss extends Component {
@@ -40,8 +51,22 @@ class HtmlCss extends Component {
         <div>
             <Container>
                 <div className="Front">
-                    <h3>HTML / CSS Projects</h3>
-                    <p>The start of my education in web development has progressed quickly. In a week's time I've managed to go from 'Hello World' in CodePen to writing an adaptive website using HTML and CSS in VS Code. I blog about it regularly, sharing my experiences with a growing readership and reinforcing my understanding by explaining it in essay form.</p>
+                    <h2>HTML Websites</h2>
+                    <p>RESPONSIVE WEBSITES AND PROJECTS BUILT USING HTML5 AND CSS3</p>
+                    <h3>High-Level</h3>
+                    <p>HTML and CSS are the basic languages of websites. They're the first tools that web developers learn to create web pages. HTML puts words and images onscreen. CSS gives them a makeover so that they look good. The following websites were all written using HTML and CSS, including a special CSS language called LESS, which makes CSS more dynamic.</p>
+
+                    <h3>Key Technologies</h3>
+                    <section class="keyTech">
+                        <div class="techName"><b>HTML</b></div>
+                        <div class="techDef">(Hyper Text Markup Language) places images and text onscreen and creates links to other pages</div>
+                        
+                        <div class="techName"><b>CSS</b></div>
+                        <div class="techDef">(Cascading Style Sheets) adds color, font size, positioning and many more visual effects to HTML</div>
+                        
+                        <div class="techName"><b>LESS</b></div>
+                        <div class="techDef">(Leaner Style Sheets) is a language extension that adds dynamic programming capability to CSS</div>
+                    </section>
                 </div>
             </Container>
             {/* <BottomBorder></BottomBorder> */}
