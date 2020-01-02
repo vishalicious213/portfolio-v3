@@ -17,10 +17,14 @@ const Container = styled.section`
     display: flex;
     justify-content: center;
 
+    .sectionInfo {
+        
+    }
+
     .Back {
         width: 90%;
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 1fr 3fr;
         grid-template-areas:
             h3 img
             p img
@@ -37,12 +41,12 @@ const Container = styled.section`
         margin: 0px 0px 1px; // top r/l bot
         padding-bottom: 1.25rem;
         border-bottom: 1px solid lightslategray;
-        text-align: right;
+        text-align: left;
     }
 
     p {
         color: gainsboro;
-        text-align: right;
+        text-align: left;
     }
 
     img {
@@ -57,12 +61,12 @@ function Backend() {
             <TopBorder></TopBorder>
             <Container>
                 <div className="Back">
+                    <div className="pictureFrame">
+                        <img src={require('../img/v2.jpg')} alt="Back of Vish's head, holding baby over shoulder."></img>
+                    </div>
                     <div className="sectionInfo">
                         <h3>Back-End Development</h3>
                         <p>Once our JavaScript/React entanglement is complete, we move on to back-end development with NodeJS, Java, Python and RDBMS. This will be augmented with deep dives into algorithms, data structures, hash tables, blockchain, graphs and computer architecture.</p>
-                    </div>
-                    <div className="pictureFrame">
-                        <img src={require('../img/v2.jpg')} alt="Back of Vish's head, holding baby over shoulder."></img>
                     </div>
                 </div>
             </Container>
