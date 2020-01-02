@@ -11,9 +11,9 @@ const Container = styled.section`
         width: 90%;
     }
 
-    h3 {
+    h2, h3 {
         color: white;
-        font-size: 1.05rem;
+        font-size: 1.15rem;
         font-family: Raleway, Helvetica, sans-serif;
         letter-spacing: .1rem;
         text-transform: uppercase;
@@ -23,10 +23,21 @@ const Container = styled.section`
         text-align: left;
     }
 
-    p {
+    h3 {
+        font-size: 1.05rem;
+    }
+
+    p, div {
         color: gainsboro;
         text-align: left;
     }
+
+    .keyTech {
+            // border: 1px solid red;
+            display: grid;
+            grid-template-columns: 5rem auto;
+            grid-row-gap: .25rem;
+        }
 `
 
 class JSReact extends Component {
@@ -40,8 +51,25 @@ class JSReact extends Component {
         <div>
             <Container>
                 <div className="Front">
-                    <h3>JavaScript / React Projects</h3>
-                    <p>The start of my education in web development has progressed quickly. In a week's time I've managed to go from 'Hello World' in CodePen to writing an adaptive website using HTML and CSS in VS Code. I blog about it regularly, sharing my experiences with a growing readership and reinforcing my understanding by explaining it in essay form.</p>
+                    <h2>JavaScript / React Websites</h2>
+                    <p>RESPONSIVE WEBSITES AND PROJECTS BUILT USING JAVASCRIPT AND THE DOM OR REACT</p>
+                    <h3>High-Level</h3>
+                    <p>JavaScript adds interactivity to web pages and online applications. The DOM is an object representation of every element on a website. Together, they transform static web pages built with HTML and CSS into vibrant, dynamic web pages and applications. User events, interaction with other websites, transaction with applications - all of this and more is possible with these combined technologies.</p>
+
+                    <h3>Key Technologies</h3>
+                    <section class="keyTech">
+                        <div class="techName"><b>JavaScript</b></div>
+                        <div class="techDef">powers the internet - it is the most widely-used web programming language in the world and adds interactivity and functionality to websites</div>
+                        
+                        <div class="techName"><b>React</b></div>
+                        <div class="techDef">is a front-end library developed by Facebook. It handles the view layer for web and mobile apps through reusable UI components.</div>
+                        
+                        <div class="techName"><b>DOM</b></div>
+                        <div class="techDef">(The Document Object Model) is a language-agnostic programming interface that features an object-oriented representation of a web page which can be modified by scripting languages</div>
+
+                        <div class="techName"><b>axios</b></div>
+                        <div class="techDef">(yes, its all lowercase) is a lightweight, promise-based HTTP client designed to take advantage of async and provide more readable asynchronous code. It gets data from online servers.</div>
+                    </section>
                 </div>
             </Container>
             {/* <BottomBorder></BottomBorder> */}

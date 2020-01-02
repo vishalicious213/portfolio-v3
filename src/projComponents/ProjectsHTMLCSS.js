@@ -13,7 +13,7 @@ const Container = styled.section`
 
     h2, h3 {
         color: white;
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         font-family: Raleway, Helvetica, sans-serif;
         letter-spacing: .1rem;
         text-transform: uppercase;

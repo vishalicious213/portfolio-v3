@@ -11,9 +11,9 @@ const Container = styled.section`
         width: 90%;
     }
 
-    h3 {
+    h2 {
         color: white;
-        font-size: 1.05rem;
+        font-size: 1.15rem;
         font-family: Raleway, Helvetica, sans-serif;
         letter-spacing: .1rem;
         text-transform: uppercase;
@@ -40,7 +40,7 @@ class Featured extends Component {
         <div>
             <Container>
                 <div className="Front">
-                    <h3>Selected Works</h3>
+                    <h2>Selected Works</h2>
                     <p>The start of my education in web development has progressed quickly. In a week's time I've managed to go from 'Hello World' in CodePen to writing an adaptive website using HTML and CSS in VS Code. I blog about it regularly, sharing my experiences with a growing readership and reinforcing my understanding by explaining it in essay form.</p>
                 </div>
             </Container>
