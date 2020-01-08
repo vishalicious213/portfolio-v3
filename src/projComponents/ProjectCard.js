@@ -21,6 +21,7 @@ const Container = styled.section`
     background-color: #2d3040;
     padding: 1rem 1rem 0px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 `
 const Card = styled.section`
@@ -178,44 +179,48 @@ const TechBox = styled.div`
         AxiosImg.title = "axios";
         ReactIco.title = "React";
 
-function ProjectCard(projectObj) {
+// featuredProjects.map(project => <p>{project.name}</p>)
+
+function ProjectCard() {
     return (
         <Container>
-            <Card>
-                <Screenshot>
-                    {/* <Img src={require('../img/blog.jpg')} alt=""></Img> */}
-                    {/* <Img src={require(`${projectObj.img}`)} alt=""></Img> */}
-                    {/* <StyledImg className="image" src={require('../img/'+`${props.name}`+'.jpg')} alt=""></StyledImg> */}
-                </Screenshot>
-                <WorkInfo>
-                    <Title>{projectObj.name}</Title>
-                    {console.log('Title: ', projectObj.name)}
-                    <Type>{projectObj.type}</Type>
-                    {console.log('Type: ', projectObj.type)}
-                    <Offsite>
-                        <Visit href={projectObj.visit}>
-                            <VisitButton>></VisitButton>
-                            <VisitText>VISIT SITE</VisitText>
-                        </Visit>
-                        <View href={projectObj.view}>
-                            <ViewButton>></ViewButton>
-                            <ViewText>VIEW CODE</ViewText>
-                        </View>
-                    </Offsite>
-                    <TechBox>
-                        <Descriptor>{projectObj.desc}</Descriptor>
-                        <Tech>{projectObj.stack}</Tech>
-                        {console.log('Stack: ', projectObj.stack)}
-                    </TechBox>
-                </WorkInfo>
-            </Card>
+            {featuredProjects.map(project =>
+                <Card>
+                    <Screenshot>
+                        {/* <Img src={require(`../img/${project.img}`)} alt=""></Img> */}
+                        {/* <Img src={require(`${projectObj.img}`)} alt=""></Img> */}
+                        {/* <StyledImg className="image" src={require('../img/'+`${props.name}`+'.jpg')} alt=""></StyledImg> */}
+                    </Screenshot>
+                    <WorkInfo>
+                        <Title key={project.name}>{project.name}</Title>
+                        {console.log('Title: ', project.name)}
+                        <Type key={project.name}>{project.type}</Type>
+                        {console.log('Type: ', project.type)}
+                        <Offsite>
+                            <Visit key={project.name} href={project.visit}>
+                                <VisitButton>></VisitButton>
+                                <VisitText>VISIT SITE</VisitText>
+                            </Visit>
+                            <View key={project.name} href={project.view}>
+                                <ViewButton>></ViewButton>
+                                <ViewText>VIEW CODE</ViewText>
+                            </View>
+                        </Offsite>
+                        <TechBox>
+                            <Descriptor key={project.name}>{project.desc}</Descriptor>
+                            <Tech key={project.name}>{project.stack}</Tech>
+                            {console.log('Stack: ', project.stack)}
+                        </TechBox>
+                    </WorkInfo>
+                </Card>
+            )} // featuredProjects
         </Container>
-    )
+    ) // return
 }
 
-featuredProjects.forEach(project => {
+featuredProjects.map(project => {
     console.log(project);
-    ProjectCard(project);
+    return ProjectCard(project);
 })
 
 export default ProjectCard;

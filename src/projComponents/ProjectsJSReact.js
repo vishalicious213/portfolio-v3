@@ -57,18 +57,18 @@ class JSReact extends Component {
                     <p>JavaScript adds interactivity to web pages and online applications. The DOM is an object representation of every element on a website. Together, they transform static web pages built with HTML and CSS into vibrant, dynamic web pages and applications. User events, interaction with other websites, transaction with applications - all of this and more is possible with these combined technologies.</p>
 
                     <h3>Key Technologies</h3>
-                    <section class="keyTech">
-                        <div class="techName"><b>JavaScript</b></div>
-                        <div class="techDef">powers the internet - it is the most widely-used web programming language in the world and adds interactivity and functionality to websites</div>
+                    <section className="keyTech">
+                        <div className="techName"><b>JavaScript</b></div>
+                        <div className="techDef">powers the internet - it is the most widely-used web programming language in the world and adds interactivity and functionality to websites</div>
                         
-                        <div class="techName"><b>React</b></div>
-                        <div class="techDef">is a front-end library developed by Facebook. It handles the view layer for web and mobile apps through reusable UI components.</div>
+                        <div className="techName"><b>React</b></div>
+                        <div className="techDef">is a front-end library developed by Facebook. It handles the view layer for web and mobile apps through reusable UI components.</div>
                         
-                        <div class="techName"><b>DOM</b></div>
-                        <div class="techDef">(The Document Object Model) is a language-agnostic programming interface that features an object-oriented representation of a web page which can be modified by scripting languages</div>
+                        <div className="techName"><b>DOM</b></div>
+                        <div className="techDef">(The Document Object Model) is a language-agnostic programming interface that features an object-oriented representation of a web page which can be modified by scripting languages</div>
 
-                        <div class="techName"><b>axios</b></div>
-                        <div class="techDef">(yes, its all lowercase) is a lightweight, promise-based HTTP client designed to take advantage of async and provide more readable asynchronous code. It gets data from online servers.</div>
+                        <div className="techName"><b>axios</b></div>
+                        <div className="techDef">(yes, its all lowercase) is a lightweight, promise-based HTTP client designed to take advantage of async and provide more readable asynchronous code. It gets data from online servers.</div>
                     </section>
                 </div>
             </Container>

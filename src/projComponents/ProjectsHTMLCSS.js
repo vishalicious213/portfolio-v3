@@ -57,15 +57,15 @@ class HtmlCss extends Component {
                     <p>HTML and CSS are the basic languages of websites. They're the first tools that web developers learn to create web pages. HTML puts words and images onscreen. CSS gives them a makeover so that they look good. The following websites were all written using HTML and CSS, including a special CSS language called LESS, which makes CSS more dynamic.</p>
 
                     <h3>Key Technologies</h3>
-                    <section class="keyTech">
-                        <div class="techName"><b>HTML</b></div>
-                        <div class="techDef">(Hyper Text Markup Language) places images and text onscreen and creates links to other pages</div>
+                    <section className="keyTech">
+                        <div className="techName"><b>HTML</b></div>
+                        <div className="techDef">(Hyper Text Markup Language) places images and text onscreen and creates links to other pages</div>
                         
-                        <div class="techName"><b>CSS</b></div>
-                        <div class="techDef">(Cascading Style Sheets) adds color, font size, positioning and many more visual effects to HTML</div>
+                        <div className="techName"><b>CSS</b></div>
+                        <div className="techDef">(Cascading Style Sheets) adds color, font size, positioning and many more visual effects to HTML</div>
                         
-                        <div class="techName"><b>LESS</b></div>
-                        <div class="techDef">(Leaner Style Sheets) is a language extension that adds dynamic programming capability to CSS</div>
+                        <div className="techName"><b>LESS</b></div>
+                        <div className="techDef">(Leaner Style Sheets) is a language extension that adds dynamic programming capability to CSS</div>
                     </section>
                 </div>
             </Container>

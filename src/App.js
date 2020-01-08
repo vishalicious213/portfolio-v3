@@ -6,15 +6,18 @@ import AboutMeButtons from './infoComponents/AboutMeButtons';
 import ProjectButtons from './projComponents/ProjectButtons';
 import GetInTouch from './GetInTouch';
 // import ProjectCardJS from './projComponents/ProjectCardJS';
+import ProjectCard from './projComponents/ProjectCard';
+// import TestComponent from './testComponents/TestRender';
 
 function App() {
   return (
     <div>
+      {/* <TestComponent /> */}
       <Header />
       <AboutMeButtons />
       <ProjectButtons />
       {/* <Selected /> */}
-      {/* <ProjectCardJS /> */}
+      <ProjectCard />
       <GetInTouch />
     </div>
   );

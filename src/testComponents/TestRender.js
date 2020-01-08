@@ -1,33 +1,4 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-
-const Container = styled.section`
-    background-color: #2d3040;
-    padding: 1rem 1rem 0px;
-    display: flex;
-    justify-content: center;
-
-    .Front {
-        width: 90%;
-    }
-
-    h2 {
-        color: white;
-        font-size: 1.15rem;
-        font-family: Raleway, Helvetica, sans-serif;
-        letter-spacing: .1rem;
-        text-transform: uppercase;
-        margin: 0px 0px 1px; // top r/l bot
-        padding-bottom: 1.25rem;
-        border-bottom: 1px solid lightslategray;
-        text-align: left;
-    }
-
-    p {
-        color: gainsboro;
-        text-align: left;
-    }
-`
+import React from 'react';
 
 const featuredProjects = [
     {img: "img/breast-cancer-comfort.jpg", name: "Breast Cancer Comfort", type: "Client Website", visit: "https://breast-cancer-comfort.netlify.com/", view: "https://github.com/vishalicious213/bcc", desc: "Breast cancer charity in Long Island, NY. Formerly Wordpress site. Built webpage with HTML/CSS/LESS. Navigation bar written with JavaScript.", stack: ["js", "html", "css", "less"]},
@@ -38,25 +9,57 @@ const featuredProjects = [
     {img: "img/blog.jpg", name: "Redo From Start", type: "Personal Project", visit: "https://neophyte.home.blog/", view: "#", desc: "My programming blog details my experience learning how to think like a programmer, grasp computer science concepts and, of course, tackling coding projects.", stack: ["html", "css", "wp"]}
 ]
 
-class Featured extends Component {
+class TestComponent extends React.Component {
     constructor() {
         super();
-        this.state = {render: 'featured'}
+        this.state = {};
     }
 
     render() {
         return (
-        <div className="Anchor">
-            <Container>
-                <div className="Front">
-                    <h2>Selected Works</h2>
-                    <p>The start of my education in web development has progressed quickly. In a week's time I've managed to go from 'Hello World' in CodePen to writing an adaptive website using HTML and CSS in VS Code. I blog about it regularly, sharing my experiences with a growing readership and reinforcing my understanding by explaining it in essay form.</p>
-                </div>
-            </Container>
-            {/* <BottomBorder></BottomBorder> */}
-        </div>
+            featuredProjects.map(project => <p>{project.name}</p>)
         )
     }
-}
 
-export default Featured;
+
+    // render() {
+    //     return (
+    //         <div>
+    //             <div>Test Component</div>
+    //             <div>
+    //                 <span><b>{featuredProjects[0].name}: </b></span>
+    //                 <span>{featuredProjects[0].type}</span>
+    //             </div>
+    //             <div>
+    //                 <span><b>{featuredProjects[1].name}: </b></span>
+    //                 <span>{featuredProjects[1].type}</span>
+    //             </div>
+    //         </div>
+    //     )
+    // }
+
+    // render: function() {
+    //     return (
+    //         <div>
+    //             <div>Test Component</div>
+    //             {featuredProjects.map((project, index) =>
+    //                 return <div>{project[index].name}</div>
+    //             )}
+    //         </div>
+    //     )
+    // }
+
+    // render: function() {
+    // const elements = ['one', 'two', 'three'];
+    // return (
+    //     <ul>
+    //     {elements.map((value, index) => {
+    //         return <li key={index}>{value}</li>
+    //     })}
+    //     </ul>
+    // )
+    // }
+
+} // class TestComponent
+
+export default TestComponent;
