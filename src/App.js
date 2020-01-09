@@ -6,8 +6,9 @@ import AboutMeButtons from './infoComponents/AboutMeButtons';
 import ProjectButtons from './projComponents/ProjectButtons';
 import GetInTouch from './GetInTouch';
 // import ProjectCardJS from './projComponents/ProjectCardJS';
-import ProjectCard from './projComponents/ProjectCard';
+// import ProjectCard from './projComponents/ProjectCard';
 // import TestComponent from './testComponents/TestRender';
+import TestProjectCard from './testComponents/TestProjectCard';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <AboutMeButtons />
       <ProjectButtons />
       {/* <Selected /> */}
-      <ProjectCard />
+      {/* <ProjectCard /> */}
+      <TestProjectCard />
       <GetInTouch />
     </div>
   );
