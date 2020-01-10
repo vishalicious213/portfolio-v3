@@ -11,12 +11,6 @@ const featuredProjects = [
 ]
 // {img: "#", name: "#", visit: "#", view: "#", desc: "#"},
 
-// projectAnchor = document.querySelector(".featuredWorks");
-// featuredProjects.forEach(project => {
-//     // console.log(project);
-//     projectAnchor.appendChild(projectCard(project));
-// })
-
 const Container = styled.section`
     background-color: #2d3040;
     padding: 1rem 1rem 0px;
@@ -158,108 +152,29 @@ const TechBox = styled.div`
         line-height: 2rem;
         color: gainsboro;
     `
-
-        // const HTMLIco = styled.li``
-        // const CSSIco = styled.li``
-        // const LESSIco = styled.li``
-        // const WPIco = styled.li``
-        // const JSIco = styled.li``
-        // const DOMIco = styled.li``
-        // const DOMImg = styled.img``
-        // const AxiosIco = styled.li``
-        // const AxiosImg = styled.img``
-        // const ReactIco = styled.li``
-
-        // HTMLIco.classList.add("fab", "fa-html5");
+    const AxiosImg = styled.img`
+        width: 1.25rem;
+        color: gainsboro;
+        border: 1px solid gainsboro;
+        border-radius: .35rem;
+    `
+    const DomImg = styled.img`
+        width: 1.25rem;
+        background-color: gainsboro;
+        border: 1px solid gainsboro;
+        border-radius: .35rem;
+    `
 
         // DOMImg.src = "img/noun_DOM_13029.svg";
         // // DOMImg.style.verticalAlign = "middle";
         // AxiosImg.src = "img/axios Page 1.svg";
         // // AxiosImg.style.verticalAlign = "middle";
 
-        // HTMLIco.title = 'HTML5';
-        // CSSIco.title = "CSS3";
-        // LESSIco.title = "LESS";
-        // WPIco.title = "WordPress";
-        // JSIco.title = "JavaScript";
-        // DOMImg.title = "DOM";
-        // AxiosImg.title = "axios";
-        // ReactIco.title = "React";
-
-// function displayStack(stackArr) {
-//     stackArr.map(item => 
-//         console.log(item),
-//         // if (item === ("html")) {return <Li title='HTML5' className='fab fa-html5'></Li>};
-//         // if (stackArr.includes("css")) {return <Li title='CSS3' className='fab fa-css3-alt'></Li>};
-//         // if (stackArr.includes("less")) {return <Li title='LESS' className='fab fa-less'></Li>};
-//         // if (stackArr.includes("wp")) {return <Li title='WordPress' className='fab fa-wordpress'></Li>};
-//         // if (stackArr.includes("js")) {return <Li title='JavaScript' className='fab fa-js-square'></Li>};
-//         // if (stackArr.includes("dom")) {return <Li title='DOM'>DOM</Li>};
-//         // if (stackArr.includes("axios")) {return <Li title='axios'>AXIOS</Li>};
-//         // if (stackArr.includes("react")) {return <Li title='React' className='fab fa-react'></Li>};
-//     )
-// }
-
-
-
-function displayStack(stackArr) {
-    // return (
-    //     <>{stackArr.map(item => <Li>{item}</Li>)}</>
-    // )
-
-    // stackArr.map(item => {
-    //     console.log('tech stack includes: ', item);
-    //     return (<Li>{item}</Li>)
-    // })
-
-    // stackArr.map(item => {
-    //     if (item === 'js') {
-    //         console.log('new try: ', item);
-    //         return (<><Li>js</Li></>)
-    //     } else
-
-    //     if (item === 'html') {
-    //         console.log('new try: ', item);
-    //         return (<><Li>html</Li></>)
-    //     }
-    // })
-
-    // stackArr.map(item => {
-    //     item === 'js' && return (<><Li>js</Li></>)
-    // })
-
-
-    stackArr.map(item => {
-        switch (item) {
-            case 'js': return (<p>test</p>);
-            case 'html': return console.log('HTML');
-            case 'css': return console.log('CSS');
-            case 'less': return console.log('LESS');
-        }
-    })
-
-}
-
-// function displayStack(stackArr) {
-//     if (stackArr.includes("html")) {return <Li title='HTML5' className='fab fa-html5'></Li>};
-//     if (stackArr.includes("css")) {return <Li title='CSS3' className='fab fa-css3-alt'></Li>};
-//     if (stackArr.includes("less")) {return <Li title='LESS' className='fab fa-less'></Li>};
-//     if (stackArr.includes("wp")) {return <Li title='WordPress' className='fab fa-wordpress'></Li>};
-//     if (stackArr.includes("js")) {return <Li title='JavaScript' className='fab fa-js-square'></Li>};
-//     if (stackArr.includes("dom")) {return <Li title='DOM'>DOM</Li>};
-//     if (stackArr.includes("axios")) {return <Li title='axios'>AXIOS</Li>};
-//     if (stackArr.includes("react")) {return <Li title='React' className='fab fa-react'></Li>};
-// }
-
-
-// featuredProjects.map(project => <p>{project.name}</p>)
-
 function TestProjectCard() {
     return (
         <Container>
             {featuredProjects.map(project =>
                 <Card>
-                    {/* {console.log(project.stack)} */}
                     {console.log(project.name)}
                     <Screenshot>
                         {/* <Img src={require(`../img/${project.img}`)} alt=""></Img> */}
@@ -283,22 +198,20 @@ function TestProjectCard() {
                         </Offsite>
                         <TechBox>
                             <Descriptor key={project.name}>{project.desc}</Descriptor>
-                            {/* <Tech key={project.name} className={project.stack}>{displayStack(project.stack)}</Tech> */}
                             <Tech key={project.name} className={project.stack}>{
                                 project.stack.map(item => {
                                     switch (item) {
-                                        case 'html': return (<Li className='fab fa-html5'></Li>);
-                                        case 'css': return (<Li className='fab fa-css3-alt'></Li>);
-                                        case 'less': return (<Li className='fab fa-less'></Li>);
-                                        case 'js': return (<Li className='fab fa-js-square'></Li>);
-                                        case 'wp': return (<Li className='fab fa-wordpress'></Li>);
-                                        case 'dom': return (<Li className=''>dom</Li>);
-                                        case 'axios': return (<Li className=''>axios</Li>);
-                                        case 'react': return (<Li className='fab fa-react'></Li>);
+                                        case 'html': return (<Li title='HTML5' className='fab fa-html5'></Li>);
+                                        case 'css': return (<Li title='CSS3' className='fab fa-css3-alt'></Li>);
+                                        case 'less': return (<Li title='LESS' className='fab fa-less'></Li>);
+                                        case 'js': return (<Li title='JavaScript' className='fab fa-js-square'></Li>);
+                                        case 'wp': return (<Li title='WordPress' className='fab fa-wordpress'></Li>);
+                                        case 'react': return (<Li title='React' className='fab fa-react'></Li>);
+                                        case 'dom': return (<DomImg title='DOM' className='shrinkImg' src={require('../img/noun_DOM_13029.svg')}></DomImg>);
+                                        case 'axios': return (<AxiosImg title='axios' className='shrinkImg' src={require('../img/axios Page 1.svg')}></AxiosImg>);
                                     }
                                 })
                             }</Tech>
-                            {/* {console.log('Stack: ', project.stack)} */}
                         </TechBox>
                     </WorkInfo>
                 </Card>
@@ -306,10 +219,5 @@ function TestProjectCard() {
         </Container>
     ) // return
 }
-
-// featuredProjects.map(project => {
-//     console.log(project);
-//     return TestProjectCard(project);
-// })
 
 export default TestProjectCard;
