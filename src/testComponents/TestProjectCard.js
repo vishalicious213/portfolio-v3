@@ -160,7 +160,7 @@ const TechBox = styled.div`
     `
     const DomImg = styled.img`
         width: 1.25rem;
-        background-color: gainsboro;
+        // background-color: gainsboro;
         border: 1px solid gainsboro;
         border-radius: .35rem;
     `
@@ -207,7 +207,7 @@ function TestProjectCard() {
                                         case 'js': return (<Li title='JavaScript' className='fab fa-js-square'></Li>);
                                         case 'wp': return (<Li title='WordPress' className='fab fa-wordpress'></Li>);
                                         case 'react': return (<Li title='React' className='fab fa-react'></Li>);
-                                        case 'dom': return (<DomImg title='DOM' className='shrinkImg' src={require('../img/noun_DOM_13029.svg')}></DomImg>);
+                                        case 'dom': return (<DomImg title='DOM' className='shrinkImg' src={require('../img/noun_DOM_13029.png')}></DomImg>);
                                         case 'axios': return (<AxiosImg title='axios' className='shrinkImg' src={require('../img/axios Page 1.svg')}></AxiosImg>);
                                     }
                                 })
