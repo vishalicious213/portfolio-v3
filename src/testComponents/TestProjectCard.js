@@ -75,7 +75,6 @@ const Offsite = styled.div`
         align-items: baseline;
         justify-content: space-between;
         width: 100%;
-        margin-bottom: 1rem;
         padding-bottom: 1rem;
         border-bottom: 1px solid lightslategray;
 `
@@ -97,7 +96,6 @@ const Offsite = styled.div`
         `
         const VisitText = styled.span`
             color: white;
-            margin-top: 0;
             font-size: .8rem;
             font-weight: 600;
             letter-spacing: 0.1em;
@@ -121,7 +119,6 @@ const Offsite = styled.div`
         `
         const ViewText = styled.span`
             color: white;
-            margin-top: 0;
             font-size: .8rem;
             font-weight: 600;
             letter-spacing: 0.1em;
@@ -129,7 +126,7 @@ const Offsite = styled.div`
         `
 const TechBox = styled.div`
     display: flex;
-    align-items: baseline;
+    align-items: top;
 `
     const Descriptor = styled.p`
     	color: gainsboro;
@@ -164,11 +161,6 @@ const TechBox = styled.div`
         border: 1px solid gainsboro;
         border-radius: .35rem;
     `
-
-        // DOMImg.src = "img/noun_DOM_13029.svg";
-        // // DOMImg.style.verticalAlign = "middle";
-        // AxiosImg.src = "img/axios Page 1.svg";
-        // // AxiosImg.style.verticalAlign = "middle";
 
 function TestProjectCard() {
     return (
