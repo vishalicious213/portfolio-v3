@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-// import ProjectCardJS from './ProjectCardJS';
 import Featured from './ProjectsFeatured';
 import HtmlCss from './ProjectsHTMLCSS';
 import JSReact from './ProjectsJSReact';

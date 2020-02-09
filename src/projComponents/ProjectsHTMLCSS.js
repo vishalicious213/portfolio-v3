@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import ProjectCard from './ProjectCard';
 
 const Container = styled.section`
     background-color: #2d3040;
@@ -43,7 +44,7 @@ const Container = styled.section`
 class HtmlCss extends Component {
     constructor() {
         super();
-        this.state = {render: 'featured'}
+        this.state = {render: 'html-css', cards: 'htmlWebProjects'}
     }
 
     render() {
@@ -69,6 +70,7 @@ class HtmlCss extends Component {
                     </section>
                 </div>
             </Container>
+            <ProjectCard cards='htmlWebProjects' />
             {/* <BottomBorder></BottomBorder> */}
         </div>
         )
