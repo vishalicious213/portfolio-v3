@@ -66,7 +66,9 @@ function Backend() {
                     </div>
                     <div className="sectionInfo">
                         <h3>Back-End Development</h3>
-                        <p>Once our JavaScript/React entanglement is complete, we move on to back-end development with NodeJS, Java, Python and RDBMS. This will be augmented with deep dives into algorithms, data structures, hash tables, blockchain, graphs and computer architecture.</p>
+                        {/* <p>Once our JavaScript/React entanglement is complete, we move on to back-end development with NodeJS, Java, Python and RDBMS. This will be augmented with deep dives into algorithms, data structures, hash tables, blockchain, graphs and computer architecture.</p> */}
+                        <p>Back-end development handles the 'behind-the-scenes' functionality of a web application. It connects the front-end with a database, manages user connections and the business logic of a web application.</p>
+                        <p>I'm currently learning back-end technologies including NodeJS, Java, Python and RDBMS at Lambda School, in Silicon Valley. This will be augmented with deep dives into algorithms, data structures, hash tables, blockchain, graphs and computer architecture.</p>
                     </div>
                 </div>
             </Container>
