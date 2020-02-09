@@ -50,8 +50,10 @@ class Featured extends Component {
         <div className="Anchor">
             <Container>
                 <div className="Front">
-                    <h2>Selected Works</h2>
-                    <p>The start of my education in web development has progressed quickly. In a week's time I've managed to go from 'Hello World' in CodePen to writing an adaptive website using HTML and CSS in VS Code. I blog about it regularly, sharing my experiences with a growing readership and reinforcing my understanding by explaining it in essay form.</p>
+                    {/* <h2>Selected Works</h2> */}
+                    {/* <p>The start of my education in web development has progressed quickly. In a week's time I've managed to go from 'Hello World' in CodePen to writing an adaptive website using HTML and CSS in VS Code. I blog about it regularly, sharing my experiences with a growing readership and reinforcing my understanding by explaining it in essay form.</p> */}
+                    <h2>Featured Projects</h2>
+                    <p>Here are six projects made using a combination of HTML/CSS, JavaScript and React. These responsive websites include client projects, personal projects, projects from Lambda School and other coding courses. My programming blog is also here - I regularly write about coding, sharing my experiences with a growing readership and reinforcing my understanding by explaining topics in essay form.</p>
                 </div>
             </Container>
             <ProjectCard cards='featuredProjects' />

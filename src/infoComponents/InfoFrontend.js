@@ -59,7 +59,8 @@ function Frontend() {
                 <div className="Front">
                     <div className="sectionInfo">
                         <h3>Front-End Development</h3>
-                        <p>The first unit at Lambda School has taught me the basics of semantic HTML and CSS, including the pains of inline-block, the mighty Flexbox and a start at responsive web design. We've since delved into JavaScript, the DOM and are learning React, with its virtual DOM, for component-driven front-end development.</p>
+                        {/* <p>The first unit at Lambda School has taught me the basics of semantic HTML and CSS, including the pains of inline-block, the mighty Flexbox and a start at responsive web design. We've since delved into JavaScript, the DOM and are learning React, with its virtual DOM, for component-driven front-end development.</p> */}
+                        <p>My approach to front-end web development centers on presenting data to the viewer through interactive graphical interfaces using technologies such as semantic HTML, CSS (including Flexbox and CSS Grid), JavaScript and React. Data is often read from outside API sources via axios and display is guided by responsive web design principles.</p>
                     </div>
                     <div className="pictureFrame">
                         <img src={require('../img/v1.jpg')} alt="Vish's face, with black cap on."></img>
