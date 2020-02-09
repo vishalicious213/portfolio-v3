@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import ProjectCard from './ProjectCard';
 
 const Container = styled.section`
     background-color: #2d3040;
@@ -43,7 +44,7 @@ const Container = styled.section`
 class JSReact extends Component {
     constructor() {
         super();
-        this.state = {render: 'featured'}
+        this.state = {render: 'JS-React', cards: 'jsDomProjects'}
     }
 
     render() {
@@ -72,6 +73,7 @@ class JSReact extends Component {
                     </section>
                 </div>
             </Container>
+            <ProjectCard cards='jsDomProjects' />
             {/* <BottomBorder></BottomBorder> */}
         </div>
         )

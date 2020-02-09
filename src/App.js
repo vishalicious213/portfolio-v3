@@ -16,7 +16,7 @@ function App() {
       <AboutMeButtons />
       <ProjectButtons />
       {/* <Selected /> */}
-      <ProjectCard />
+      {/* <ProjectCard /> */}
       <GetInTouch />
     </div>
   );
