@@ -44,7 +44,7 @@ const Card = styled.section`
     border: .5px solid #2e3141;
     width: 30%;
     margin: 1rem;
-    margin-top: 2.5rem;
+    // margin-top: 2.5rem;
     border-radius: .25rem;
 
     &:hover {
@@ -63,6 +63,7 @@ const Screenshot = styled.div`
     width: 100%;
     margin-bottom: .1rem;
     border-radius: .25rem .25rem 0 0;
+    padding-top: .5px;
 `
 const Img = styled.img`
     width: 100%;

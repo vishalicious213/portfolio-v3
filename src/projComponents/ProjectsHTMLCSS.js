@@ -54,10 +54,10 @@ class HtmlCss extends Component {
                 <div className="Front">
                     <h2>HTML Websites</h2>
                     <p>RESPONSIVE WEBSITES AND PROJECTS BUILT USING HTML5 AND CSS3</p>
-                    <h3>High-Level</h3>
+                    {/* <h3>High-Level</h3> */}
                     <p>HTML and CSS are the basic languages of websites. They're the first tools that web developers learn to create web pages. HTML puts words and images onscreen. CSS gives them a makeover so that they look good. The following websites were all written using HTML and CSS, including a special CSS language called LESS, which makes CSS more dynamic.</p>
 
-                    <h3>Key Technologies</h3>
+                    {/* <h3>Key Technologies</h3>
                     <section className="keyTech">
                         <div className="techName"><b>HTML</b></div>
                         <div className="techDef">(Hyper Text Markup Language) places images and text onscreen and creates links to other pages</div>
@@ -67,7 +67,7 @@ class HtmlCss extends Component {
                         
                         <div className="techName"><b>LESS</b></div>
                         <div className="techDef">(Leaner Style Sheets) is a language extension that adds dynamic programming capability to CSS</div>
-                    </section>
+                    </section> */}
                 </div>
             </Container>
             <ProjectCard cards='htmlWebProjects' />

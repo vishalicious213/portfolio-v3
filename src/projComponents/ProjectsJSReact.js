@@ -53,11 +53,11 @@ class JSReact extends Component {
             <Container>
                 <div className="Front">
                     <h2>JavaScript / React Websites</h2>
-                    <p>RESPONSIVE WEBSITES AND PROJECTS BUILT USING JAVASCRIPT AND THE DOM OR REACT</p>
-                    <h3>High-Level</h3>
+                    <p>RESPONSIVE WEBSITES AND PROJECTS BUILT USING JAVASCRIPT/DOM OR REACT</p>
+                    {/* <h3>High-Level</h3> */}
                     <p>JavaScript adds interactivity to web pages and online applications. The DOM is an object representation of every element on a website. Together, they transform static web pages built with HTML and CSS into vibrant, dynamic web pages and applications. User events, interaction with other websites, transaction with applications - all of this and more is possible with these combined technologies.</p>
 
-                    <h3>Key Technologies</h3>
+                    {/* <h3>Key Technologies</h3>
                     <section className="keyTech">
                         <div className="techName"><b>JavaScript</b></div>
                         <div className="techDef">powers the internet - it is the most widely-used web programming language in the world and adds interactivity and functionality to websites</div>
@@ -70,7 +70,7 @@ class JSReact extends Component {
 
                         <div className="techName"><b>axios</b></div>
                         <div className="techDef">(yes, its all lowercase) is a lightweight, promise-based HTTP client designed to take advantage of async and provide more readable asynchronous code. It gets data from online servers.</div>
-                    </section>
+                    </section> */}
                 </div>
             </Container>
             <ProjectCard cards='jsDomProjects' />
