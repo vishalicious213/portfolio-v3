@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const featuredProjects = [
@@ -44,7 +44,7 @@ const Card = styled.section`
     border: .5px solid #2e3141;
     width: 30%;
     margin: 1rem;
-    margin-top: 2.5rem;
+    // margin-top: 2.5rem;
     border-radius: .25rem;
 
     &:hover {
@@ -63,6 +63,7 @@ const Screenshot = styled.div`
     width: 100%;
     margin-bottom: .1rem;
     border-radius: .25rem .25rem 0 0;
+    padding-top: .5px;
 `
 const Img = styled.img`
     width: 100%;
@@ -102,6 +103,7 @@ const Offsite = styled.div`
 `
     const Visit = styled.a`
         width: 48%;
+        text-decoration: none;
     `
         const VisitButton = styled.span`
             color: white;
@@ -125,6 +127,7 @@ const Offsite = styled.div`
         `
     const View = styled.a`
         width: 48%;
+        text-decoration: none;
     `
         const ViewButton = styled.span`
             color: white;
@@ -185,13 +188,6 @@ const TechBox = styled.div`
     `
 
 function ProjectCard(props) {
-    // let projectArray = 'featuredProjects';
-    // if (props = 'featuredProjects' ) {projectArray = 'featuredProjects'} else
-    // if (props = 'htmlWebProjects' ) {projectArray = 'htmlWebProjects'} else
-    // if (props = 'jsDomProjects' ) {projectArray = 'jsDomProjects'}
-
-// console.log('props = ', props.cards)
-// let dataSet=props.cards;
 let dataSet=htmlWebProjects;
 console.log('props = ', dataSet);
 
@@ -219,11 +215,15 @@ switch(props.cards){
                         <Type>{project.type}</Type>
                         <Offsite>
                             <Visit href={project.visit}>
-                                <VisitButton>></VisitButton>
+                                <VisitButton>
+                                    <i className="far fa-arrow-alt-circle-right"></i>
+                                </VisitButton>
                                 <VisitText>VISIT SITE</VisitText>
                             </Visit>
                             <View href={project.view}>
-                                <ViewButton>></ViewButton>
+                                <ViewButton>
+                                    <i className="fab fa-github"></i>
+                                </ViewButton>
                                 <ViewText>VIEW CODE</ViewText>
                             </View>
                         </Offsite>

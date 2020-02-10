@@ -59,8 +59,8 @@ function About() {
                 <div className="About">
                     <div className="sectionInfo">
                         <h3>Father, Bass Enthusiast, Extreme Metaller</h3>
-                        <p>Intertwined with my coding interests are my roles as a father & husband, my study of electric bass (its not a guitar!) and my love of extreme metal, food, air frying and the Instant Pot.</p>
-                        <p>Years ago, I was a tabletop gamer, ran a Renegade BBS, read for leisure instead of work and collected comic books. These days, when there's time, I blog and unsuccessfully try to keep my distance from Nick Jr and Disney Junior.</p>
+                        <p>Intertwined with my coding interests are my roles as a father & husband, my study of electric bass (its not a guitar!) and my love of extreme metal, food, air frying and the Instant Pot. Years ago, I was a sprinter, tabletop gamer, ran a Renegade BBS, read for leisure instead of work and collected comic books.</p>
+                        <p>These days, when there's time, I blog and unsuccessfully try to keep my distance from Nick Jr and Disney Junior while being outnumbered by my wife and two girls.</p>
                     </div>
                     <div className="pictureFrame">
                         <img src={require('../img/v5.jpg')} alt="Older daughter playing guitar and younger daughter playing drums."></img>

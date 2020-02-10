@@ -5,7 +5,7 @@ import AboutMeButtons from './infoComponents/AboutMeButtons';
 // import Selected from './Selected';
 import ProjectButtons from './projComponents/ProjectButtons';
 import GetInTouch from './GetInTouch';
-import ProjectCard from './projComponents/ProjectCard';
+// import ProjectCard from './projComponents/ProjectCard';
 // import TestComponent from './testComponents/TestRender';
 
 function App() {

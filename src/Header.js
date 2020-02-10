@@ -8,7 +8,7 @@ function Header() {
         <HeaderContainer>
           <StyledH1>Vish Singh</StyledH1>
           {/* <Subheading>FULL-STACK WEB DEVELOPMENT STUDENT AT LAMBDA SCHOOL</Subheading> */}
-          <Subheading>FRONT-END WEB DEVELOPER</Subheading>
+          <Subheading>FRONT-END WEB DEVELOPER / FULL-STACK INTERLOPER</Subheading>
           {/* <Subheading>FRONT-END WEB DEVELOPER / BACK-END INITIATE</Subheading> */}
           <Social>
               <a href="https://www.linkedin.com/in/vish213/" title="LinkedIn"><i className="fab fa-linkedin"></i></a>
