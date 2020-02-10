@@ -189,7 +189,8 @@ const TechBox = styled.div`
     `
 
 function ProjectCard(props) {
-let dataSet=htmlWebProjects;
+// let dataSet=htmlWebProjects;
+let dataSet=props.cards;
 console.log('props = ', dataSet);
 
 switch(props.cards){
