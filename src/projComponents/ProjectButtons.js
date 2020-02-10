@@ -24,6 +24,11 @@ const Container = styled.section`
             text-decoration: none; // page buttons below each page's projects
                     color: white;
         }
+
+        @media screen and (max-width: 840px) {
+            font-size: .6rem;
+            width: 6rem;
+        } // @media 840
     }
 
     button:hover {

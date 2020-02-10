@@ -49,7 +49,9 @@ const Card = styled.section`
     border-radius: .25rem;
 
     &:hover {
-        border: .5px solid silver;
+        border: .5px solid #4c5c96;
+        border-top: .5px solid white;
+        border-left: .5px solid silver;
     }
 
     @media screen and (max-width: 1220px) {
@@ -65,6 +67,9 @@ const Screenshot = styled.div`
     margin-bottom: .1rem;
     border-radius: .25rem .25rem 0 0;
     padding-top: .5px;
+    padding-left: .5px;
+    box-sizing: border-box;
+    overflow: hidden;
 `
 const Img = styled.img`
     width: 100%;
@@ -189,7 +194,8 @@ const TechBox = styled.div`
     `
 
 function ProjectCard(props) {
-let dataSet=htmlWebProjects;
+// let dataSet=htmlWebProjects;
+let dataSet=props.cards;
 console.log('props = ', dataSet);
 
 switch(props.cards){
