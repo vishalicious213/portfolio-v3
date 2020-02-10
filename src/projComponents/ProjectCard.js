@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const featuredProjects = [
@@ -102,6 +102,7 @@ const Offsite = styled.div`
 `
     const Visit = styled.a`
         width: 48%;
+        text-decoration: none;
     `
         const VisitButton = styled.span`
             color: white;
@@ -125,6 +126,7 @@ const Offsite = styled.div`
         `
     const View = styled.a`
         width: 48%;
+        text-decoration: none;
     `
         const ViewButton = styled.span`
             color: white;
@@ -185,13 +187,6 @@ const TechBox = styled.div`
     `
 
 function ProjectCard(props) {
-    // let projectArray = 'featuredProjects';
-    // if (props = 'featuredProjects' ) {projectArray = 'featuredProjects'} else
-    // if (props = 'htmlWebProjects' ) {projectArray = 'htmlWebProjects'} else
-    // if (props = 'jsDomProjects' ) {projectArray = 'jsDomProjects'}
-
-// console.log('props = ', props.cards)
-// let dataSet=props.cards;
 let dataSet=htmlWebProjects;
 console.log('props = ', dataSet);
 
@@ -219,11 +214,15 @@ switch(props.cards){
                         <Type>{project.type}</Type>
                         <Offsite>
                             <Visit href={project.visit}>
-                                <VisitButton>></VisitButton>
+                                <VisitButton>
+                                    <i className="far fa-arrow-alt-circle-right"></i>
+                                </VisitButton>
                                 <VisitText>VISIT SITE</VisitText>
                             </Visit>
                             <View href={project.view}>
-                                <ViewButton>></ViewButton>
+                                <ViewButton>
+                                    <i className="fab fa-github"></i>
+                                </ViewButton>
                                 <ViewText>VIEW CODE</ViewText>
                             </View>
                         </Offsite>
