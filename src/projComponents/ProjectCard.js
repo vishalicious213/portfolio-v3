@@ -34,7 +34,11 @@ const jsDomProjects = [
 
 const WPProjects = [
     {img: "breast-cancer-comfort.jpg", name: "Breast Cancer Comfort (v2)", type: "Client Website", visit: "https://breast-cancer-comfort.netlify.com/", view: "#", desc: "Breast cancer charity in Long Island, NY. Originally a Wordpress site. I redesigned and rebuilt it with HTML/LESS and used JavaScript for the navigation bar. Upon request, I then refactored it using WordPress and Divi so that other staff at the charity could more easily make changes without knowing how to code.", stack: ["wp", "html", "css"]},
-    {img: "blog.jpg", name: "Redo From Start", type: "Personal Project", visit: "https://neophyte.home.blog/", view: "#", desc: "My programming blog details my experience learning how to think like a programmer, grasp computer science concepts and, of course, tackling coding projects.", stack: ["wp", "html", "css"]}
+    {img: "wp-housecall.jpg", name: "HouseCall Support Services", type: "Client Website", visit: "http://housecallny.com/", view: "#", desc: "My programming blog details my experience learning how to think like a programmer, grasp computer science concepts and, of course, tackling coding projects.", stack: ["wp"]},
+    {img: "blog.jpg", name: "Redo From Start", type: "Personal Project", visit: "https://neophyte.home.blog/", view: "#", desc: "My programming blog details my experience learning how to think like a programmer, grasp computer science concepts and, of course, tackling coding projects.", stack: ["wp", "html", "css"]},
+    {img: "wp-ugly.jpg", name: "Ugly Bass Face", type: "Personal Project", visit: "https://uglybass.wordpress.com/", view: "#", desc: "My programming blog details my experience learning how to think like a programmer, grasp computer science concepts and, of course, tackling coding projects.", stack: ["wp"]},
+    {img: "wp-breaking.jpg", name: "Breaking the 4th Wall", type: "Personal Project", visit: "https://bt4wall.wordpress.com/", view: "#", desc: "My programming blog details my experience learning how to think like a programmer, grasp computer science concepts and, of course, tackling coding projects.", stack: ["wp"]},
+    {img: "wp-mortal.jpg", name: "Mortal Equality", type: "Personal Project", visit: "https://mortalequality.wordpress.com/", view: "#", desc: "My programming blog details my experience learning how to think like a programmer, grasp computer science concepts and, of course, tackling coding projects.", stack: ["wp"]}
 ]
 
 // {img: "#", name: "#", visit: "#", view: "#", desc: "#"},

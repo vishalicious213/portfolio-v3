@@ -54,8 +54,9 @@ class WPSites extends Component {
                 <div className="Front">
                     <h2>WordPress Websites</h2>
                     <p>RESPONSIVE WEBSITES BUILT USING WORDPRESS</p>
-                    <p><b>WordPress</b> is a content management system (CMS) used to create blogs, online stores and other websites. It is the most-used CMS in the world with a robust plugin selection and vast template system which is used to create distinct themes to personalize websites.</p>
+                    <p><b>WordPress</b> is a content management system (CMS) that powers blogs, online stores and other websites. It is the most-used CMS in the world with a robust plugin selection and vast template system which is used to create distinct themes to personalize websites.</p>
                     <p><b>Divi</b> is a WordPress theme and site builder which adds a drag-and-drop user interface that allows WordPress developers to create web pages visually.</p>
+                    <p>Prior to learning how to code, all of my personal blogs were created with WordPress - including the website for my tech support company. I still appreciate that it allows content-creators to focus on writing, making videos or other digital content without needing to learn how to build a website and configure back-end technologies.</p>
                 </div>
             </Container>
             <ProjectCard cards='WPProjects' />
