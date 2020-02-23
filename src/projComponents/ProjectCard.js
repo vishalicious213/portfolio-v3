@@ -33,7 +33,7 @@ const jsDomProjects = [
 ]
 
 const WPProjects = [
-    {img: "breast-cancer-comfort.jpg", name: "Breast Cancer Comfort (v2)", type: "Client Website", visit: "http://www.breastcancercomfort.org/home/", view: "#", desc: "Originally a WordPress site built for a cancer charity in Long Island, NY; I redesigned and rebuilt it using HTML/LESS with JavaScript for the navigation bar. Upon request, I refactored it back to WordPress using the Divi theme (which the COO favored) so that staff without coding knowledge could update it independently.", stack: ["wp", "html", "css"]},
+    {img: "breast-cancer-comfort.jpg", name: "Breast Cancer Comfort (v2)", type: "Client Website", visit: "http://www.breastcancercomfort.org/home/", view: "#", desc: "Originally a WordPress site built for a cancer charity in Long Island, NY; I redesigned and rebuilt it using HTML/LESS with JavaScript for the navigation bar. Upon request, I refactored it back to WordPress using the Divi theme (which the COO favored) so that staff without coding knowledge could update it independently.", stack: ["wp", "divi"]},
     {img: "blog.jpg", name: "Redo From Start", type: "Personal Blog", visit: "https://neophyte.home.blog/", view: "#", desc: "My programming blog details my experience learning how to think like a programmer, grasp computer science concepts and, of course, tackling coding projects.", stack: ["wp", "html", "css"]},
     {img: "wp-housecall.jpg", name: "HouseCall Support Services", type: "Client Website", visit: "http://housecallny.com/", view: "#", desc: "In 2016, I started a tech support company in NY, because working full-time at an EMR obviously wasn't consuming enough of my time. Building this site is one of the experiences that led to my desire to learn frontend development. WordPress sufficed to let me quickly create an online presence (coupled with Facebook) and was key to marketing my services.", stack: ["wp"]},
     {img: "wp-mortal.jpg", name: "Mortal Equality", type: "Personal Blog", visit: "https://mortalequality.wordpress.com/", view: "#", desc: "In 2014, I started my metal blog. It wasn't focused on music reviews or the like. It was more driven by social issues related to metal, academic research (my wife writes about metal and presents at conferences, internationally) ethnic influences on metal subgenres, and the like. It was an offshoot of my bass blog, which had begun to take in a lot of metal-related topics instead of focusing on bass and music theory. When the stars are right, I'll return to this. There's so much to explore, and its ever-expanding.", stack: ["wp"]},
@@ -202,6 +202,12 @@ const TechBox = styled.div`
         border: 1px solid gainsboro;
         border-radius: .35rem;
     `
+    const DiviImg = styled.img`
+        width: 1.25rem;
+        background-color: gainsboro;
+        border: 1px solid gainsboro;
+        border-radius: .35rem;
+    `
 
 function ProjectCard(props) {
 // let dataSet=htmlWebProjects;
@@ -260,6 +266,7 @@ switch(props.cards){
                                         case 'react': return (<Li title='React' className='fab fa-react'></Li>);
                                         case 'dom': return (<DomImg title='DOM' className='shrinkImg' src={require('../img/noun_DOM_13029.png')}></DomImg>);
                                         case 'axios': return (<AxiosImg title='axios' className='shrinkImg' src={require('../img/axios Page 1.svg')}></AxiosImg>);
+                                        case 'divi': return (<DiviImg title='Divi' className='shrinkImg' src={require('../img/divi-150x150.png')}></DiviImg>);
                                     }
                                 })
                             }</Tech>
