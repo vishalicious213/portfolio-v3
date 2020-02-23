@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Featured from './ProjectsFeatured';
 import HtmlCss from './ProjectsHTMLCSS';
 import JSReact from './ProjectsJSReact';
+import WPSites from './ProjectsWP';
 
 const Container = styled.section`
     background-color: #2d3040;
@@ -52,6 +53,7 @@ class ProjectButtons extends Component {
             case 'featured': return <Featured />
             case 'html-css': return <HtmlCss />
             case 'JS-React': return <JSReact />
+            case 'Wordpress' : return <WPSites />
         }
     }
 
@@ -70,6 +72,10 @@ class ProjectButtons extends Component {
                     <button onClick={
                         this.handleClick.bind(this, 'JS-React')
                     }>JavaScript & React Sites</button>
+
+                    <button onClick={
+                        this.handleClick.bind(this, 'Wordpress')
+                    }>WordPress Websites</button>
                 </Container>
 
                 {this._renderSubComp()}

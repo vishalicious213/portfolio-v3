@@ -55,7 +55,7 @@ class HtmlCss extends Component {
                     <h2>HTML Websites</h2>
                     <p>RESPONSIVE WEBSITES AND PROJECTS BUILT USING HTML5 AND CSS3</p>
                     {/* <h3>High-Level</h3> */}
-                    <p>HTML and CSS are the basic languages of websites. They're the first tools that web developers learn to create web pages. HTML puts words and images onscreen. CSS gives them a makeover so that they look good. The following websites were all written using HTML and CSS, including a special CSS language called LESS, which makes CSS more dynamic.</p>
+                    <p><b>HTML</b> and <b>CSS</b> are the basic languages of websites. They're the first tools that web developers learn to create web pages. HTML puts words and images onscreen. CSS gives them a makeover so that they look good. The following websites were all written using HTML and CSS, including a special CSS language called LESS, which makes CSS more dynamic.</p>
 
                     {/* <h3>Key Technologies</h3>
                     <section className="keyTech">
