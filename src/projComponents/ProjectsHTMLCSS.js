@@ -33,6 +33,12 @@ const Container = styled.section`
         text-align: left;
     }
 
+    p {
+        @media screen and (max-width: 840px) {
+            font-size: .9rem;
+        } // @media 840
+    }
+
     .keyTech {
             // border: 1px solid red;
             display: grid;
