@@ -47,6 +47,10 @@ const Container = styled.section`
     p {
         color: gainsboro;
         text-align: left;
+
+        @media screen and (max-width: 840px) {
+            font-size: .9rem;
+        } // @media 840
     }
 
     img {
