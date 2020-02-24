@@ -8,6 +8,7 @@ import WPSites from './ProjectsWP';
 const Container = styled.section`
     background-color: #2d3040;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
     button {
@@ -30,11 +31,15 @@ const Container = styled.section`
             font-size: .6rem;
             width: 6rem;
         } // @media 840
-    }
+    } // button
 
     button:hover {
         background-color: #353849;
     }
+
+    // @media screen and (max-width: 840px) {
+    //     width: 800px;
+    // }
 `
 
 class ProjectButtons extends Component {

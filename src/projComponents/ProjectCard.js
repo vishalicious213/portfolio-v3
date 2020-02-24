@@ -175,6 +175,10 @@ const TechBox = styled.div`
         font-family: "Source Sans Pro", Helvetica, sans-serif;
         font-weight: 200;
         line-height: 1.5;
+
+        @media screen and (max-width: 840px) {
+            font-size: .9rem;
+        } // @media 840
     `
     const Tech = styled.ul`
         border-left: 1px solid lightslategray;
@@ -182,7 +186,7 @@ const TechBox = styled.div`
         margin-left: .5rem;
         padding-left: .5rem;
         text-align: center;
-        width: 15%;
+        max-width: 2rem;
     `
     const Li = styled.li`
         list-style-type: none;
