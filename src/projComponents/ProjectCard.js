@@ -24,6 +24,7 @@ const htmlWebProjects = [
 ]
 
 const jsDomProjects = [
+    {img: "avengers.jpg", name: "Avengers SPA", type: "React Router I", visit: "https://vish213-avengers.netlify.com/", view: "https://github.com/vishalicious213/7.1-react-router-avengers", desc: "Avengers, assemble! Used React Router to build a single-page application (SPA) that gives the appearance of an app with multiple pages. Imported and exported components, set up Routes (including 'exact' routes), used Link to build dynamic URLs and set up dynamic routes using URL parameters.", stack: ["js", "react", "reactr"]},
     {img: "react-wars.jpg", name: "React Wars", type: "Sprint Challenge V: React", visit: "https://vish213-reactwars.netlify.com", view: "https://github.com/vishalicious213/6.5-Sprint-Challenge-React-Wars", desc: "Used axios to access the Star Wars API, then used React components, state and side effects to render information about Star Wars characters. Imported and rendered images separately.", stack: ["js", "react", "axios"]},
     {img: "american-football.jpg", name: "Football Scoreboard", type: "React Components & Component State", visit: "https://vish213-scoreboard-v3.netlify.com/", view: "https://github.com/vishalicious213/6.1-react-american-football-scoreboard-v3", desc: "Football scoreboard: Two buttons per team - one increments score by 3 points (field goal) and the other by 7 (touchdown + extra point). Demonstrates React components, state, useState and click handlers.", stack: ["js", "react"]},
     {img: "lambda-times.jpg", name: "Lambda Times", type: "Sprint Challenge IV: Applied JavaScript", visit: "https://vishalicious213.github.io/5.5-Sprint-Challenge-Applied-Javascript-v2/", view: "https://github.com/vishalicious213/5.5-Sprint-Challenge-Applied-Javascript-v2", desc: "This project tied together the DOM, components, axios and HTTP get requests through JavaScript. Article data was retrieved from an API and required manipulation of nested objects and arrays.", stack: ["js", "dom", "axios"]},
@@ -212,6 +213,11 @@ const TechBox = styled.div`
         border: 1px solid gainsboro;
         border-radius: .35rem;
     `
+    const ReactRImg = styled.img`
+        width: 1.25rem;
+        border: 1px solid gainsboro;
+        border-radius: .35rem;
+    `
 
 function ProjectCard(props) {
 // let dataSet=htmlWebProjects;
@@ -271,6 +277,7 @@ switch(props.cards){
                                         case 'dom': return (<DomImg title='DOM' className='shrinkImg' src={require('../img/noun_DOM_13029.png')}></DomImg>);
                                         case 'axios': return (<AxiosImg title='axios' className='shrinkImg' src={require('../img/axios Page 1.svg')}></AxiosImg>);
                                         case 'divi': return (<DiviImg title='Divi' className='shrinkImg' src={require('../img/divi-150x150.png')}></DiviImg>);
+                                        case 'reactr' : return (<ReactRImg title='React Router' className='shrinkImg' src={require('../img/react-router.png')}></ReactRImg>);
                                     }
                                 })
                             }</Tech>
