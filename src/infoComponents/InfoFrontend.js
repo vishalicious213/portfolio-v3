@@ -53,6 +53,41 @@ const Container = styled.section`
         width: 100%;
         border-radius: 50%;
     }
+
+    @media screen and (min-width: 577px) {
+        .tinyPictureFrame {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .Front {
+            grid-template-columns: 1fr;
+        }
+
+        .pictureFrame {
+            @media screen and (max-width: 576px) {
+                display: none;
+            } // @media 576
+        }
+
+        .sectionInfo {
+            @media screen and (max-width: 576px) {
+                width: 100%;
+            } // @media 576
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .tinyPictureFrame {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1rem;
+        }
+    } // @media 576
 `
 
 function Frontend() {
@@ -61,6 +96,9 @@ function Frontend() {
             <TopBorder></TopBorder>
             <Container>
                 <div className="Front">
+                    <div className="tinyPictureFrame">
+                        <img src={require('../img/v1.jpg')} alt="Vish's face, with black cap on."></img>
+                    </div>
                     <div className="sectionInfo">
                         <h3>Front-End Development</h3>
                         {/* <p>The first unit at Lambda School has taught me the basics of semantic HTML and CSS, including the pains of inline-block, the mighty Flexbox and a start at responsive web design. We've since delved into JavaScript, the DOM and are learning React, with its virtual DOM, for component-driven front-end development.</p> */}

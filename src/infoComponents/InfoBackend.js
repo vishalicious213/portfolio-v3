@@ -57,6 +57,41 @@ const Container = styled.section`
         width: 100%;
         border-radius: 50%;
     }
+    
+    @media screen and (min-width: 577px) {
+        .tinyPictureFrame {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .Back {
+            grid-template-columns: 1fr;
+        }
+
+        .pictureFrame {
+            @media screen and (max-width: 576px) {
+                display: none;
+            } // @media 576
+        }
+
+        .sectionInfo {
+            @media screen and (max-width: 576px) {
+                width: 100%;
+            } // @media 576
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .tinyPictureFrame {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1rem;
+        }
+    } // @media 576
 `
 
 function Backend() {
@@ -65,6 +100,9 @@ function Backend() {
             <TopBorder></TopBorder>
             <Container>
                 <div className="Back">
+                    <div className="tinyPictureFrame">
+                        <img src={require('../img/v2.jpg')} alt="Vish's face, with black cap on."></img>
+                    </div>
                     <div className="pictureFrame">
                         <img src={require('../img/v2.jpg')} alt="Back of Vish's head, holding baby over shoulder."></img>
                     </div>
