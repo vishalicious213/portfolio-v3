@@ -21,6 +21,7 @@ const Container = styled.section`
         width: 8rem;
         padding: .5rem 1rem .5rem 1rem;
         border-radius: .25rem;
+        cursor: pointer;
         
         a {
             text-decoration: none; // page buttons below each page's projects

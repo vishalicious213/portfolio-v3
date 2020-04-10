@@ -253,7 +253,9 @@ switch(props.cards){
             {dataSet.map(project =>
                 <Card key={project.name}>
                     <Screenshot>
-                        <Img src={require('../img/'+`${project.img}`)} alt={project.name}></Img>
+                        <a href={project.visit}>
+                            <Img src={require('../img/'+`${project.img}`)} alt={project.name}></Img>
+                        </a>
                     </Screenshot>
                     <WorkInfo>
                         <Title>{project.name}</Title>
