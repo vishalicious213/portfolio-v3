@@ -232,7 +232,7 @@ const TechBox = styled.div`
 function ProjectCard(props) {
 // let dataSet=htmlWebProjects;
 let dataSet=props.cards;
-console.log('props = ', dataSet);
+// console.log('props = ', dataSet);
 
 switch(props.cards){
     case 'featuredProjects':
@@ -247,6 +247,7 @@ switch(props.cards){
     case 'WPProjects':
         dataSet=WPProjects;
         break;
+    default:
 }
 
     return (
@@ -255,7 +256,7 @@ switch(props.cards){
                 <Card key={project.name}>
                     <Screenshot>
                         <a href={project.visit}>
-                            <Img src={require('../img/'+`${project.img}`)} alt={project.name}></Img>
+                            <Img src={require(`../img/`+`${project.img}`)} alt={project.name}></Img>
                         </a>
                     </Screenshot>
                     <WorkInfo>
@@ -290,7 +291,8 @@ switch(props.cards){
                                         case 'axios': return (<AxiosImg title='axios' className='shrinkImg' src={require('../img/axios Page 1.svg')}></AxiosImg>);
                                         case 'divi': return (<DiviImg title='Divi' className='shrinkImg' src={require('../img/divi-150x150.png')}></DiviImg>);
                                         case 'reactr' : return (<ReactRImg title='React Router' className='shrinkImg' src={require('../img/react-router.png')}></ReactRImg>);
-                                        case 'styled' : return (<StyledImg title='Styled Components' className='shrinkImg' src={require('../img/styled-components.svg')}></StyledImg>)
+                                        case 'styled' : return (<StyledImg title='Styled Components' className='shrinkImg' src={require('../img/styled-components.svg')}></StyledImg>);
+                                        default:
                                     }
                                 })
                             }</Tech>

@@ -53,6 +53,7 @@ class AboutMeButtons extends Component {
             case 'frontend': return <Frontend />
             case 'backend': return <Backend />
             case 'about': return <About />
+            default:
         }
     }
 
