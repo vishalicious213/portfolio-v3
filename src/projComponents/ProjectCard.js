@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-
+ 
 const featuredProjects = [
+    {img: "react-github-followers.jpg", name: "React GitHub Usercard", type: "The React Lifecycle", visit: "https://vish213-react-github-followers.netlify.com/", view: "https://github.com/vishalicious213/9.2-react-github-user-card", desc: "Used React class component lifecycle methods (componentDidMount & componentDidUpdate) to build an app that renders user & follower data from GitHub API. Added search component to load new user & used library to show GitHub Contribution Calendar for user and followers.", stack: ["js", "react"]},
     {img: "todo.jpg", name: "To-Do List", type: "Class Components", visit: "https://vish213-todo.netlify.com/", view: "https://github.com/vishalicious213/9.1-react-todo-v2", desc: "Yes, a to-do list. Its cliche, but a great way to work with state & forms. Built stateful class component. Displays task list, input field, submit & clear buttons. Child components use parent helper functions to update state when tasks are added or completed. Expanded to include shopping & notes.", stack: ["js", "react"]},
     {img: "rick-and-morty.jpg", name: "Rick and Morty Fansite", type: "Sprint Challenge VI: Single Page Applications", visit: "https://vish213-rick-and-morty.netlify.com/", view: "https://github.com/vishalicious213/7.5-Sprint-Challenge-Single-Page-Apps-v2", desc: "Got data from Rick and Morty API using axios and rendered character data. Used React Router to build a single-page application (SPA) with Routes and Links to components. Used Styled Components to style site and built a search form that filters through characters to find the one(s) sought.", stack: ["js", "react", "reactr", "axios", "styled"]},
-    {img: "breast-cancer-comfort.jpg", name: "Breast Cancer Comfort (v1)", type: "Client Website", visit: "https://breast-cancer-comfort.netlify.com/", view: "https://github.com/vishalicious213/bcc", desc: "Breast cancer charity in Long Island, NY. Formerly Wordpress site. Built webpage with HTML/CSS/LESS. Navigation bar written with JavaScript.", stack: ["js", "html", "css", "less"]},
+    {img: "breast-cancer-comfort.jpg", name: "Breast Cancer Comfort (v2)", type: "Client Website", visit: "http://www.breastcancercomfort.org/home/", view: "#", desc: "Originally a WordPress site built for a cancer charity in Long Island, NY; I redesigned and rebuilt it using HTML/LESS with JavaScript for the navigation bar. Upon request, I refactored it back to WordPress using the Divi theme (which the COO favored) so that staff without coding knowledge could update it independently.", stack: ["wp", "divi"]},
     {img: "react-wars.jpg", name: "React Wars", type: "Sprint Challenge V: React", visit: "https://vish213-reactwars.netlify.com", view: "https://github.com/vishalicious213/6.5-Sprint-Challenge-React-Wars", desc: "Used axios to access the Star Wars API, then used React components, state and side effects to render information about Star Wars characters. Imported and rendered images separately. Styled using Styled Components.", stack: ["js", "react", "axios", "styled"]},
     {img: "nasa.jpg", name: "Astronomy Photo of the Day", type: "Component Side Effects", visit: "https://vish213-nasa.netlify.com/", view: "https://github.com/vishalicious213/6.3-nasa-photo-of-the-day", desc: "Utilized React's useEffect hook to run axios as a side effect & fetch 'Astronomy Photo of the Day' from NASA API. Built components to get data, render image & details. Held cosmic data on state and passed as props to components. Used ternary operator & state to toggle details on/off. Added a date picker to see new images and details.", stack: ["js", "react", "axios"]},
-    {img: "instagram-clone.jpg", name: "Vishtagram", type: "Composing React Components & Passing Props", visit: "https://vish213-instagram.netlify.com/", view: "https://github.com/vishalicious213/6.2-React-Components-Insta-Clone/tree/vish-singh", desc: "Instagram clone using React. Rendered search bar section, posts with thumbnails, images, likes section and comments section. Made use of nested components, updated state with working 'likes' heart icon and drilled props down several levels.", stack: ["js", "react"]},
 ]
 
 const htmlWebProjects = [
@@ -23,6 +23,7 @@ const htmlWebProjects = [
 ]
 
 const jsDomProjects = [
+    {img: "react-github-followers.jpg", name: "React GitHub Usercard", type: "The React Lifecycle", visit: "https://vish213-react-github-followers.netlify.com/", view: "https://github.com/vishalicious213/9.2-react-github-user-card", desc: "Used React class component lifecycle methods (componentDidMount & componentDidUpdate) to build an app that renders user & follower data from GitHub API. Added search component to load new user & used library to show GitHub Contribution Calendar for user and followers.", stack: ["js", "react"]},
     {img: "todo.jpg", name: "To-Do List", type: "Class Components", visit: "https://vish213-todo.netlify.com/", view: "https://github.com/vishalicious213/9.1-react-todo-v2", desc: "Yes, a to-do list. Its cliche, but a great way to work with state & forms. Built stateful class component. Displays task list, input field, submit & clear buttons. Child components use parent helper functions to update state when tasks are added or completed. Expanded to include shopping & notes.", stack: ["js", "react"]},
     {img: "10-recipes.jpg", name: "10 Recipes", type: "React Project [Dev Ed]", visit: "https://vish213-10recipes.netlify.com/", view: "https://github.com/vishalicious213/recipes", desc: "React Hooks application with working searchbar. Uses async/await to query Edamam Recipe Search API & return 10 recipes for a given keyword. Made stateful functional components with useState and useEffect hooks & passed data from parent to child via props. Recipe titles & images link to detailed pages.", stack: ["js", "react"]},
     {img: "rick-and-morty.jpg", name: "Rick and Morty Fansite", type: "Sprint Challenge VI: Single Page Applications", visit: "https://vish213-rick-and-morty.netlify.com/", view: "https://github.com/vishalicious213/7.5-Sprint-Challenge-Single-Page-Apps-v2", desc: "Got data from Rick and Morty API using axios and rendered character data. Used React Router to build a single-page application (SPA) with Routes and Links to components. Used Styled Components to style site and built a search form that filters through characters to find the one(s) sought.", stack: ["js", "react", "reactr", "axios", "styled"]},
@@ -175,7 +176,7 @@ const TechBox = styled.div`
     align-items: top;
 `
     const Descriptor = styled.p`
-    	color: gainsboro;
+        color: gainsboro;
         font-size: 1rem;
         font-family: "Source Sans Pro", Helvetica, sans-serif;
         font-weight: 200;
@@ -228,33 +229,34 @@ const TechBox = styled.div`
         border-radius: .35rem;
     `
 
-function ProjectCard(props) {
-// let dataSet=htmlWebProjects;
-let dataSet=props.cards;
-console.log('props = ', dataSet);
+const ProjectCard = (props) => {
+    // let dataSet=htmlWebProjects;
+    let dataSet=props.cards;
+    // console.log('props = ', dataSet);
 
-switch(props.cards){
-    case 'featuredProjects':
-        dataSet=featuredProjects;
-        break;
-    case 'htmlWebProjects':
-        dataSet=htmlWebProjects;
-        break;
-    case 'jsDomProjects':
-        dataSet=jsDomProjects;
-        break;
-    case 'WPProjects':
-        dataSet=WPProjects;
-        break;
-}
+    switch(props.cards){
+        case 'featuredProjects':
+            dataSet=featuredProjects;
+            break;
+        case 'htmlWebProjects':
+            dataSet=htmlWebProjects;
+            break;
+        case 'jsDomProjects':
+            dataSet=jsDomProjects;
+            break;
+        case 'WPProjects':
+            dataSet=WPProjects;
+            break;
+        default:
+    }
 
     return (
         <Container>
             {dataSet.map(project =>
-                <Card key={project.name}>
+                <Card>
                     <Screenshot>
                         <a href={project.visit}>
-                            <Img src={require('../img/'+`${project.img}`)} alt={project.name}></Img>
+                            <Img src={require(`../img/${project.img}`)} alt={project.name}></Img>
                         </a>
                     </Screenshot>
                     <WorkInfo>
@@ -289,7 +291,8 @@ switch(props.cards){
                                         case 'axios': return (<AxiosImg title='axios' className='shrinkImg' src={require('../img/axios Page 1.svg')}></AxiosImg>);
                                         case 'divi': return (<DiviImg title='Divi' className='shrinkImg' src={require('../img/divi-150x150.png')}></DiviImg>);
                                         case 'reactr' : return (<ReactRImg title='React Router' className='shrinkImg' src={require('../img/react-router.png')}></ReactRImg>);
-                                        case 'styled' : return (<StyledImg title='Styled Components' className='shrinkImg' src={require('../img/styled-components.svg')}></StyledImg>)
+                                        case 'styled' : return (<StyledImg title='Styled Components' className='shrinkImg' src={require('../img/styled-components.svg')}></StyledImg>);
+                                        default:
                                     }
                                 })
                             }</Tech>

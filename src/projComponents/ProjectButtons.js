@@ -60,6 +60,7 @@ class ProjectButtons extends Component {
             case 'html-css': return <HtmlCss />
             case 'JS-React': return <JSReact />
             case 'Wordpress' : return <WPSites />
+            default:
         }
     }
 
