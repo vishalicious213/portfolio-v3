@@ -256,7 +256,7 @@ switch(props.cards){
                 <Card key={project.name}>
                     <Screenshot>
                         <a href={project.visit}>
-                            <Img src={require(`../img/`+`${project.img}`)} alt={project.name}></Img>
+                            <Img src={require(`../img/${project.img}`)} alt={project.name}></Img>
                         </a>
                     </Screenshot>
                     <WorkInfo>
