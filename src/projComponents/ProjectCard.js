@@ -176,7 +176,7 @@ const TechBox = styled.div`
     align-items: top;
 `
     const Descriptor = styled.p`
-    	color: gainsboro;
+        color: gainsboro;
         font-size: 1rem;
         font-family: "Source Sans Pro", Helvetica, sans-serif;
         font-weight: 200;
@@ -229,31 +229,31 @@ const TechBox = styled.div`
         border-radius: .35rem;
     `
 
-function ProjectCard(props) {
-// let dataSet=htmlWebProjects;
-let dataSet=props.cards;
-// console.log('props = ', dataSet);
+const ProjectCard = (props) => {
+    // let dataSet=htmlWebProjects;
+    let dataSet=props.cards;
+    // console.log('props = ', dataSet);
 
-switch(props.cards){
-    case 'featuredProjects':
-        dataSet=featuredProjects;
-        break;
-    case 'htmlWebProjects':
-        dataSet=htmlWebProjects;
-        break;
-    case 'jsDomProjects':
-        dataSet=jsDomProjects;
-        break;
-    case 'WPProjects':
-        dataSet=WPProjects;
-        break;
-    default:
-}
+    switch(props.cards){
+        case 'featuredProjects':
+            dataSet=featuredProjects;
+            break;
+        case 'htmlWebProjects':
+            dataSet=htmlWebProjects;
+            break;
+        case 'jsDomProjects':
+            dataSet=jsDomProjects;
+            break;
+        case 'WPProjects':
+            dataSet=WPProjects;
+            break;
+        default:
+    }
 
     return (
         <Container>
             {dataSet.map(project =>
-                <Card key={project.name}>
+                <Card>
                     <Screenshot>
                         <a href={project.visit}>
                             <Img src={require(`../img/${project.img}`)} alt={project.name}></Img>
