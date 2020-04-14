@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+ 
 const featuredProjects = [
     {img: "react-github-followers.jpg", name: "React GitHub Usercard", type: "The React Lifecycle", visit: "https://vish213-react-github-followers.netlify.com/", view: "https://github.com/vishalicious213/9.2-react-github-user-card", desc: "Used React class component lifecycle methods (componentDidMount & componentDidUpdate) to build an app that renders user & follower data from GitHub API. Added search component to load new user & used library to show GitHub Contribution Calendar for user and followers.", stack: ["js", "react"]},
     {img: "todo.jpg", name: "To-Do List", type: "Class Components", visit: "https://vish213-todo.netlify.com/", view: "https://github.com/vishalicious213/9.1-react-todo-v2", desc: "Yes, a to-do list. Its cliche, but a great way to work with state & forms. Built stateful class component. Displays task list, input field, submit & clear buttons. Child components use parent helper functions to update state when tasks are added or completed. Expanded to include shopping & notes.", stack: ["js", "react"]},
