@@ -23,6 +23,7 @@ const htmlWebProjects = [
 ]
 
 const jsDomProjects = [
+    {img: "womens-world-cup.jpg", name: "Women's World Cup", type: "Testing Web Applications", visit: "#", view: "https://github.com/vishalicious213/9.5-sprint-challenge-advanced-react-v2", desc: "To viewers, this is a simple React app that uses axios to read data from a local API and toggles color schemes. Behind the scenes though, it makes use of a custom hook and testing via React Testing Library.", stack: ["js", "react", "axios", "rtl"]},
     {img: "dark-mode.jpg", name: "Crypto Tracker (dark mode)", type: "Composing and Sharing Non-Visual Behavior", visit: "https://vish213-dark-mode.netlify.app/", view: "https://github.com/vishalicious213/9.3-dark-mode", desc: "Created React custom hook that composes multiple hooks together & uses local storage to build dark mode toggle that remembers user's preference. axios was set up to get cryptocurrency coin data from Coin Gecko API & Recharts library produced charts from data.", stack: ["js", "react", "axios", "recharts"]},
     {img: "react-github-followers.jpg", name: "React GitHub Usercard", type: "The React Lifecycle", visit: "https://vish213-react-github-followers.netlify.com/", view: "https://github.com/vishalicious213/9.2-react-github-user-card", desc: "Used React class component lifecycle methods (componentDidMount & componentDidUpdate) to build an app that renders user & follower data from GitHub API. Added search component to load new user & used React GitHub Calendar to show GitHub contribution calendar for user and followers.", stack: ["js", "react", "axios", "rgcal"]},
     {img: "todo.jpg", name: "To-Do List", type: "Class Components", visit: "https://vish213-todo.netlify.com/", view: "https://github.com/vishalicious213/9.1-react-todo-v2", desc: "Yes, a to-do list. Its cliche, but a great way to work with state & forms. Built stateful class component. Displays task list, input field, submit & clear buttons. Child components use parent helper functions to update state when tasks are added or completed. Expanded to include shopping & notes.", stack: ["js", "react"]},
@@ -288,8 +289,9 @@ const ProjectCard = (props) => {
                                         case 'divi': return (<DiviImg title='Divi' className='shrinkImg' src={require('../img/divi-150x150.png')}></DiviImg>);
                                         case 'reactr' : return (<GenericImg title='React Router' className='shrinkImg' src={require('../img/react-router.png')}></GenericImg>);
                                         case 'styled' : return (<GenericImg title='Styled Components' className='shrinkImg' src={require('../img/styled-components.svg')}></GenericImg>);
-                                        case 'rgcal' : return (<Lib title='React Github Calendar' className='fas fa-code'></Lib>)
+                                        case 'rgcal' : return (<Lib title='React Github Calendar' className='fas fa-code'></Lib>);
                                         case 'recharts' : return (<Lib title='Recharts library' className='fas fa-code'></Lib>);
+                                        case 'rtl' : return (<Lib title='React Testing Library' className='fas fa-code'></Lib>);
                                         default:
                                     }
                                 })
