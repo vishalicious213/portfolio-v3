@@ -16,6 +16,14 @@ const HeaderContainer = styled.div`
     // width: 90%;
     align-items: center;
     text-align: center;
+
+    .mobileHeading {
+        margin: 1rem 0px 1rem;
+
+        @media screen and (min-width: 577px) {
+            display: none;
+        }
+    }
 `
 const StyledH1 = styled.h1`
     color: white;
@@ -36,6 +44,19 @@ const Subheading = styled.p`
     font-weight: 200;
     letter-spacing: .1rem;
     line-height: 2;
+
+    @media screen and (max-width: 576px) {
+        display: none;
+    }
+`
+const SubheadingMobile = styled.p`
+    color: ${Colors.SubheadingTxt};
+    font-size: .8rem;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    line-height: 1.5;
+    margin: 0;
 `
 const Social = styled.section`
     font-size: 1.25rem;
@@ -53,4 +74,4 @@ const Social = styled.section`
     }
 `
 
-export { StyledH1, Subheading, Social, HeaderContainer, PageHeader };
+export { StyledH1, Subheading, SubheadingMobile, Social, HeaderContainer, PageHeader };

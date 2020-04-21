@@ -1,15 +1,17 @@
 import React from 'react';
 // import styled from 'styled-components';
-import { StyledH1, Subheading, Social, HeaderContainer, PageHeader } from './styles';
+import { StyledH1, Subheading, SubheadingMobile, Social, HeaderContainer, PageHeader } from './styles';
 
 function Header() {
     return (
       <PageHeader>
         <HeaderContainer>
           <StyledH1>Vish Singh</StyledH1>
-          {/* <Subheading>FULL-STACK WEB DEVELOPMENT STUDENT AT LAMBDA SCHOOL</Subheading> */}
-          <Subheading>FRONT-END WEB DEVELOPER / FULL-STACK INTERLOPER</Subheading>
-          {/* <Subheading>FRONT-END WEB DEVELOPER / BACK-END INITIATE</Subheading> */}
+          <Subheading className='Subheading'>FRONT-END WEB DEVELOPER / FULL-STACK INTERLOPER</Subheading>
+          <div className='mobileHeading'>
+              <SubheadingMobile className='SubheadingMobile'>FRONT-END WEB DEVELOPER /</SubheadingMobile>
+              <SubheadingMobile className='SubheadingMobile'>FULL-STACK INTERLOPER</SubheadingMobile>
+          </div>
           <Social>
               <a href="https://www.linkedin.com/in/vish213/" title="LinkedIn"><i className="fab fa-linkedin"></i></a>
               <a href="https://github.com/vishalicious213" title="GitHub"><i className="fab fa-github"></i></a>
