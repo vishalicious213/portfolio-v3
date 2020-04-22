@@ -44,7 +44,7 @@ class AboutMeButtons extends Component {
     }
 
     handleClick(infoSection, event){
-        console.log(infoSection);
+        // console.log(infoSection);
         this.setState({render:infoSection});
     }
 

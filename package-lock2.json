@@ -3027,6 +3027,11 @@
                 "brace-expansion": "^1.1.7"
               }
             },
+            "minimist": {
+              "version": "0.0.8",
+              "bundled": true,
+              "optional": true
+            },
             "minipass": {
               "version": "2.9.0",
               "bundled": true,
@@ -3047,7 +3052,10 @@
             "mkdirp": {
               "version": "0.5.1",
               "bundled": true,
-              "optional": true
+              "optional": true,
+              "requires": {
+                "minimist": "0.0.8"
+              }
             },
             "ms": {
               "version": "2.1.2",
@@ -7260,6 +7268,11 @@
                 "brace-expansion": "^1.1.7"
               }
             },
+            "minimist": {
+              "version": "0.0.8",
+              "bundled": true,
+              "optional": true
+            },
             "minipass": {
               "version": "2.9.0",
               "bundled": true,
@@ -7280,7 +7293,10 @@
             "mkdirp": {
               "version": "0.5.1",
               "bundled": true,
-              "optional": true
+              "optional": true,
+              "requires": {
+                "minimist": "0.0.8"
+              }
             },
             "ms": {
               "version": "2.1.2",
@@ -8481,9 +8497,9 @@
       }
     },
     "minimist": {
-      "version": "1.2.5",
-      "resolved": "https://registry.npmjs.org/minimist/-/minimist-1.2.5.tgz",
-      "integrity": "sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw=="
+      "version": "1.2.0",
+      "resolved": "https://registry.npmjs.org/minimist/-/minimist-1.2.0.tgz",
+      "integrity": "sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ="
     },
     "mississippi": {
       "version": "3.0.0",
