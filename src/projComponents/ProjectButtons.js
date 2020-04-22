@@ -50,7 +50,7 @@ class ProjectButtons extends Component {
     }
 
     handleClick(projSection, event){
-        console.log(projSection);
+        // console.log(projSection);
         this.setState({render:projSection});
     }
 
