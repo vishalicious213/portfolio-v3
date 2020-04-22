@@ -250,7 +250,7 @@ const ProjectCard = (props) => {
     return (
         <Container>
             {dataSet.map(project =>
-                <Card>
+                <Card key={project.name}>
                     <Screenshot>
                         <a href={project.visit}>
                             <Img src={require(`../img/${project.img}`)} alt={project.name}></Img>
@@ -278,21 +278,21 @@ const ProjectCard = (props) => {
                             <Tech className={project.stack}>{
                                 project.stack.map(item => {
                                     switch (item) {
-                                        case 'html': return (<Li title='HTML5' className='fab fa-html5'></Li>);
-                                        case 'css': return (<Li title='CSS3' className='fab fa-css3-alt'></Li>);
-                                        case 'less': return (<Li title='LESS' className='fab fa-less'></Li>);
-                                        case 'js': return (<Li title='JavaScript' className='fab fa-js-square'></Li>);
-                                        case 'wp': return (<Li title='WordPress' className='fab fa-wordpress'></Li>);
-                                        case 'react': return (<Li title='React' className='fab fa-react'></Li>);
-                                        case 'dom': return (<GenericImg title='DOM' className='shrinkImg' src={require('../img/noun_DOM_13029.png')}></GenericImg>);
-                                        case 'axios': return (<AxiosImg title='axios' className='shrinkImg' src={require('../img/axios Page 1.svg')}></AxiosImg>);
-                                        case 'divi': return (<DiviImg title='Divi' className='shrinkImg' src={require('../img/divi-150x150.png')}></DiviImg>);
-                                        case 'reactr' : return (<GenericImg title='React Router' className='shrinkImg' src={require('../img/react-router.png')}></GenericImg>);
-                                        case 'styled' : return (<GenericImg title='Styled Components' className='shrinkImg' src={require('../img/styled-components.svg')}></GenericImg>);
-                                        case 'rgcal' : return (<Lib title='React Github Calendar' className='fas fa-code'></Lib>);
-                                        case 'recharts' : return (<Lib title='Recharts library' className='fas fa-code'></Lib>);
-                                        case 'rtl' : return (<Lib title='React Testing Library' className='fas fa-code'></Lib>);
-                                        default:
+                                        case 'html': return (<Li title='HTML5' key='html' className='fab fa-html5'></Li>);
+                                        case 'css': return (<Li title='CSS3' key='css' className='fab fa-css3-alt'></Li>);
+                                        case 'less': return (<Li title='LESS' key='less' className='fab fa-less'></Li>);
+                                        case 'js': return (<Li title='JavaScript' key='js' className='fab fa-js-square'></Li>);
+                                        case 'wp': return (<Li title='WordPress' key='wp' className='fab fa-wordpress'></Li>);
+                                        case 'react': return (<Li title='React' key='react' className='fab fa-react'></Li>);
+                                        case 'dom': return (<GenericImg title='DOM' key='dom' className='shrinkImg' src={require('../img/noun_DOM_13029.png')}></GenericImg>);
+                                        case 'axios': return (<AxiosImg title='axios' key='axios' className='shrinkImg' src={require('../img/axios Page 1.svg')}></AxiosImg>);
+                                        case 'divi': return (<DiviImg title='Divi' key='divi' className='shrinkImg' src={require('../img/divi-150x150.png')}></DiviImg>);
+                                        case 'reactr' : return (<GenericImg title='React Router' key='reactr' className='shrinkImg' src={require('../img/react-router.png')}></GenericImg>);
+                                        case 'styled' : return (<GenericImg title='Styled Components' key='styled' className='shrinkImg' src={require('../img/styled-components.svg')}></GenericImg>);
+                                        case 'rgcal' : return (<Lib title='React Github Calendar' key='rgcal' className='fas fa-code'></Lib>);
+                                        case 'recharts' : return (<Lib title='Recharts library' key='recharts' className='fas fa-code'></Lib>);
+                                        case 'rtl' : return (<Lib title='React Testing Library' key='rtl' className='fas fa-code'></Lib>);
+                                        default: return null
                                     }
                                 })
                             }</Tech>
