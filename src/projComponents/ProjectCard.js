@@ -259,7 +259,7 @@ const ProjectCard = (props) => {
             {dataSet.map(project =>
                 <Card key={project.name}>
                     <Screenshot>
-                        <a href={project.visit}>
+                        <a target="_blank" rel="noopener noreferrer" href={project.visit}>
                             <Img src={require(`../img/${project.img}`)} alt={project.name}></Img>
                         </a>
                     </Screenshot>
@@ -267,13 +267,13 @@ const ProjectCard = (props) => {
                         <Title>{project.name}</Title>
                         <Type>{project.type}</Type>
                         <Offsite>
-                            <Visit href={project.visit}>
+                            <Visit target="_blank" rel="noopener noreferrer" href={project.visit}>
                                 <VisitButton>
                                     <i className="far fa-arrow-alt-circle-right"></i>
                                 </VisitButton>
                                 <VisitText>VISIT SITE</VisitText>
                             </Visit>
-                            <View href={project.view}>
+                            <View target="_blank" rel="noopener noreferrer" href={project.view}>
                                 <ViewButton>
                                     <i className="fab fa-github"></i>
                                 </ViewButton>
