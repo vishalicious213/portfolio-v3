@@ -34,6 +34,7 @@ const jsDomProjects = [
     {img: "dark-mode.jpg", name: "Crypto Tracker (dark mode)", type: "9.3 Composing and Sharing Non-Visual Behavior", visit: "https://vish213-dark-mode.netlify.app/", view: "https://github.com/vishalicious213/9.3-dark-mode", desc: "Created React custom hook that composes multiple hooks together & uses local storage to build dark mode toggle that remembers user's preference. axios was set up to get cryptocurrency coin data from Coin Gecko API & Recharts library produced charts from data.", stack: ["js", "react", "axios", "recharts"]},
     {img: "react-github-followers.jpg", name: "React GitHub Usercard", type: "9.2 The React Lifecycle", visit: "https://vish213-react-github-followers.netlify.com/", view: "https://github.com/vishalicious213/9.2-react-github-user-card", desc: "Used React class component lifecycle methods (componentDidMount & componentDidUpdate) to build an app that renders user & follower data from GitHub API. Added search component to load new user & used React GitHub Calendar to show GitHub contribution calendar for user and followers.", stack: ["js", "react", "axios", "rgcal"]},
     {img: "todo.jpg", name: "To-Do List", type: "9.1 Class Components", visit: "https://vish213-todo.netlify.com/", view: "https://github.com/vishalicious213/9.1-react-todo-v2", desc: "Yes, a to-do list. Its cliche, but a great way to work with state & forms. Built stateful class component. Displays task list, input field, submit & clear buttons. Child components use parent helper functions to update state when tasks are added or completed. Expanded to include shopping & notes.", stack: ["js", "react"]},
+    {img: "react-test-projects.jpg", name: "React Test Projects", type: "Personal Project", visit: "https://vish213-react-form-tests.netlify.app/", view: "https://github.com/vishalicious213/react-test-projects", desc: "Experiments with forms, state-controlled inputs and form validation using React. The goal is to let state control values for different input types, including clearing state and onscreen JSX elements when a form is reset.", stack: ["js", "react"]},
     {img: "10-recipes.jpg", name: "10 Recipes", type: "React Project [Dev Ed]", visit: "https://vish213-10recipes.netlify.com/", view: "https://github.com/vishalicious213/recipes", desc: "React Hooks application with working searchbar. Uses async/await to query Edamam Recipe Search API & return 10 recipes for a given keyword. Made stateful functional components with useState and useEffect hooks & passed data from parent to child via props. Recipe titles & images link to detailed pages.", stack: ["js", "react"]},
     {img: "rick-and-morty.jpg", name: "Rick and Morty Fansite", type: "7.5 Sprint Challenge VII: Single Page Applications", visit: "https://vish213-rick-and-morty.netlify.com/", view: "https://github.com/vishalicious213/7.5-Sprint-Challenge-Single-Page-Apps-v2", desc: "Got data from Rick and Morty API using axios and rendered character data. Used React Router to build a single-page application (SPA) with Routes and Links to components. Used Styled Components to style site and built a search form that filters through characters to find the one(s) sought.", stack: ["js", "react", "reactr", "axios", "styled"]},
     {img: "avengers.jpg", name: "Avengers Assemble!", type: "7.1 React Router I", visit: "https://vish213-avengers.netlify.com/", view: "https://github.com/vishalicious213/7.1-react-router-avengers", desc: "Avengers, assemble! Used React Router to build a single-page application (SPA) that gives the appearance of an app with multiple pages. Imported and exported components, set up Routes (including 'exact' routes), used Link to build dynamic URLs and set up dynamic routes using URL parameters.", stack: ["js", "react", "reactr"]},
@@ -57,6 +58,85 @@ const WPProjects = [
 ]
 
 // {img: "#", name: "#", type: "#", visit: "#", view: "#", desc: "#", stack: ["#", "#"]},
+
+const ProjectCard = (props) => {
+    // let dataSet=htmlWebProjects;
+    let dataSet=props.cards;
+    // console.log('props = ', dataSet);
+
+    switch(props.cards){
+        case 'featuredProjects':
+            dataSet=featuredProjects;
+            break;
+        case 'htmlWebProjects':
+            dataSet=htmlWebProjects;
+            break;
+        case 'jsDomProjects':
+            dataSet=jsDomProjects;
+            break;
+        case 'WPProjects':
+            dataSet=WPProjects;
+            break;
+        default:
+    }
+
+    return (
+        <Container>
+            {dataSet.map(project =>
+                <Card key={project.name}>
+                    <Screenshot>
+                        <a target="_blank" rel="noopener noreferrer" href={project.visit}>
+                            <Img src={require(`../img/${project.img}`)} alt={project.name}></Img>
+                        </a>
+                    </Screenshot>
+                    <WorkInfo>
+                        <Title>{project.name}</Title>
+                        <Type>{project.type}</Type>
+                        <Offsite>
+                            <Visit target="_blank" rel="noopener noreferrer" href={project.visit}>
+                                <VisitButton>
+                                    <i className="far fa-arrow-alt-circle-right"></i>
+                                </VisitButton>
+                                <VisitText>VISIT SITE</VisitText>
+                            </Visit>
+                            <View target="_blank" rel="noopener noreferrer" href={project.view}>
+                                <ViewButton>
+                                    <i className="fab fa-github"></i>
+                                </ViewButton>
+                                <ViewText>VIEW CODE</ViewText>
+                            </View>
+                        </Offsite>
+                        <TechBox>
+                            <Descriptor>{project.desc}</Descriptor>
+                            <Tech className={project.stack}>{
+                                project.stack.map(item => {
+                                    switch (item) {
+                                        case 'html': return (<Li title='HTML5' key='html' className='fab fa-html5'></Li>);
+                                        case 'css': return (<Li title='CSS3' key='css' className='fab fa-css3-alt'></Li>);
+                                        case 'less': return (<Li title='LESS' key='less' className='fab fa-less'></Li>);
+                                        case 'js': return (<Li title='JavaScript' key='js' className='fab fa-js-square'></Li>);
+                                        case 'wp': return (<Li title='WordPress' key='wp' className='fab fa-wordpress'></Li>);
+                                        case 'react': return (<Li title='React' key='react' className='fab fa-react'></Li>);
+                                        case 'dom': return (<GenericImg title='DOM' key='dom' className='shrinkImg' src={require('../img/noun_DOM_13029.png')}></GenericImg>);
+                                        case 'axios': return (<AxiosImg title='axios' key='axios' className='shrinkImg' src={require('../img/axios Page 1.svg')}></AxiosImg>);
+                                        case 'divi': return (<DiviImg title='Divi' key='divi' className='shrinkImg' src={require('../img/divi-150x150.png')}></DiviImg>);
+                                        case 'reactr' : return (<GenericImg title='React Router' key='reactr' className='shrinkImg' src={require('../img/react-router.png')}></GenericImg>);
+                                        case 'styled' : return (<GenericImg title='Styled Components' key='styled' className='shrinkImg' src={require('../img/styled-components.svg')}></GenericImg>);
+                                        case 'rgcal' : return (<Lib title='React Github Calendar' key='rgcal' className='fas fa-code'></Lib>);
+                                        case 'recharts' : return (<Lib title='Recharts library' key='recharts' className='fas fa-code'></Lib>);
+                                        case 'rtl' : return (<Lib title='React Testing Library' key='rtl' className='fas fa-code'></Lib>);
+                                        case 'codepen' : return (<Lib title='Codepen' key='codepen' className='fab fa-codepen'></Lib>);
+                                        default: return null
+                                    }
+                                })
+                            }</Tech>
+                        </TechBox>
+                    </WorkInfo>
+                </Card>
+            )}
+        </Container>
+    ) // return
+}
 
 const Container = styled.section`
     background-color: #2d3040;
@@ -232,84 +312,5 @@ const TechBox = styled.div`
         border: 1px solid gainsboro;
         border-radius: .35rem;
     `
-
-const ProjectCard = (props) => {
-    // let dataSet=htmlWebProjects;
-    let dataSet=props.cards;
-    // console.log('props = ', dataSet);
-
-    switch(props.cards){
-        case 'featuredProjects':
-            dataSet=featuredProjects;
-            break;
-        case 'htmlWebProjects':
-            dataSet=htmlWebProjects;
-            break;
-        case 'jsDomProjects':
-            dataSet=jsDomProjects;
-            break;
-        case 'WPProjects':
-            dataSet=WPProjects;
-            break;
-        default:
-    }
-
-    return (
-        <Container>
-            {dataSet.map(project =>
-                <Card key={project.name}>
-                    <Screenshot>
-                        <a target="_blank" rel="noopener noreferrer" href={project.visit}>
-                            <Img src={require(`../img/${project.img}`)} alt={project.name}></Img>
-                        </a>
-                    </Screenshot>
-                    <WorkInfo>
-                        <Title>{project.name}</Title>
-                        <Type>{project.type}</Type>
-                        <Offsite>
-                            <Visit target="_blank" rel="noopener noreferrer" href={project.visit}>
-                                <VisitButton>
-                                    <i className="far fa-arrow-alt-circle-right"></i>
-                                </VisitButton>
-                                <VisitText>VISIT SITE</VisitText>
-                            </Visit>
-                            <View target="_blank" rel="noopener noreferrer" href={project.view}>
-                                <ViewButton>
-                                    <i className="fab fa-github"></i>
-                                </ViewButton>
-                                <ViewText>VIEW CODE</ViewText>
-                            </View>
-                        </Offsite>
-                        <TechBox>
-                            <Descriptor>{project.desc}</Descriptor>
-                            <Tech className={project.stack}>{
-                                project.stack.map(item => {
-                                    switch (item) {
-                                        case 'html': return (<Li title='HTML5' key='html' className='fab fa-html5'></Li>);
-                                        case 'css': return (<Li title='CSS3' key='css' className='fab fa-css3-alt'></Li>);
-                                        case 'less': return (<Li title='LESS' key='less' className='fab fa-less'></Li>);
-                                        case 'js': return (<Li title='JavaScript' key='js' className='fab fa-js-square'></Li>);
-                                        case 'wp': return (<Li title='WordPress' key='wp' className='fab fa-wordpress'></Li>);
-                                        case 'react': return (<Li title='React' key='react' className='fab fa-react'></Li>);
-                                        case 'dom': return (<GenericImg title='DOM' key='dom' className='shrinkImg' src={require('../img/noun_DOM_13029.png')}></GenericImg>);
-                                        case 'axios': return (<AxiosImg title='axios' key='axios' className='shrinkImg' src={require('../img/axios Page 1.svg')}></AxiosImg>);
-                                        case 'divi': return (<DiviImg title='Divi' key='divi' className='shrinkImg' src={require('../img/divi-150x150.png')}></DiviImg>);
-                                        case 'reactr' : return (<GenericImg title='React Router' key='reactr' className='shrinkImg' src={require('../img/react-router.png')}></GenericImg>);
-                                        case 'styled' : return (<GenericImg title='Styled Components' key='styled' className='shrinkImg' src={require('../img/styled-components.svg')}></GenericImg>);
-                                        case 'rgcal' : return (<Lib title='React Github Calendar' key='rgcal' className='fas fa-code'></Lib>);
-                                        case 'recharts' : return (<Lib title='Recharts library' key='recharts' className='fas fa-code'></Lib>);
-                                        case 'rtl' : return (<Lib title='React Testing Library' key='rtl' className='fas fa-code'></Lib>);
-                                        case 'codepen' : return (<Lib title='Codepen' key='codepen' className='fab fa-codepen'></Lib>);
-                                        default: return null
-                                    }
-                                })
-                            }</Tech>
-                        </TechBox>
-                    </WorkInfo>
-                </Card>
-            )}
-        </Container>
-    ) // return
-}
 
 export default ProjectCard;
