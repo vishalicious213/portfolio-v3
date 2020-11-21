@@ -1,6 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
 
+function Backend() {
+    return (
+        <div>
+            <TopBorder></TopBorder>
+            <Container>
+                <div className="Back">
+                    <div className="tinyPictureFrame">
+                        <img src={require('../img/v2.jpg')} alt="Vish's face, with black cap on."></img>
+                    </div>
+                    <div className="pictureFrame">
+                        <img src={require('../img/v2.jpg')} alt="Back of Vish's head, holding baby over shoulder."></img>
+                    </div>
+                    <div className="sectionInfo">
+                        <h3>Back-End Development</h3>
+                        {/* <p>Once our JavaScript/React entanglement is complete, we move on to back-end development with NodeJS, Java, Python and RDBMS. This will be augmented with deep dives into algorithms, data structures, hash tables, blockchain, graphs and computer architecture.</p> */}
+                        <p>Back-end development handles the 'behind-the-scenes' functionality of a web application. It connects the front-end with a database, implements APIs, manages user connections and structures the business logic of a web application.</p>
+                        <p>The technologies I use most frequently for back-end work include Node.JS, Express, SQL, knex and Python. I've implemented authentication with cookies and with JSON Web Tokens.</p>
+                    </div>
+                </div>
+            </Container>
+            <BottomBorder></BottomBorder>
+        </div>
+    )
+}
+
 const TopBorder = styled.div`
     width: 100%;
     height: 3rem;
@@ -93,30 +118,5 @@ const Container = styled.section`
         }
     } // @media 576
 `
-
-function Backend() {
-    return (
-        <div>
-            <TopBorder></TopBorder>
-            <Container>
-                <div className="Back">
-                    <div className="tinyPictureFrame">
-                        <img src={require('../img/v2.jpg')} alt="Vish's face, with black cap on."></img>
-                    </div>
-                    <div className="pictureFrame">
-                        <img src={require('../img/v2.jpg')} alt="Back of Vish's head, holding baby over shoulder."></img>
-                    </div>
-                    <div className="sectionInfo">
-                        <h3>Back-End Development</h3>
-                        {/* <p>Once our JavaScript/React entanglement is complete, we move on to back-end development with NodeJS, Java, Python and RDBMS. This will be augmented with deep dives into algorithms, data structures, hash tables, blockchain, graphs and computer architecture.</p> */}
-                        <p>Back-end development handles the 'behind-the-scenes' functionality of a web application. It connects the front-end with a database, manages user connections and the business logic of a web application.</p>
-                        <p>I'm currently learning back-end technologies including NodeJS, Java, Python and RDBMS at Lambda School, in Silicon Valley. This will be augmented with deep dives into algorithms, data structures, hash tables, blockchain, graphs and computer architecture.</p>
-                    </div>
-                </div>
-            </Container>
-            <BottomBorder></BottomBorder>
-        </div>
-    )
-}
 
 export default Backend;

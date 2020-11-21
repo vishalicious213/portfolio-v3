@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
  
 const featuredProjects = [
+    {img: "wildfires.jpg", name: "Wildfire Tracker", type: "Personal Project", visit: "https://vish213-wildfire.netlify.app/", view: "https://github.com/vishalicious213/wildfires", desc: "React Hooks app. Displays wildfires around the globe. Uses NASA Open API for wildfire data, Google Maps API for map generation, Google-Map-React to render data geolocationally & Iconify to provide fire icons.", stack: ["js", "react", "nasa", "g-maps", "map", "iconify"]},
     {img: "smurfs.jpg", name: "React Smurfs Village", type: "10.5 Sprint Challenge X: Advanced State Management", visit: "https://vish213-smurfs.netlify.app/", view: "https://github.com/vishalicious213/10.5-sprint-challenge-state-management-smurfs-v2", desc: "Managed global state with Context API & built Smurf village. Fetched data from local API with axios. Made form to update API data with new smurfs. Added ability to render male or female smurfs conditionally. Note: API will update locally, but not at Netlify.", stack: ["js", "react", "axios"]},
     {img: "react-github-followers.jpg", name: "React GitHub Usercard", type: "9.2 The React Lifecycle", visit: "https://vish213-react-github-followers.netlify.com/", view: "https://github.com/vishalicious213/9.2-react-github-user-card", desc: "Used React class component lifecycle methods (componentDidMount & componentDidUpdate) to build an app that renders user & follower data from GitHub API. Added search component to load new user & used React GitHub Calendar to show GitHub contribution calendar for user and followers.", stack: ["js", "react", "axios", "rgcal"]},
     {img: "todo.jpg", name: "To-Do List", type: "9.1 Class Components", visit: "https://vish213-todo.netlify.com/", view: "https://github.com/vishalicious213/9.1-react-todo-v2", desc: "Yes, a to-do list. Its cliche, but a great way to work with state & forms. Built stateful class component. Displays task list, input field, submit & clear buttons. Child components use parent helper functions to update state when tasks are added or completed. Expanded to include shopping & notes.", stack: ["js", "react"]},
-    {img: "rick-and-morty.jpg", name: "Rick and Morty Fansite", type: "7.5 Sprint Challenge VII: Single Page Applications", visit: "https://vish213-rick-and-morty.netlify.com/", view: "https://github.com/vishalicious213/7.5-Sprint-Challenge-Single-Page-Apps-v2", desc: "Got data from Rick and Morty API using axios and rendered character data. Used React Router to build a single-page application (SPA) with Routes and Links to components. Used Styled Components to style site and built a search form that filters through characters to find the one(s) sought.", stack: ["js", "react", "reactr", "axios", "styled"]},
     {img: "breast-cancer-comfort.jpg", name: "Breast Cancer Comfort (v2)", type: "Client Website", visit: "http://www.breastcancercomfort.org/home/", view: "#", desc: "Originally a WordPress site built for a cancer charity in Long Island, NY; I redesigned and rebuilt it using HTML/LESS with JavaScript for the navigation bar. Upon request, I refactored it back to WordPress using the Divi theme (which the COO favored) so that staff without coding knowledge could update it independently.", stack: ["wp", "divi"]},
     {img: "react-wars.jpg", name: "React Wars", type: "6.5 Sprint Challenge VI: React", visit: "https://vish213-reactwars.netlify.com", view: "https://github.com/vishalicious213/6.5-Sprint-Challenge-React-Wars", desc: "Used axios to access the Star Wars API, then used React components, state and side effects to render information about Star Wars characters. Imported and rendered images separately. Styled using Styled Components.", stack: ["js", "react", "axios", "styled"]},
 ]
@@ -114,7 +114,7 @@ const ProjectCard = (props) => {
                                     switch (item) {
                                         case 'html': return (<Li title='HTML5' key='html' className='fab fa-html5'></Li>);
                                         case 'css': return (<Li title='CSS3' key='css' className='fab fa-css3-alt'></Li>);
-                                        case 'less': return (<Li title='LESS' key='less' className='fab fa-less'></Li>);
+                                        case 'less': return (<Lib title='LESS' key='less' className='fab fa-less'></Lib>);
                                         case 'js': return (<Li title='JavaScript' key='js' className='fab fa-js-square'></Li>);
                                         case 'wp': return (<Li title='WordPress' key='wp' className='fab fa-wordpress'></Li>);
                                         case 'react': return (<Li title='React' key='react' className='fab fa-react'></Li>);
@@ -127,10 +127,10 @@ const ProjectCard = (props) => {
                                         case 'recharts' : return (<Lib title='Recharts library' key='recharts' className='fas fa-code'></Lib>);
                                         case 'rtl' : return (<Lib title='React Testing Library' key='rtl' className='fas fa-code'></Lib>);
                                         case 'codepen' : return (<Lib title='Codepen' key='codepen' className='fab fa-codepen'></Lib>);
-                                        case 'nasa' : return (<Li title='Nasa API' key='nasa' className='fas fa-space-shuttle'></Li>);
+                                        case 'nasa' : return (<Lib title='Nasa API' key='nasa' className='fas fa-space-shuttle'></Lib>);
                                         case 'g-maps' : return (<Li title='Google Maps API' className="iconify" key='g-maps' data-icon="zmdi:google-maps" data-inline="false"></Li>);
-                                        case 'map' : return (<Li title='Google-Map-React' key='map' className='far fa-map'></Li>);
-                                        case 'iconify' : return (<Li title='Iconify' className="iconify" key='iconify' data-icon="simple-icons:iconify" data-inline="false"></Li>);
+                                        case 'map' : return (<Lib title='Google-Map-React' key='map' className='far fa-map'></Lib>);
+                                        case 'iconify' : return (<Lib title='Iconify' className="iconify" key='iconify' data-icon="simple-icons:iconify" data-inline="false"></Lib>);
                                         default: return null
                                     }
                                 })
