@@ -28,6 +28,7 @@ const htmlWebProjects = [
 ]
 
 const jsDomProjects = [
+    {img: "wildfires.jpg", name: "Wildfire Tracker", type: "Personal Project", visit: "https://vish213-wildfire.netlify.app/", view: "https://github.com/vishalicious213/wildfires", desc: "React Hooks app. Displays wildfires around the globe. Uses NASA Open API for wildfire data, Google Maps API for map generation, Google-Map-React to render data geolocationally & Iconify to provide fire icons.", stack: ["js", "react", "nasa", "g-maps", "map", "iconify"]},
     {img: "friends.jpg", name: "F-R-I-E-N-D-S List", type: "11.2 Client-Side Authentication", visit: "https://vish213-friends.netlify.app/", view: "https://github.com/vishalicious213/11.2-auth-friends", desc: "Used React-Router, protected routes, axios, AJAX, promises & authentication tokens to build CRUD app. User can login & view friends list. Secured pages require token for access. User can change each friend's details, add new friends & delete friends. Note: API server works locally.", stack: ["js", "react", "axios"]},
     {img: "smurfs.jpg", name: "React Smurfs Village", type: "10.5 Sprint Challenge X: Advanced State Management", visit: "https://vish213-smurfs.netlify.app/", view: "https://github.com/vishalicious213/10.5-sprint-challenge-state-management-smurfs-v2", desc: "Managed global state with Context API & built Smurf village. Fetched data from local API with axios. Made form to update API data with new smurfs. Added ability to render male or female smurfs conditionally. Note: API will update locally, but not at Netlify.", stack: ["js", "react", "axios"]},
     {img: "womens-world-cup.jpg", name: "Women's World Cup", type: "9.5 Sprint Challenge IX: Advanced React", visit: "https://vish213-wwc.netlify.app/", view: "https://github.com/vishalicious213/9.5-sprint-challenge-advanced-react-v4", desc: "To viewers, this is a simple React app that uses axios to read data from a local API and toggles color schemes. Behind the scenes though, it makes use of a custom hook and testing via React Testing Library.", stack: ["js", "react", "axios", "styled", "rtl"]},
@@ -35,11 +36,11 @@ const jsDomProjects = [
     {img: "react-github-followers.jpg", name: "React GitHub Usercard", type: "9.2 The React Lifecycle", visit: "https://vish213-react-github-followers.netlify.com/", view: "https://github.com/vishalicious213/9.2-react-github-user-card", desc: "Used React class component lifecycle methods (componentDidMount & componentDidUpdate) to build an app that renders user & follower data from GitHub API. Added search component to load new user & used React GitHub Calendar to show GitHub contribution calendar for user and followers.", stack: ["js", "react", "axios", "rgcal"]},
     {img: "todo.jpg", name: "To-Do List", type: "9.1 Class Components", visit: "https://vish213-todo.netlify.com/", view: "https://github.com/vishalicious213/9.1-react-todo-v2", desc: "Yes, a to-do list. Its cliche, but a great way to work with state & forms. Built stateful class component. Displays task list, input field, submit & clear buttons. Child components use parent helper functions to update state when tasks are added or completed. Expanded to include shopping & notes.", stack: ["js", "react"]},
     {img: "react-test-projects.jpg", name: "React Test Projects", type: "Personal Project", visit: "https://vish213-react-form-tests.netlify.app/", view: "https://github.com/vishalicious213/react-test-projects", desc: "Experiments with forms, state-controlled inputs and form validation using React. The goal is to let state control values for different input types, including clearing state and onscreen JSX elements when a form is reset.", stack: ["js", "react", "reactr"]},
-    {img: "10-recipes.jpg", name: "10 Recipes", type: "Personal Project [Dev Ed]", visit: "https://vish213-10recipes.netlify.com/", view: "https://github.com/vishalicious213/recipes", desc: "React Hooks application with searchbar. Uses async/await to query Edamam Recipe Search API & return 10 recipes for a given keyword. Made stateful functional components with useState & useEffect hooks. Passed data from parent to child via props. Recipe titles & images link to detailed pages.", stack: ["js", "react"]},
+    {img: "10-recipes.jpg", name: "10 Recipes", type: "Personal Project", visit: "https://vish213-10recipes.netlify.com/", view: "https://github.com/vishalicious213/recipes", desc: "React Hooks application with searchbar. Uses async/await to query Edamam Recipe Search API & return 10 recipes for a given keyword. Made stateful functional components with useState & useEffect hooks. Passed data from parent to child via props. Recipe titles & images link to detailed pages.", stack: ["js", "react"]},
     {img: "rick-and-morty.jpg", name: "Rick and Morty Fansite", type: "7.5 Sprint Challenge VII: Single Page Applications", visit: "https://vish213-rick-and-morty.netlify.com/", view: "https://github.com/vishalicious213/7.5-Sprint-Challenge-Single-Page-Apps-v2", desc: "Got data from Rick and Morty API using axios & rendered it. Used React Router to build a single-page application (SPA) with Routes & Links to components. Styled site with Styled Components & built a search form that filters characters to find target.", stack: ["js", "react", "reactr", "axios", "styled"]},
     {img: "avengers.jpg", name: "Avengers Assemble!", type: "7.1 React Router I", visit: "https://vish213-avengers.netlify.com/", view: "https://github.com/vishalicious213/7.1-react-router-avengers", desc: "Avengers, assemble! Used React Router to build a single-page application (SPA) that gives the appearance of an app with multiple pages. Imported & exported components, set up Routes, Built dynamic URLs with Link & set up dynamic routes using URL parameters.", stack: ["js", "react", "reactr"]},
     {img: "react-wars.jpg", name: "React Wars", type: "6.5 Sprint Challenge VI: React", visit: "https://vish213-reactwars.netlify.com", view: "https://github.com/vishalicious213/6.5-Sprint-Challenge-React-Wars", desc: "Used axios to access the Star Wars API, then used React components, state and side effects to render information about Star Wars characters. Imported and rendered images separately. Styled using Styled Components.", stack: ["js", "react", "axios", "styled"]},
-    {img: "nasa.jpg", name: "Astronomy Photo of the Day", type: "6.3 Component Side Effects", visit: "https://vish213-nasa.netlify.com/", view: "https://github.com/vishalicious213/6.3-nasa-photo-of-the-day", desc: "Utilized useEffect hook to run axios as a side effect & fetch 'Astronomy Photo of the Day' from NASA API. Built components to get data, render image & details. Held cosmic data on state & passed as props to components. Used ternary operator & state to toggle details on/off. Added a date picker to see new images & details.", stack: ["js", "react", "axios"]},
+    {img: "nasa.jpg", name: "Astronomy Photo of the Day", type: "6.3 Component Side Effects", visit: "https://vish213-nasa.netlify.com/", view: "https://github.com/vishalicious213/6.3-nasa-photo-of-the-day", desc: "Utilized useEffect hook to run axios as a side effect & fetch 'Astronomy Photo of the Day' from NASA API. Built components to get data, render image & details. Held cosmic data on state & passed as props to components. Used ternary operator & state to toggle details on/off. Added a date picker to see new images & details.", stack: ["js", "react", "axios", "nasa"]},
     {img: "instagram-clone.jpg", name: "Vishtagram", type: "6.2 Composing React Components & Passing Props", visit: "https://vish213-instagram.netlify.com/", view: "https://github.com/vishalicious213/6.2-React-Components-Insta-Clone/tree/vish-singh", desc: "Instagram clone using React. Rendered search bar section, posts with thumbnails, images, likes section & comments section. Made use of nested components, updated state with working 'likes' heart icon & drilled props down several levels.", stack: ["js", "react"]},
     {img: "american-football.jpg", name: "Football Scoreboard", type: "6.1 React Components & Component State", visit: "https://vish213-scoreboard-v3.netlify.com/", view: "https://github.com/vishalicious213/6.1-react-american-football-scoreboard-v3", desc: "Football scoreboard: Two buttons per team - one increments score by 3 points (field goal) and the other by 7 (touchdown + extra point). Demonstrates React components, state, useState and click handlers.", stack: ["js", "react"]},
     {img: "lambda-times.jpg", name: "Lambda Times", type: "5.5 Sprint Challenge V: Applied JavaScript", visit: "https://vishalicious213.github.io/5.5-Sprint-Challenge-Applied-Javascript-v2/", view: "https://github.com/vishalicious213/5.5-Sprint-Challenge-Applied-Javascript-v2", desc: "This project tied together the DOM, components, axios & HTTP get requests through JavaScript. Article data was retrieved from an API & required manipulation of nested objects & arrays.", stack: ["js", "dom", "axios"]},
@@ -117,15 +118,19 @@ const ProjectCard = (props) => {
                                         case 'js': return (<Li title='JavaScript' key='js' className='fab fa-js-square'></Li>);
                                         case 'wp': return (<Li title='WordPress' key='wp' className='fab fa-wordpress'></Li>);
                                         case 'react': return (<Li title='React' key='react' className='fab fa-react'></Li>);
-                                        case 'dom': return (<GenericImg title='DOM' key='dom' className='shrinkImg' src={require('../img/noun_DOM_13029.png')}></GenericImg>);
-                                        case 'axios': return (<AxiosImg title='axios' key='axios' className='shrinkImg' src={require('../img/axios Page 1.svg')}></AxiosImg>);
-                                        case 'divi': return (<DiviImg title='Divi' key='divi' className='shrinkImg' src={require('../img/divi-150x150.png')}></DiviImg>);
-                                        case 'reactr' : return (<GenericImg title='React Router' key='reactr' className='shrinkImg' src={require('../img/react-router.png')}></GenericImg>);
-                                        case 'styled' : return (<GenericImg title='Styled Components' key='styled' className='shrinkImg' src={require('../img/styled-components.svg')}></GenericImg>);
+                                        case 'dom' : return (<Li title='DOM' className="iconify" key='dom' data-icon="file-icons:dom" data-inline="false"></Li>);
+                                        case 'axios' : return (<Li title='axios' className="iconify" key='axios' data-icon="bx:bx-transfer-alt" data-inline="false"></Li>);
+                                        case 'divi' : return (<Li title='Divi' className="iconify" key='divi' data-icon="emojione-monotone:letter-d" data-inline="false"></Li>);
+                                        case 'reactr' : return (<Li title='React Router' className="iconify" key='reactr' data-icon="simple-icons:reactrouter" data-inline="false"></Li>);
+                                        case 'styled' : return (<Li title='Styled Components' className="iconify" key='styled' data-icon="simple-icons:styled-components" data-inline="false"></Li>);
                                         case 'rgcal' : return (<Lib title='React Github Calendar' key='rgcal' className='fas fa-code'></Lib>);
                                         case 'recharts' : return (<Lib title='Recharts library' key='recharts' className='fas fa-code'></Lib>);
                                         case 'rtl' : return (<Lib title='React Testing Library' key='rtl' className='fas fa-code'></Lib>);
                                         case 'codepen' : return (<Lib title='Codepen' key='codepen' className='fab fa-codepen'></Lib>);
+                                        case 'nasa' : return (<Li title='Nasa API' key='nasa' className='fas fa-space-shuttle'></Li>);
+                                        case 'g-maps' : return (<Li title='Google Maps API' className="iconify" key='g-maps' data-icon="zmdi:google-maps" data-inline="false"></Li>);
+                                        case 'map' : return (<Li title='Google-Map-React' key='map' className='far fa-map'></Li>);
+                                        case 'iconify' : return (<Li title='Iconify' className="iconify" key='iconify' data-icon="simple-icons:iconify" data-inline="false"></Li>);
                                         default: return null
                                     }
                                 })
@@ -294,23 +299,6 @@ const TechBox = styled.div`
         font-size: 1.1rem;
         line-height: 2rem;
         color: gainsboro;
-    `
-    const AxiosImg = styled.img`
-        width: 1.25rem;
-        color: gainsboro;
-        border: 1px solid gainsboro;
-        border-radius: .35rem;
-    `
-    const GenericImg = styled.img`
-        width: 1.25rem;
-        border: 1px solid gainsboro;
-        border-radius: .35rem;
-    `
-    const DiviImg = styled.img`
-        width: 1.25rem;
-        background-color: gainsboro;
-        border: 1px solid gainsboro;
-        border-radius: .35rem;
     `
 
 export default ProjectCard;
