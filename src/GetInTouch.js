@@ -20,6 +20,7 @@ function GetInTouch() {
                                 name='name'
                                 type='text'
                                 placeholder='name'
+                                className='field'
                             />
                             
                             <label htmlFor='email'>EMAIL</label>
@@ -28,6 +29,7 @@ function GetInTouch() {
                                 name='email'
                                 type='email'
                                 placeholder='email'
+                                className='field'
                             />
                             
                             <label htmlFor='phone'>PHONE</label>
@@ -36,6 +38,7 @@ function GetInTouch() {
                                 name='phone'
                                 type='text'
                                 placeholder='phone'
+                                className='field'
                             />
                             
                             <label htmlFor='message'>MESSAGE</label>
@@ -45,6 +48,7 @@ function GetInTouch() {
                                 rows='4'
                                 cols='50'
                                 placeholder='message'
+                                className='field'
                             />
 
                             <button type='submit'>Send Message</button>
@@ -112,6 +116,13 @@ const ContactForm = styled.section`
 
     input {
         margin-bottom: 1.5rem;
+    }
+
+    .field {
+        background: #353849
+        border: 2px solid #494c5b;
+        border-radius: .35rem;
+        padding: 1rem;
     }
 `
 
