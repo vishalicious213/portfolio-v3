@@ -1,6 +1,56 @@
 import React from 'react';
 import styled from 'styled-components';
 
+function GetInTouch() {
+    return (
+        <div>
+            <TopBorder></TopBorder>
+            <Container>
+                <div className="Front">
+                    <h3>Get In Touch</h3>
+                    <p>Lets build the future together! If you have a need for a website or an idea for a web application, lets design it and show it to the world. Prior to my endeavor to become a full-stack developer, I already worked in software development as a designer for a clinical EMR for long-term care. I didn't know code then, and helped build a system that was ahead of its time. Now, I've started building skills to craft websites and web applications. Let me exercise this knowledge by putting it to work for you!</p>
+
+                    <ContactForm>
+                        <form id='contact-form' name='contact-form' method='POST' data-netlify='true'>
+                            <input type='hidden' name='form-name' value='contact-form' />
+                            <input
+                                id='name'
+                                name='name'
+                                type='text'
+                                placeholder='name'
+                            />
+                            <input
+                                id='email'
+                                name='email'
+                                type='email'
+                                placeholder='email'
+                            />
+                            <input
+                                id='phone'
+                                name='phone'
+                                type='text'
+                                placeholder='phone'
+                            />
+                            <textarea
+                                id='message'
+                                name='message'
+                                rows='4'
+                                cols='50'
+                                placeholder='message'
+                            />
+                            <button type='submit'>Send Message</button>
+                        </form>
+
+                        <section className='social'>
+
+                        </section>
+                    </ContactForm>
+                </div>
+            </Container>
+        </div>
+    )
+}
+
 const TopBorder = styled.div`
     width: 100%;
     height: 3rem;
@@ -35,18 +85,13 @@ const Container = styled.section`
     }
 `
 
-function GetInTouch() {
-    return (
-        <div>
-            <TopBorder></TopBorder>
-            <Container>
-                <div className="Front">
-                    <h3>Get In Touch</h3>
-                    <p>Lets build the future together! If you have a need for a website or an idea for a web application, lets design it and show it to the world. Prior to my endeavor to become a full-stack developer, I already worked in software development as a designer for a clinical EMR for long-term care. I didn't know code then, and helped build a system that was ahead of its time. Now, I've started building skills to craft websites and web applications. Let me exercise this knowledge by putting it to work for you!</p>
-                </div>
-            </Container>
-        </div>
-    )
-}
+const ContactForm = styled.section`
+    display: flex;
+    
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+`
 
 export default GetInTouch;
