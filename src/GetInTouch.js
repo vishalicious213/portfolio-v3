@@ -13,24 +13,32 @@ function GetInTouch() {
                     <ContactForm>
                         <form id='contact-form' name='contact-form' method='POST' data-netlify='true'>
                             <input type='hidden' name='form-name' value='contact-form' />
+                            
+                            <label htmlFor='name'>NAME</label>
                             <input
                                 id='name'
                                 name='name'
                                 type='text'
                                 placeholder='name'
                             />
+                            
+                            <label htmlFor='email'>EMAIL</label>
                             <input
                                 id='email'
                                 name='email'
                                 type='email'
                                 placeholder='email'
                             />
+                            
+                            <label htmlFor='phone'>PHONE</label>
                             <input
                                 id='phone'
                                 name='phone'
                                 type='text'
                                 placeholder='phone'
                             />
+                            
+                            <label htmlFor='message'>MESSAGE</label>
                             <textarea
                                 id='message'
                                 name='message'
@@ -38,6 +46,7 @@ function GetInTouch() {
                                 cols='50'
                                 placeholder='message'
                             />
+
                             <button type='submit'>Send Message</button>
                         </form>
 
@@ -91,6 +100,18 @@ const ContactForm = styled.section`
     #contact-form {
         display: flex;
         flex-direction: column;
+    }
+
+    label {
+        color: gainsboro;
+        font-size: .8rem;
+        font-weight: 700;
+        letter-spacing: .1rem;
+        margin-bottom: .5rem;
+    }
+
+    input {
+        margin-bottom: 1.5rem;
     }
 `
 
