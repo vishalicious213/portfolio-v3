@@ -1,6 +1,85 @@
 import React from 'react';
 import styled from 'styled-components';
 
+function GetInTouch() {
+    return (
+        <div>
+            <TopBorder></TopBorder>
+            <Container>
+                <div className="Front">
+                    <h3>Get In Touch</h3>
+                    <p>Lets build the future together! If you have a need for a website or an idea for a web application, lets design it and show it to the world. Prior to my endeavor to become a full-stack developer, I already worked in software development as a designer for a clinical EMR for long-term care. I didn't know code then, and helped build a system that was ahead of its time. Now, I've started building skills to craft websites and web applications. Let me exercise this knowledge by putting it to work for you!</p>
+
+                    <ContactForm>
+                        <form id='contact-form' name='contact-form' method='POST' data-netlify='true'>
+                            <input type='hidden' name='form-name' value='contact-form' />
+                            
+                            <div className='form-half'>
+                                <label htmlFor='name'>NAME</label>
+                                <input
+                                    id='name'
+                                    name='name'
+                                    type='text'
+                                    placeholder='name'
+                                    className='field'
+                                />
+                                
+                                <label htmlFor='email'>EMAIL</label>
+                                <input
+                                    id='email'
+                                    name='email'
+                                    type='email'
+                                    placeholder='email'
+                                    className='field'
+                                />
+                                
+                                <label htmlFor='phone'>PHONE</label>
+                                <input
+                                    id='phone'
+                                    name='phone'
+                                    type='tel'
+                                    pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
+                                    placeholder='phone'
+                                    className='field'
+                                />
+                            </div>
+                            
+                            <div className='form-half'>
+                                <label htmlFor='message'>MESSAGE</label>
+                                <textarea
+                                    id='message'
+                                    name='message'
+                                    rows='4'
+                                    cols='50'
+                                    placeholder='message'
+                                    className='field message'
+                                />
+
+                                <button id='contact-button' type='submit'>SEND MESSAGE</button>
+                            </div>
+                        </form>
+
+                        <Social>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vish213/" title="LinkedIn"><i className="fab fa-linkedin"></i></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/vishalicious213" title="GitHub"><i className="fab fa-github"></i></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://neophyte.home.blog/" title="Wordpress"><i className="fab fa-wordpress"></i></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/vishalicious213" title="Twitter"><i className="fab fa-twitter"></i></a>
+                            {/* <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/vish213" title="Facebook"><i className="fab fa-facebook-square"></i></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/vishalicious213/" title="Instagram"><i className="fab fa-instagram"></i></a> */}
+                            <a target="_blank" rel="noopener noreferrer" href="mailto:vishalicious213@gmail.com" title="Gmail"><i className="fas fa-envelope"></i></a>
+                        </Social>
+                    </ContactForm>
+
+                    <hr />
+                    <footer>
+                        © Vish Singh. All rights reserved.
+                    </footer>
+                </div>
+            </Container>
+        </div>
+    )
+}
+
 const TopBorder = styled.div`
     width: 100%;
     height: 3rem;
@@ -29,24 +108,95 @@ const Container = styled.section`
         text-align: left;
     }
 
+    hr {
+        border: none;
+        background: lightslategray;
+        height: .5px;
+        margin-top: 1.25rem;
+    }
+
     p {
         color: gainsboro;
         text-align: left;
     }
+
+    footer {
+        margin: 2rem auto;
+        color: gainsboro;
+        text-align: center;
+    }
 `
 
-function GetInTouch() {
-    return (
-        <div>
-            <TopBorder></TopBorder>
-            <Container>
-                <div className="Front">
-                    <h3>Get In Touch</h3>
-                    <p>Lets build the future together! If you have a need for a website or an idea for a web application, lets design it and show it to the world. Prior to my endeavor to become a full-stack developer, I already worked in software development as a designer for a clinical EMR for long-term care. I didn't know code then, and helped build a system that was ahead of its time. Now, I've started building skills to craft websites and web applications. Let me exercise this knowledge by putting it to work for you!</p>
-                </div>
-            </Container>
-        </div>
-    )
-}
+const ContactForm = styled.section`
+    #contact-form {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 0;
+    }
+
+    .form-half {
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+    }
+
+    label, #contact-button {
+        color: gainsboro;
+        font-size: .8rem;
+        font-weight: 700;
+        letter-spacing: .1rem;
+        margin-bottom: .5rem;
+    }
+
+    input {
+        margin-bottom: 1.5rem;
+    }
+
+    .message {
+        height: 7.2rem;
+    }
+
+    .field, #contact-button {
+        background: #353849
+        border: 2px solid #494c5b;
+        border-radius: .35rem;
+        padding: 1rem;
+        color: gainsboro;
+    }
+
+    .field:focus, #contact-button:focus {
+        outline: none;
+        border: 2px solid lightslategray;
+    }
+
+    #contact-button {
+        color: white;
+        margin-top: 3rem;
+    }
+
+    #contact-button:hover {
+        background: #494c5b;
+        border: 2px solid #5d606d;
+        transition: .25s
+    }
+`
+
+const Social = styled.section`
+    margin: 0 auto;
+    font-size: 1.25rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+        text-decoration: none;
+        color: silver;
+    }
+
+    a:hover {
+        color: white;
+        transition: .25s;
+    }
+`
 
 export default GetInTouch;
