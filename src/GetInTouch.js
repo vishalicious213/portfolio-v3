@@ -14,44 +14,48 @@ function GetInTouch() {
                         <form id='contact-form' name='contact-form' method='POST' data-netlify='true'>
                             <input type='hidden' name='form-name' value='contact-form' />
                             
-                            <label htmlFor='name'>NAME</label>
-                            <input
-                                id='name'
-                                name='name'
-                                type='text'
-                                placeholder='name'
-                                className='field'
-                            />
+                            <div className='form-half'>
+                                <label htmlFor='name'>NAME</label>
+                                <input
+                                    id='name'
+                                    name='name'
+                                    type='text'
+                                    placeholder='name'
+                                    className='field'
+                                />
+                                
+                                <label htmlFor='email'>EMAIL</label>
+                                <input
+                                    id='email'
+                                    name='email'
+                                    type='email'
+                                    placeholder='email'
+                                    className='field'
+                                />
+                                
+                                <label htmlFor='phone'>PHONE</label>
+                                <input
+                                    id='phone'
+                                    name='phone'
+                                    type='text'
+                                    placeholder='phone'
+                                    className='field'
+                                />
+                            </div>
                             
-                            <label htmlFor='email'>EMAIL</label>
-                            <input
-                                id='email'
-                                name='email'
-                                type='email'
-                                placeholder='email'
-                                className='field'
-                            />
-                            
-                            <label htmlFor='phone'>PHONE</label>
-                            <input
-                                id='phone'
-                                name='phone'
-                                type='text'
-                                placeholder='phone'
-                                className='field'
-                            />
-                            
-                            <label htmlFor='message'>MESSAGE</label>
-                            <textarea
-                                id='message'
-                                name='message'
-                                rows='4'
-                                cols='50'
-                                placeholder='message'
-                                className='field'
-                            />
+                            <div className='form-half'>
+                                <label htmlFor='message'>MESSAGE</label>
+                                <textarea
+                                    id='message'
+                                    name='message'
+                                    rows='4'
+                                    cols='50'
+                                    placeholder='message'
+                                    className='field'
+                                />
 
-                            <button id='contact-button' type='submit'>SEND MESSAGE</button>
+                                <button id='contact-button' type='submit'>SEND MESSAGE</button>
+                            </div>
                         </form>
 
                         <section className='social'>
@@ -99,11 +103,16 @@ const Container = styled.section`
 `
 
 const ContactForm = styled.section`
-    display: flex;
-    
     #contact-form {
         display: flex;
+        justify-content: space-between;
+        margin: 2rem 0;
+    }
+
+    .form-half {
+        display: flex;
         flex-direction: column;
+        width: 48%;
     }
 
     label, #contact-button {
@@ -133,6 +142,7 @@ const ContactForm = styled.section`
     #contact-button:hover {
         background: #494c5b;
         border: 2px solid #5d606d;
+        transition: .25s
     }
 `
 
