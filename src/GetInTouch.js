@@ -51,10 +51,20 @@ function GetInTouch() {
                                     rows='4'
                                     cols='50'
                                     placeholder='message'
-                                    className='field'
+                                    className='field message'
                                 />
 
                                 <button id='contact-button' type='submit'>SEND MESSAGE</button>
+
+                                <Social>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vish213/" title="LinkedIn"><i className="fab fa-linkedin"></i></a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vishalicious213" title="GitHub"><i className="fab fa-github"></i></a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://neophyte.home.blog/" title="Wordpress"><i className="fab fa-wordpress"></i></a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/vishalicious213" title="Twitter"><i className="fab fa-twitter"></i></a>
+                                    {/* <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/vish213" title="Facebook"><i className="fab fa-facebook-square"></i></a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/vishalicious213/" title="Instagram"><i className="fab fa-instagram"></i></a> */}
+                                    <a target="_blank" rel="noopener noreferrer" href="mailto:vishalicious213@gmail.com" title="Gmail"><i className="fas fa-envelope"></i></a>
+                                </Social>
                             </div>
                         </form>
 
@@ -127,6 +137,10 @@ const ContactForm = styled.section`
         margin-bottom: 1.5rem;
     }
 
+    .message {
+        height: 7.15rem;
+    }
+
     .field, #contact-button {
         background: #353849
         border: 2px solid #494c5b;
@@ -136,13 +150,30 @@ const ContactForm = styled.section`
 
     #contact-button {
         color: white;
-        margin-top: 1.5rem;
+        margin-top: 3rem;
     }
 
     #contact-button:hover {
         background: #494c5b;
         border: 2px solid #5d606d;
         transition: .25s
+    }
+`
+
+const Social = styled.section`
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+        text-decoration: none;
+        color: silver;
+    }
+
+    a:hover {
+        color: white;
     }
 `
 
