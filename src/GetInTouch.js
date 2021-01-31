@@ -70,7 +70,7 @@ function GetInTouch() {
                         </Social>
                     </ContactForm>
 
-                    <h3></h3>
+                    <hr />
                     <footer>
                         © Vish Singh. All rights reserved.
                     </footer>
@@ -106,6 +106,13 @@ const Container = styled.section`
         padding-bottom: 1.25rem;
         border-bottom: 1px solid lightslategray;
         text-align: left;
+    }
+
+    hr {
+        border: none;
+        background: lightslategray;
+        height: .5px;
+        margin-top: 1.25rem;
     }
 
     p {
@@ -157,7 +164,7 @@ const ContactForm = styled.section`
         color: gainsboro;
     }
 
-    .field:focus {
+    .field:focus, #contact-button:focus {
         outline: none;
         border: 2px solid lightslategray;
     }
