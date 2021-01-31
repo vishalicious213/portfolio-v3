@@ -55,23 +55,24 @@ function GetInTouch() {
                                 />
 
                                 <button id='contact-button' type='submit'>SEND MESSAGE</button>
-
-                                <Social>
-                                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vish213/" title="LinkedIn"><i className="fab fa-linkedin"></i></a>
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/vishalicious213" title="GitHub"><i className="fab fa-github"></i></a>
-                                    <a target="_blank" rel="noopener noreferrer" href="https://neophyte.home.blog/" title="Wordpress"><i className="fab fa-wordpress"></i></a>
-                                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/vishalicious213" title="Twitter"><i className="fab fa-twitter"></i></a>
-                                    {/* <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/vish213" title="Facebook"><i className="fab fa-facebook-square"></i></a>
-                                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/vishalicious213/" title="Instagram"><i className="fab fa-instagram"></i></a> */}
-                                    <a target="_blank" rel="noopener noreferrer" href="mailto:vishalicious213@gmail.com" title="Gmail"><i className="fas fa-envelope"></i></a>
-                                </Social>
                             </div>
                         </form>
 
-                        <section className='social'>
-
-                        </section>
+                        <Social>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vish213/" title="LinkedIn"><i className="fab fa-linkedin"></i></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/vishalicious213" title="GitHub"><i className="fab fa-github"></i></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://neophyte.home.blog/" title="Wordpress"><i className="fab fa-wordpress"></i></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/vishalicious213" title="Twitter"><i className="fab fa-twitter"></i></a>
+                            {/* <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/vish213" title="Facebook"><i className="fab fa-facebook-square"></i></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/vishalicious213/" title="Instagram"><i className="fab fa-instagram"></i></a> */}
+                            <a target="_blank" rel="noopener noreferrer" href="mailto:vishalicious213@gmail.com" title="Gmail"><i className="fas fa-envelope"></i></a>
+                        </Social>
                     </ContactForm>
+
+                    <h3></h3>
+                    <footer>
+                        © Vish Singh. All rights reserved.
+                    </footer>
                 </div>
             </Container>
         </div>
@@ -109,6 +110,12 @@ const Container = styled.section`
     p {
         color: gainsboro;
         text-align: left;
+    }
+
+    footer {
+        margin: 2rem auto;
+        color: gainsboro;
+        text-align: center;
     }
 `
 
@@ -161,9 +168,9 @@ const ContactForm = styled.section`
 `
 
 const Social = styled.section`
-    margin-top: 1rem;
+    margin: 0 auto;
     font-size: 1.25rem;
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: space-evenly;
 
