@@ -179,6 +179,20 @@ const ContactForm = styled.section`
         border: 2px solid #5d606d;
         transition: .25s
     }
+
+    @media screen and (max-width: 840px) {
+        #contact-form {
+            flex-direction: column;
+        }
+
+        .form-half {
+            width: 100%;
+        }
+
+        #contact-button {
+            margin-top: 1.5rem;
+        }
+    } // @media 840
 `
 
 const Social = styled.section`
