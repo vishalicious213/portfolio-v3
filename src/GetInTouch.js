@@ -12,7 +12,7 @@ function GetInTouch() {
 
                     <ContactForm>
                         <form id='contact-form' name='contact-form' method='POST' data-netlify='true'>
-                            <input type='hidden' name='form-name' value='contact-form' />
+                            <input type='hidden' name='form-name' value='html-contact-form' />
                             
                             <div className='form-half'>
                                 <label htmlFor='name'>NAME</label>
