@@ -51,7 +51,7 @@ function GetInTouch() {
                                 className='field'
                             />
 
-                            <button type='submit'>Send Message</button>
+                            <button id='contact-button' type='submit'>SEND MESSAGE</button>
                         </form>
 
                         <section className='social'>
@@ -106,7 +106,7 @@ const ContactForm = styled.section`
         flex-direction: column;
     }
 
-    label {
+    label, #contact-button {
         color: gainsboro;
         font-size: .8rem;
         font-weight: 700;
@@ -118,11 +118,21 @@ const ContactForm = styled.section`
         margin-bottom: 1.5rem;
     }
 
-    .field {
+    .field, #contact-button {
         background: #353849
         border: 2px solid #494c5b;
         border-radius: .35rem;
         padding: 1rem;
+    }
+
+    #contact-button {
+        color: white;
+        margin-top: 1.5rem;
+    }
+
+    #contact-button:hover {
+        background: #494c5b;
+        border: 2px solid #5d606d;
     }
 `
 
