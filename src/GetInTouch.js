@@ -38,7 +38,7 @@ function GetInTouch() {
                                     id='phone'
                                     name='phone'
                                     type='tel'
-                                    pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
+                                    // pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
                                     placeholder='phone'
                                     className='field'
                                 />
