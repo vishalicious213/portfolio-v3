@@ -37,7 +37,8 @@ function GetInTouch() {
                                 <input
                                     id='phone'
                                     name='phone'
-                                    type='text'
+                                    type='tel'
+                                    pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
                                     placeholder='phone'
                                     className='field'
                                 />
@@ -145,7 +146,7 @@ const ContactForm = styled.section`
     }
 
     .message {
-        height: 7.15rem;
+        height: 7.2rem;
     }
 
     .field, #contact-button {
@@ -153,6 +154,12 @@ const ContactForm = styled.section`
         border: 2px solid #494c5b;
         border-radius: .35rem;
         padding: 1rem;
+        color: gainsboro;
+    }
+
+    .field:focus {
+        outline: none;
+        border: 2px solid lightslategray;
     }
 
     #contact-button {
@@ -181,6 +188,7 @@ const Social = styled.section`
 
     a:hover {
         color: white;
+        transition: .25s;
     }
 `
 
