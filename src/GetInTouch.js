@@ -157,8 +157,8 @@ const ContactForm = styled.section`
     }
 
     .field, #contact-button {
-        background: #353849
-        border: 2px solid #494c5b;
+        background: #2d3040;
+        border: 2px solid #484a59;
         border-radius: .35rem;
         padding: 1rem;
         color: gainsboro;
@@ -175,7 +175,7 @@ const ContactForm = styled.section`
     }
 
     #contact-button:hover {
-        background: #494c5b;
+        background: #353849;
         border: 2px solid #5d606d;
         transition: .25s
     }
