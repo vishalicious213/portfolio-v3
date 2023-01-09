@@ -58,11 +58,13 @@ class ReactProjects extends Component {
         <div>
             <Container>
                 <div className="Front">
-                    <h2>JavaScript / React Websites</h2>
-                    <p>RESPONSIVE WEBSITES AND PROJECTS BUILT USING JAVASCRIPT/DOM OR REACT</p>
+                    <h2>React & Next.js Projects</h2>
+                    <p>RESPONSIVE WEBSITES AND PROJECTS BUILT USING REACT AND NEXT.JS</p>
                     {/* <h3>High-Level</h3> */}
-                    <p><b>JavaScript</b> adds interactivity to web pages and online applications. The DOM is an object representation of every element on a website. Together, they transform static web pages built with HTML and CSS into vibrant, dynamic web pages and applications. User events, interaction with other websites, transaction with applications - all of this and more is possible with these combined technologies.</p>
-                    <p><b>React</b> expands on JavaScript by way of a component-based architecture and melding of JavaScript functionality with data presentation using a language technology called JSX. Proper use increases the speed of web pages and reduces the need to repeatedly request data from a website.</p>
+                    {/* <p><b>JavaScript</b> adds interactivity to web pages and online applications. The DOM is an object representation of every element on a website. Together, they transform static web pages built with HTML and CSS into vibrant, dynamic web pages and applications. User events, interaction with other websites, transaction with applications - all of this and more is possible with these combined technologies.</p> */}
+                    <p><b>React</b> is a JavaScript library designed for building user interfaces. It expands features a component-based architecture, state management and data presentation using a language called JSX (JavaScript Extension). It's frequently used to build single-page applications (SPAs).</p>
+
+                    <p><b>Next.js</b> is a framework that sits on top of React and adds many features commonly incorporated by including multiple JavaScript libraries. Some of these features include routing, server-side rendering, image optimization, component-scoped CSS, basic API routes and the ability to define and customize global page templates.</p>
 
                     {/* <h3>Key Technologies</h3>
                     <section className="keyTech">

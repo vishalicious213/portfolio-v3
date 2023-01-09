@@ -58,11 +58,11 @@ class JsProjects extends Component {
         <div>
             <Container>
                 <div className="Front">
-                    <h2>JavaScript / React Websites</h2>
-                    <p>RESPONSIVE WEBSITES AND PROJECTS BUILT USING JAVASCRIPT/DOM OR REACT</p>
+                    <h2>JavaScript Projects</h2>
+                    <p>RESPONSIVE WEBSITES AND PROJECTS BUILT USING JAVASCRIPT AND DOM MANIPULATION</p>
                     {/* <h3>High-Level</h3> */}
                     <p><b>JavaScript</b> adds interactivity to web pages and online applications. The DOM is an object representation of every element on a website. Together, they transform static web pages built with HTML and CSS into vibrant, dynamic web pages and applications. User events, interaction with other websites, transaction with applications - all of this and more is possible with these combined technologies.</p>
-                    <p><b>React</b> expands on JavaScript by way of a component-based architecture and melding of JavaScript functionality with data presentation using a language technology called JSX. Proper use increases the speed of web pages and reduces the need to repeatedly request data from a website.</p>
+                    {/* <p><b>React</b> expands on JavaScript by way of a component-based architecture and melding of JavaScript functionality with data presentation using a language technology called JSX. Proper use increases the speed of web pages and reduces the need to repeatedly request data from a website.</p> */}
 
                     {/* <h3>Key Technologies</h3>
                     <section className="keyTech">
