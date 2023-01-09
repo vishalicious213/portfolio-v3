@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Featured from './ProjectsFeatured';
 import HtmlCss from './ProjectsHTMLCSS';
-import JSReact from './ProjectsJSReact';
+import JsProjects from './ProjectsJS';
 import WPSites from './ProjectsWP';
 
 const Container = styled.section`
@@ -58,8 +58,8 @@ class ProjectButtons extends Component {
         switch(this.state.render){
             case 'featured': return <Featured />
             case 'html-css': return <HtmlCss />
-            case 'javascript': return <JSReact />
-            case 'react': return <JSReact />
+            case 'javascript': return <JsProjects />
+            case 'react': return <JsProjects />
             case 'Wordpress' : return <WPSites />
             default:
         }
