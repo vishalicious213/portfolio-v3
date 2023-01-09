@@ -58,7 +58,8 @@ class ProjectButtons extends Component {
         switch(this.state.render){
             case 'featured': return <Featured />
             case 'html-css': return <HtmlCss />
-            case 'JS-React': return <JSReact />
+            case 'javascript': return <JSReact />
+            case 'react': return <JSReact />
             case 'Wordpress' : return <WPSites />
             default:
         }
@@ -77,8 +78,12 @@ class ProjectButtons extends Component {
                     }>HTML / CSS Websites</button>
 
                     <button onClick={
-                        this.handleClick.bind(this, 'JS-React')
-                    }>JavaScript & React Sites</button>
+                        this.handleClick.bind(this, 'javascript')
+                    }>JavaScript Projects</button>
+
+                    <button onClick={
+                        this.handleClick.bind(this, 'react')
+                    }>React & Next.js Projects</button>
 
                     <button onClick={
                         this.handleClick.bind(this, 'Wordpress')
