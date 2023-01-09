@@ -50,7 +50,7 @@ const Container = styled.section`
 class ReactProjects extends Component {
     constructor() {
         super();
-        this.state = {render: 'JS-React', cards: 'jsDomProjects'}
+        this.state = {render: 'JS-React', cards: 'reactProjects'}
     }
 
     render() {
@@ -80,7 +80,7 @@ class ReactProjects extends Component {
                     </section> */}
                 </div>
             </Container>
-            <ProjectCard cards='jsDomProjects' />
+            <ProjectCard cards='reactProjects' />
             {/* <BottomBorder></BottomBorder> */}
         </div>
         )
