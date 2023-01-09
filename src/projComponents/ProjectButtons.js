@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Featured from './ProjectsFeatured';
 import HtmlCss from './ProjectsHTMLCSS';
 import JsProjects from './ProjectsJS';
+import ReactProjects from './ProjectsReact';
 import WPSites from './ProjectsWP';
 
 const Container = styled.section`
@@ -59,7 +60,7 @@ class ProjectButtons extends Component {
             case 'featured': return <Featured />
             case 'html-css': return <HtmlCss />
             case 'javascript': return <JsProjects />
-            case 'react': return <JsProjects />
+            case 'react': return <ReactProjects />
             case 'Wordpress' : return <WPSites />
             default:
         }

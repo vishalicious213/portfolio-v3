@@ -47,7 +47,7 @@ const Container = styled.section`
         }
 `
 
-class JSReact extends Component {
+class ReactProjects extends Component {
     constructor() {
         super();
         this.state = {render: 'JS-React', cards: 'jsDomProjects'}
@@ -87,4 +87,4 @@ class JSReact extends Component {
     }
 }
 
-export default JSReact;
+export default ReactProjects;
