@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import ProjectCard from './ProjectCard';
 
-class HtmlCss extends Component {
+class ReactProjects extends Component {
     constructor() {
         super();
-        this.state = {render: 'html-css', cards: 'htmlWebProjects'}
+        this.state = {render: 'JS-React', cards: 'reactProjects'}
     }
 
     render() {
@@ -13,13 +13,16 @@ class HtmlCss extends Component {
         <div>
             <Container>
                 <div className="Front">
-                    <h2>HTML Websites</h2>
-                    <p>RESPONSIVE WEBSITES AND PROJECTS BUILT USING HTML5 AND CSS3</p>
-                    {/* <h3>High-Level</h3> */}
-                    <p><b>HTML</b> and <b>CSS</b> are the basic languages of websites. They're the first tools that web developers learn to create web pages. HTML puts words and images onscreen. CSS gives them a makeover so that they look good. The following websites were all written using HTML and CSS, including a special CSS language called LESS, which makes CSS more dynamic.</p>
+                    <h2>React & Next.js Projects</h2>
+                    <p>RESPONSIVE WEBSITES AND PROJECTS BUILT USING REACT AND NEXT.JS</p>
+
+                    <p><b>React</b> is a JavaScript library designed for building user interfaces. It expands features a component-based architecture, state management and data presentation using a language called JSX (JavaScript Extension). It's frequently used to build single-page applications (SPAs).</p>
+
+                    <p><b>Next.js</b> is a framework that sits on top of React and adds many features commonly incorporated by including multiple JavaScript libraries. Some of these features include routing, server-side rendering, image optimization, component-scoped CSS, basic API routes and the ability to define and customize global page templates.</p>
+
                 </div>
             </Container>
-            <ProjectCard cards='htmlWebProjects' />
+            <ProjectCard cards='reactProjects' />
             {/* <BottomBorder></BottomBorder> */}
         </div>
         )
@@ -64,4 +67,4 @@ const Container = styled.section`
     }
 `
 
-export default HtmlCss;
+export default ReactProjects;
