@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
- 
+
 const featuredProjects = [
     {img: "iconic-v2.gif", name: "Iconic Web Studios v2", type: "Professional Project - Next.js", visit: "https://iconicweb.dev/", view: "https://github.com/vishalicious213/iconic-v3", desc: "This is v2 of the website for Iconic Web Studios, my web development company. Visually, I went in a completely different direction from v1. I still used React and Next.js to build it, but added on Google Maps and Netlify Forms. This site lives at www.iconicweb.dev.", stack: ["next", "react", "js", "g-maps", "netlify"]},
     {img: "breast-cancer-comfort.jpg", name: "Breast Cancer Comfort (v3)", type: "Client Website - Next.js", visit: "http://www.breastcancercomfort.org/", view: "#", desc: "Originally a WordPress site built for a cancer charity in Long Island, NY. I redesigned and rebuilt it using Next.js and added features like Google Maps, Facebook feed integration, blog articles, a carousel and a contact form.", stack: ["next", "react", "js", "g-maps", "netlify"]},
@@ -37,6 +37,7 @@ const htmlWebProjects = [
 ]
 
 const jsDomProjects = [
+    {img: "cookie-consent.jpg", name: "Cookie Consent Pop-Up", type: "Scrimba Project", visit: "https://vish213-cookie-popup.netlify.app/", view: "https://github.com/vishalicious213/cookie-consent", desc: "JavaScript and CSS power a pop-up modal that won't go away until it has your name and password. Its perfect for the hard sell. Resistance is futile. Just try to click the 'Decline' button.", stack: ["js", "dom", "css"]},
     {img: "oldagram.jpg", name: "Oldagram", type: "Scrimba Project", visit: "https://vish213-oldagram.netlify.app/", view: "https://github.com/vishalicious213/oldagram", desc: "If you like Instagram but you're over 200 years old and can't communicate with people born after The Revolutionary War, this one's for you. Get your artist a new paintbrush and view the portraits of other 17-&-18-century thingumbobs.", stack: ["js", "dom", "css"]},
     {img: "profile-generator.jpg", name: "Profile Generator", type: "Scrimba Project", visit: "https://vish213-profile-generator.netlify.app/", view: "https://github.com/vishalicious213/profile-generator", desc: "Build a short online profile. Add your name, fun facts about yourself, your LinkedIn profile and a profile pictore. Change the page theme via drop-downs that change the font, background color, text color, light or dark mode and element corners.", stack: ["js", "dom", "css"]},
     {img: "js-panels.jpg", name: "Flex Panels Image Gallery", type: "JavaScript30 Project", visit: "https://vish213-flex-panel-gallery.netlify.app/", view: "https://github.com/vishalicious213/js30-05-flex-panel-gallery", desc: "Displays 5 images horizontally. Clicking on an image 'opens' it and drops in text from the top and bottom of the screen. This project was CSS heavy. JS was mainly used to add/remove classes to elements to animate them.", stack: ["js", "dom", "css"]},
