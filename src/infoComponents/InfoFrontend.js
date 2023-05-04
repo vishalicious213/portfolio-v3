@@ -15,7 +15,14 @@ function Frontend() {
                         {/* <p>The first unit at Lambda School has taught me the basics of semantic HTML and CSS, including the pains of inline-block, the mighty Flexbox and a start at responsive web design. We've since delved into JavaScript, the DOM and are learning React, with its virtual DOM, for component-driven front-end development.</p> */}
                         <p>My approach to front-end web development centers on presenting data to the viewer through interactive graphical interfaces using technologies such as semantic HTML, CSS (including Flexbox and CSS Grid), JavaScript and React. Data is often read from outside API sources (or my own custom APIs) and display is guided by responsive web design principles.</p>
                         <p>The front-end libraries that I use most frequently include axios, Styled Components and React Router and my framework of choice is currently Next.js.</p>
-                        <p><b>Skills:</b> HTML, CSS, JavaScript, React.JS, Next.JS, Node.JS, Express.JS</p>
+                        <p><b>Skills: </b>HTML, CSS, JavaScript, React.JS, Next.JS, Node.JS, Express.JS</p>
+                        <div className="certs">
+                            <div><b>Certificates:</b></div>
+                            <div className="certs-list">
+                                <div><a target="_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/82e37eab-aa57-4794-9109-bc24cdf04867?source=linked_in_profile">BloomTech: Full-Stack Web Development</a></div>
+                                <div><a target="_blank" rel="noopener noreferrer" href="https://www.freecodecamp.org/certification/vishalicious213/responsive-web-design">freeCodeCamp: Responsive Web Design</a></div>
+                            </div>
+                        </div>
                     </div>
                     <div className="pictureFrame">
                         <img src={require('../img/v1.jpg')} alt="Vish's face, with black cap on."></img>
@@ -73,6 +80,36 @@ const Container = styled.section`
         @media screen and (max-width: 840px) {
             font-size: .9rem;
         } // @media 840
+    }
+
+    .certs {
+        text-align: right;
+        color: gainsboro;
+    }
+
+    .certs-list {
+        display: flex;
+        justify-content: end;
+        margin-top: .75rem;
+        gap: 1rem;
+    }
+
+    .certs-list div {
+        width: 7rem;
+        text-align: center;
+        padding: .5rem .75rem;
+        border: 1px solid gainsboro;
+        border-radius: .5rem;
+        background: #353849;
+    }
+    
+    .certs-list div:hover {
+        background: #2d3040;
+    }
+
+    .certs-list div a {
+        color: gainsboro;
+        text-decoration: none;
     }
 
     img {
