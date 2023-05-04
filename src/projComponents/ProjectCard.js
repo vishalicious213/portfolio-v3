@@ -38,7 +38,7 @@ const htmlWebProjects = [
 ]
 
 const jsDomProjects = [
-    {img: "shop-firebase.jpg", name: "Shopping List with Firebase DB", type: "Scrimba Project", visit: "https://vish213-fb-shopping.netlify.app/", view: "https://github.com/vishalicious213/shopping-firebase", desc: "Shopping list. Add to or delete from the cart. Data is saved to a Firebase database. Add/delete an item from your phone & watch it happen from another device in realtime.", stack: ["js", "dom", "css"]},
+    {img: "shop-firebase.jpg", name: "Shopping List with Firebase DB", type: "Scrimba Project", visit: "https://vish213-fb-shopping.netlify.app/", view: "https://github.com/vishalicious213/shopping-firebase", desc: "Shopping list. Add to or delete from the cart. Data is saved to a Firebase database. Add/delete an item from your phone & watch it happen from another device in realtime.", stack: ["js", "firebase", "dom", "css"]},
     {img: "hp-tracker.jpg", name: "Hit Point Tracker", type: "Personal Project", visit: "https://vish213-hp-tracker.netlify.app/", view: "https://github.com/vishalicious213/hit-point-tracker", desc: "Track health levels of characters in a group. Add, remove & delete characters. Change their positions. Set current & max hit points. The meter adjusts with hit point changes. Save, load & delete groups.", stack: ["js", "dom", "css"]},
     {img: "jimmys-diner.jpg", name: "Jimmy's Diner", type: "Solo Project", visit: "https://vish213-jimmys-diner.netlify.app/", view: "https://github.com/vishalicious213/restaurant-ordering-app", desc: "Jimmy's Diner serves the best burgers and pizzas in town. Their website was prepared using the finest JS including arrays, objects and a sampler platter teeming with JS methods and CSS goodies.", stack: ["js", "dom", "css"]},
     {img: "twimba.jpg", name: "Twitter Clone", type: "Scrimba Project", visit: "https://vish213-twimba.netlify.app/", view: "https://github.com/vishalicious213/twitter-clone", desc: "Post and reply to tweets. Replies display a modal. Heavy use of array methods, event listeners, classList, getElementById, localStorage and other JavaScript goodies.", stack: ["js", "dom", "css"]},
@@ -158,21 +158,22 @@ const ProjectCard = (props) => {
                                         case 'js': return (<Li title='JavaScript' key='js' className='fab fa-js-square'></Li>);
                                         case 'wp': return (<Li title='WordPress' key='wp' className='fab fa-wordpress'></Li>);
                                         case 'react': return (<Li title='React' key='react' className='fab fa-react'></Li>);
-                                        case 'dom' : return (<Li title='DOM' className="iconify" key='dom' data-icon="file-icons:dom" data-inline="false"></Li>);
-                                        case 'axios' : return (<Li title='axios' className="iconify" key='axios' data-icon="bx:bx-transfer-alt" data-inline="false"></Li>);
-                                        case 'divi' : return (<Li title='Divi' className="iconify" key='divi' data-icon="emojione-monotone:letter-d" data-inline="false"></Li>);
-                                        case 'reactr' : return (<Li title='React Router' className="iconify" key='reactr' data-icon="simple-icons:reactrouter" data-inline="false"></Li>);
-                                        case 'styled' : return (<Li title='Styled Components' className="iconify" key='styled' data-icon="simple-icons:styled-components" data-inline="false"></Li>);
+                                        case 'dom' : return (<Li title='DOM' className='iconify' key='dom' data-icon='file-icons:dom' data-inline='false'></Li>);
+                                        case 'axios' : return (<Li title='axios' className='iconify' key='axios' data-icon='bx:bx-transfer-alt' data-inline='false'></Li>);
+                                        case 'divi' : return (<Li title='Divi' className='iconify' key='divi' data-icon='emojione-monotone:letter-d' data-inline='false'></Li>);
+                                        case 'reactr' : return (<Li title='React Router' className='iconify' key='reactr' data-icon='simple-icons:reactrouter' data-inline='false'></Li>);
+                                        case 'styled' : return (<Li title='Styled Components' className='iconify' key='styled' data-icon='simple-icons:styled-components' data-inline='false'></Li>);
                                         case 'rgcal' : return (<Lib title='React Github Calendar' key='rgcal' className='fas fa-code'></Lib>);
                                         case 'recharts' : return (<Lib title='Recharts library' key='recharts' className='fas fa-code'></Lib>);
                                         case 'rtl' : return (<Lib title='React Testing Library' key='rtl' className='fas fa-code'></Lib>);
                                         case 'codepen' : return (<Lib title='Codepen' key='codepen' className='fab fa-codepen'></Lib>);
                                         case 'nasa' : return (<Lib title='Nasa API' key='nasa' className='fas fa-space-shuttle'></Lib>);
-                                        case 'g-maps' : return (<Li title='Google Maps API' className="iconify" key='g-maps' data-icon="zmdi:google-maps" data-inline="false"></Li>);
+                                        case 'g-maps' : return (<Li title='Google Maps API' className='iconify' key='g-maps' data-icon='zmdi:google-maps' data-inline='false'></Li>);
                                         case 'map' : return (<Lib title='Google-Map-React' key='map' className='far fa-map'></Lib>);
-                                        case 'iconify' : return (<Lib title='Iconify' className="iconify" key='iconify' data-icon="simple-icons:iconify" data-inline="false"></Lib>);
-                                        case 'next' : return (<Lib title='Next.js' className="iconify" key='next-js' data-icon="file-icons:nextjs" data-inline="false"></Lib>);
-                                        case 'netlify' : return (<Lib title='Netlify Forms' className="iconify" key='netlify' data-icon="file-icons:netlify" data-inline="false"></Lib>);
+                                        case 'iconify' : return (<Lib title='Iconify' className='iconify' key='iconify' data-icon='simple-icons:iconify' data-inline='false'></Lib>);
+                                        case 'next' : return (<Lib title='Next.js' className='iconify' key='next-js' data-icon='file-icons:nextjs' data-inline='false'></Lib>);
+                                        case 'netlify' : return (<Lib title='Netlify Forms' className='iconify' key='netlify' data-icon='file-icons:netlify' data-inline='false'></Lib>);
+                                        case 'firebase' : return (<Li title='Firebase' className='iconify' key='firebase' data-icon='devicon-plain:firebase' data-inline='false'></Li>);
                                         default: return null
                                     }
                                 })
