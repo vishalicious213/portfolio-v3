@@ -11,7 +11,7 @@ function About() {
                         <img src={require('../img/v5.jpg')} alt="Vish's face, with black cap on."></img>
                     </div>
                     <div className="sectionInfo">
-                        <h3>Father, Bass Enthusiast, Extreme Metaller</h3>
+                        <h3>Father, Foodie, Bass Enthusiast, Extreme Metaller</h3>
                         <p>Intertwined with my coding interests are my role as a father, my study of electric bass (its not a guitar!) and my love of extreme metal, food, air frying and the Instant Pot. Years ago, I was a sprinter, tabletop gamer, ran a Renegade BBS, read for leisure instead of work and collected comic books.</p>
                         <p>These days, when there's time, I blog, attend concerts, hunt down new eateries and unsuccessfully try to keep my distance from Nick Jr, Disney Junior, Roblox videos, a deluge of kids' YouTube channels and marathons of Winx Club while being outnumbered by my two girls.</p>
                         <p>I also walk a 5k several times a week. Soon, I'll run it.</p>
