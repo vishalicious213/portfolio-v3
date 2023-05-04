@@ -23,8 +23,13 @@ const Cert = styled.div`
 
     .certs-list {
         display: flex;
+        flex-direction: column;
         margin-top: .75rem;
         gap: 1rem;
+
+        @media screen and (min-width: 840px) {
+            flex-direction: row;
+        }
     }
 
     .certs-list a {
