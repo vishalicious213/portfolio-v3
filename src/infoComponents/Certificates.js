@@ -7,8 +7,8 @@ function Certificates() {
             <div className="certs">
                 <div><b>Certificates:</b></div>
                 <div className="certs-list">
-                    <div><a target="_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/82e37eab-aa57-4794-9109-bc24cdf04867?source=linked_in_profile">BloomTech: Full-Stack Web Development</a></div>
-                    <div><a target="_blank" rel="noopener noreferrer" href="https://www.freecodecamp.org/certification/vishalicious213/responsive-web-design">freeCodeCamp: Responsive Web Design</a></div>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/82e37eab-aa57-4794-9109-bc24cdf04867?source=linked_in_profile">BloomTech: Full-Stack Web Development</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.freecodecamp.org/certification/vishalicious213/responsive-web-design">freeCodeCamp: Responsive Web Design</a>
                 </div>
             </div>
         </Cert>
@@ -27,22 +27,19 @@ const Cert = styled.div`
         gap: 1rem;
     }
 
-    .certs-list div {
+    .certs-list a {
         width: 11rem;
         text-align: center;
         padding: .5rem 1rem;
-        // border: 1px solid #484A59;
         border-radius: .5rem;
         background: #5e6ca1;
-    }
-
-    .certs-list div:hover {
-        background: #445387;
-    }
-
-    .certs-list div a {
         color: gainsboro;
         text-decoration: none;
+    }
+
+    .certs-list a:hover {
+        background: #445387;
+        color: white;
     }
 `
 
