@@ -82,7 +82,11 @@ const Container = styled.section`
     }
 
     .certs-list {
-        justify-content: start;
+        align-items: start;
+        
+        @media screen and (min-width: 840px) {
+            justify-content: start;
+        }
     }
 
     .certs {
