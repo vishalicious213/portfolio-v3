@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Certificates from './Certificates';
 
 function Backend() {
     return (
@@ -18,6 +19,8 @@ function Backend() {
                         {/* <p>Once our JavaScript/React entanglement is complete, we move on to back-end development with NodeJS, Java, Python and RDBMS. This will be augmented with deep dives into algorithms, data structures, hash tables, blockchain, graphs and computer architecture.</p> */}
                         <p>Back-end development handles the 'behind-the-scenes' functionality of a web application. It connects the front-end with a database, implements APIs, manages user connections and structures the business logic of a web application.</p>
                         <p>The technologies I use most frequently for back-end work include Node.JS, Express, SQL, knex and Python. I've implemented authentication through cookies and with JSON Web Tokens.</p>
+                        <p><b>Skills:</b> HTML, CSS, JavaScript, React.JS, Next.JS, Node.JS, Express.JS</p>
+                        <Certificates />
                     </div>
                 </div>
             </Container>
@@ -76,6 +79,14 @@ const Container = styled.section`
         @media screen and (max-width: 840px) {
             font-size: .9rem;
         } // @media 840
+    }
+
+    .certs-list {
+        justify-content: start;
+    }
+
+    .certs {
+        text-align: left;
     }
 
     img {
