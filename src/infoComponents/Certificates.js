@@ -23,22 +23,21 @@ const Cert = styled.div`
 
     .certs-list {
         display: flex;
-        // justify-content: end;
         margin-top: .75rem;
         gap: 1rem;
     }
 
     .certs-list div {
-        width: 7rem;
+        width: 11rem;
         text-align: center;
-        padding: .5rem .75rem;
-        border: 1px solid gainsboro;
+        padding: .5rem 1rem;
+        // border: 1px solid #484A59;
         border-radius: .5rem;
-        background: #353849;
+        background: #5e6ca1;
     }
 
     .certs-list div:hover {
-        background: #2d3040;
+        background: #445387;
     }
 
     .certs-list div a {
