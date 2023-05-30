@@ -44,6 +44,7 @@ const htmlWebProjects = [
 ]
 
 const jsDomProjects = [
+    {img: "war.jpg", name: "War", type: "Scrimba M9 Project", visit: "https://vish213-war.netlify.app/", view: "https://github.com/vishalicious213/war", desc: "Simplified Game of War card game. Uses the JavaScript fetch API with the Deck of Cards API to generate a card deck and draw cards.", stack: ["js", "dom", "css"]},
     {img: "task-list.jpg", name: "Task List (Firebase)", type: "Personal Project", visit: "https://vish213-task-list.netlify.app/", view: "https://github.com/vishalicious213/tasks-firebase", desc: "Shopping list (with separate regular and bulk items section), To-Do list and Notes section. Built this for my family. Uses Firebase Realtime Database to store and update data.", stack: ["js", "firebase", "dom", "css"]},
     {img: "color-scheme.jpg", name: "Color Scheme Generator", type: "Solo Project", visit: "https://vish213-colors.netlify.app/", view: "https://github.com/vishalicious213/color-scheme-generator", desc: "Uses The Color API to generate color schemes. User picks a color, a type of palette and number of colors to include. Colors can be clicked to copy hex code.", stack: ["js", "dom", "css"]},
     {img: "blogspace.jpg", name: "Blogspace", type: "Solo Project", visit: "https://vish213-blogspace.netlify.app/", view: "https://github.com/vishalicious213/blogspace", desc: "Uses the jsonplaceholder API and JavaScript fetch API to get data for 'blog posts'. Users can also create their own blog posts via an input form and post them to the news feed.", stack: ["js", "dom", "css"]},
