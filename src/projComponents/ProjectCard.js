@@ -44,6 +44,7 @@ const htmlWebProjects = [
 ]
 
 const jsDomProjects = [
+    {img: "locator.jpg", name: "Locator App", type: "Personal Project", visit: "https://vish213-locator.netlify.app/", view: "https://github.com/vishalicious213/locator", desc: "Progressive Web App that displays current location, local map and weather & temperature information for when I'm driving. Uses Open Weather API and Google Maps API.", stack: ["js", "dom", "css"]},
     {img: "dashboard.jpg", name: "Personal Dashboard", type: "Scrimba M9 Project", visit: "https://vish213-crypto-weather-dashboard.netlify.app/", view: "https://github.com/vishalicious213/dashboard", desc: "Dashboard that displays crypto, weather and time information as well as a random background. Uses CoinGecko API, Open Weather API, Unsplash API and asynchronous JavaScript.", stack: ["js", "dom", "css"]},
     {img: "movies.jpg", name: "Movies Watchlist", type: "Solo Project", visit: "https://vish213-movies.netlify.app/", view: "https://github.com/vishalicious213/movies", desc: "Uses the OMDB (Online Movie Database) API to get movie info from user searches. Users can add movies to or remove movies from a personal watchlist. Includes pagination for more results.", stack: ["js", "dom", "css"]},
     {img: "war.jpg", name: "War", type: "Scrimba M9 Project", visit: "https://vish213-war.netlify.app/", view: "https://github.com/vishalicious213/war", desc: "Simplified Game of War card game. Uses the JavaScript fetch API with the Deck of Cards API to generate a card deck and draw cards.", stack: ["js", "dom", "css"]},
