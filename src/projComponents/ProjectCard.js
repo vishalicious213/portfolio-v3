@@ -83,6 +83,7 @@ const jsDomProjects = [
 ]
 
 const reactProjects = [
+    {img: "show-journal.jpg", name: "Show Journal", type: "Solo Project", visit: "https://vish213-show-journal.netlify.app/", view: "https://github.com/vishalicious213/show-journal", desc: "", stack: ["js", "react"]},
     {img: "experiences.jpg", name: "AirBnB Experiences Clone", type: "Scimba M11 Project", visit: "https://vish213-experiences.netlify.app/", view: "https://github.com/vishalicious213/experiences", desc: "", stack: ["js", "react"]},
     {img: "digital-biz-card.jpg", name: "Digital Business Card", type: "Scimba M11 Project", visit: "https://vish213-bizcard.netlify.app/", view: "https://github.com/vishalicious213/digital-biz-card", desc: "", stack: ["js", "react"]},
     {img: "breast-cancer-comfort.jpg", name: "Breast Cancer Comfort (v3)", type: "Client Website - Next.js", visit: "http://www.breastcancercomfort.org/", view: "#", desc: "Originally a WordPress site built for a cancer charity in Long Island, NY. I redesigned and rebuilt it using Next.js and added features like Google Maps, Facebook feed integration, blog articles, a carousel and a contact form.", stack: ["next", "react", "js", "g-maps", "netlify"]},
