@@ -83,6 +83,7 @@ const jsDomProjects = [
 ]
 
 const reactProjects = [
+    {img: "meme-generator.jpg", name: "Meme Generator", type: "Solo Project", visit: "https://vish213-meme-generator.netlify.app/", view: "https://github.com/vishalicious213/meme-generator", desc: "", stack: ["js", "react"]},
     {img: "show-journal.jpg", name: "Show Journal", type: "Solo Project", visit: "https://vish213-show-journal.netlify.app/", view: "https://github.com/vishalicious213/show-journal", desc: "", stack: ["js", "react"]},
     {img: "experiences.jpg", name: "AirBnB Experiences Clone", type: "Scimba M11 Project", visit: "https://vish213-experiences.netlify.app/", view: "https://github.com/vishalicious213/experiences", desc: "", stack: ["js", "react"]},
     {img: "digital-biz-card.jpg", name: "Digital Business Card", type: "Scimba M11 Project", visit: "https://vish213-bizcard.netlify.app/", view: "https://github.com/vishalicious213/digital-biz-card", desc: "", stack: ["js", "react"]},
