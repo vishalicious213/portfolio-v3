@@ -9,7 +9,7 @@ function Frontend() {
             <Container>
                 <div className="Front">
                     <div className="tinyPictureFrame">
-                        <img src={require('../img/v1.jpg')} alt="Vish's face, with black cap on."></img>
+                        <img src={require('../img/v1a.jpg')} alt="Vish's face, with black cap on."></img>
                     </div>
                     <div className="sectionInfo">
                         <h3>Front-End Development</h3>
@@ -27,7 +27,7 @@ function Frontend() {
                         <Certificates />
                     </div>
                     <div className="pictureFrame">
-                        <img src={require('../img/v1.jpg')} alt="Vish's face, with black cap on."></img>
+                        <img src={require('../img/v1a.jpg')} alt="Vish's face, with black cap on."></img>
                     </div>
                 </div>
             </Container>
