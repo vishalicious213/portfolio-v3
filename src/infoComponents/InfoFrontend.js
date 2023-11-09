@@ -9,14 +9,14 @@ function Frontend() {
             <Container>
                 <div className="Front">
                     <div className="tinyPictureFrame">
-                        <img src={require('../img/v1.jpg')} alt="Vish's face, with black cap on."></img>
+                        <img src={require('../img/v1a.jpg')} alt="Vish sitting in a restaurant with a mixed drink in front of him wearing an Obituary shirt and Getty Museum hat"></img>
                     </div>
                     <div className="sectionInfo">
                         <h3>Front-End Development</h3>
                         {/* <p>The first unit at Lambda School has taught me the basics of semantic HTML and CSS, including the pains of inline-block, the mighty Flexbox and a start at responsive web design. We've since delved into JavaScript, the DOM and are learning React, with its virtual DOM, for component-driven front-end development.</p> */}
-                        <p>My approach to front-end web development centers on presenting data to the viewer through interactive graphical interfaces using technologies such as semantic HTML, CSS (including Flexbox and CSS Grid), JavaScript and React. Data is often read from outside API sources (or my own custom APIs) and display is guided by responsive web design principles.</p>
+                        <p>My approach to front-end web development centers on presenting data to the viewer through interactive graphical interfaces using technologies such as semantic HTML, CSS (including Flexbox and CSS Grid), Tailwind, JavaScript and React. Data is often read from outside API sources (or my own custom APIs) and display is guided by responsive web design principles.</p>
                         <p>The front-end libraries that I use most frequently include axios, Styled Components and React Router and my framework of choice is currently Next.js.</p>
-                        <p><b>Skills: </b>HTML, CSS, JavaScript, React.JS, Next.JS, Node.JS, Express.JS</p>
+                        <p><b>Skills: </b>HTML, CSS, JavaScript, Tailwind, React.JS, Next.JS, Node.JS, Express.JS</p>
                         {/* <div className="certs">
                             <div><b>Certificates:</b></div>
                             <div className="certs-list">
@@ -27,7 +27,7 @@ function Frontend() {
                         <Certificates />
                     </div>
                     <div className="pictureFrame">
-                        <img src={require('../img/v1.jpg')} alt="Vish's face, with black cap on."></img>
+                        <img src={require('../img/v1a.jpg')} alt="Vish sitting in a restaurant with a mixed drink in front of him wearing an Obituary shirt and Getty Museum hat"></img>
                     </div>
                 </div>
             </Container>
