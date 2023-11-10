@@ -11,6 +11,7 @@ const featuredProjects = [
 ]
 
 const htmlWebProjects = [
+    {img: "tw-manage.jpg", name: "Manage Landing page", type: "Solo Project", visit: "https://vish213-tw-manage.netlify.app/", view: "https://github.com/vishalicious213/tw-splashboard", desc: "Landing page for Manage reporting software. Built with Tailwind CSS. Extended Tailwind with custom colors and added custom screen widths. Brought in custom CSS classes, media queries and CSS animations for hamburger menu.", stack: ["js", "tw", "html", "css"]},
     {img: "coalition.jpg", name: "Coalition Tech Developer's Test", type: "Solo Project", visit: "https://vish213-coalition-site.netlify.app/", view: "https://github.com/vishalicious213/coalition-site", desc: "Developer's test for Coalition Technologies applicants. Converted PSD file into responsive website with carousel using HTML, CSS & JavaScript.", stack: ["js", "html", "css"]},
     {img: "learning-journal.jpg", name: "Learning Journal", type: "Solo Project", visit: "https://vish213-learning-journal.netlify.app/", view: "https://github.com/vishalicious213/learning-journal", desc: "Responsive journal/blog with articles and a working menu. Makes use of semantic HTML, CSS Grid and an array of JavaScript objects to render articles. ChatGPT provided article content.", stack: ["js", "html", "css"]},
     {img: "css-grid-card.jpg", name: "CSS Grid Card", type: "Scrimba M6 Project", visit: "https://vish213-css-grid-card.netlify.app/", view: "https://github.com/vishalicious213/css-grid-card", desc: "Responsive article card that uses CSS Grid and media queries to change layout and orientation when in mobile or larger screen views.", stack: ["html", "css"]},
@@ -174,28 +175,30 @@ const ProjectCard = (props) => {
                             <Tech className={project.stack}>{
                                 project.stack.map(item => {
                                     switch (item) {
-                                        case 'html': return (<Li title='HTML5' key='html' className='fab fa-html5'></Li>);
-                                        case 'css': return (<Li title='CSS3' key='css' className='fab fa-css3-alt'></Li>);
-                                        case 'less': return (<Lib title='LESS' key='less' className='fab fa-less'></Lib>);
-                                        case 'js': return (<Li title='JavaScript' key='js' className='fab fa-js-square'></Li>);
-                                        case 'wp': return (<Li title='WordPress' key='wp' className='fab fa-wordpress'></Li>);
-                                        case 'react': return (<Li title='React' key='react' className='fab fa-react'></Li>);
-                                        case 'dom' : return (<Li title='DOM' className='iconify' key='dom' data-icon='file-icons:dom' data-inline='false'></Li>);
-                                        case 'axios' : return (<Li title='axios' className='iconify' key='axios' data-icon='bx:bx-transfer-alt' data-inline='false'></Li>);
-                                        case 'divi' : return (<Li title='Divi' className='iconify' key='divi' data-icon='emojione-monotone:letter-d' data-inline='false'></Li>);
-                                        case 'reactr' : return (<Li title='React Router' className='iconify' key='reactr' data-icon='simple-icons:reactrouter' data-inline='false'></Li>);
-                                        case 'styled' : return (<Li title='Styled Components' className='iconify' key='styled' data-icon='simple-icons:styled-components' data-inline='false'></Li>);
-                                        case 'rgcal' : return (<Lib title='React Github Calendar' key='rgcal' className='fas fa-code'></Lib>);
-                                        case 'recharts' : return (<Lib title='Recharts library' key='recharts' className='fas fa-code'></Lib>);
-                                        case 'rtl' : return (<Lib title='React Testing Library' key='rtl' className='fas fa-code'></Lib>);
-                                        case 'codepen' : return (<Lib title='Codepen' key='codepen' className='fab fa-codepen'></Lib>);
-                                        case 'nasa' : return (<Lib title='Nasa API' key='nasa' className='fas fa-space-shuttle'></Lib>);
-                                        case 'g-maps' : return (<Li title='Google Maps API' className='iconify' key='g-maps' data-icon='zmdi:google-maps' data-inline='false'></Li>);
-                                        case 'map' : return (<Lib title='Google-Map-React' key='map' className='far fa-map'></Lib>);
-                                        case 'iconify' : return (<Lib title='Iconify' className='iconify' key='iconify' data-icon='simple-icons:iconify' data-inline='false'></Lib>);
-                                        case 'next' : return (<Lib title='Next.js' className='iconify' key='next-js' data-icon='file-icons:nextjs' data-inline='false'></Lib>);
-                                        case 'netlify' : return (<Lib title='Netlify Forms' className='iconify' key='netlify' data-icon='file-icons:netlify' data-inline='false'></Lib>);
-                                        case 'firebase' : return (<Li title='Firebase' className='iconify' key='firebase' data-icon='devicon-plain:firebase' data-inline='false'></Li>);
+                                        case 'html' :       return (<Li title='HTML5'                   key='html'      className='fab fa-html5'></Li>);
+                                        case 'css' :        return (<Li title='CSS3'                    key='css'       className='fab fa-css3-alt'></Li>);
+                                        case 'less' :       return (<Lib title='LESS'                   key='less'      className='fab fa-less'></Lib>);
+                                        case 'js' :         return (<Li title='JavaScript'              key='js'        className='fab fa-js-square'></Li>);
+                                        case 'wp' :         return (<Li title='WordPress'               key='wp'        className='fab fa-wordpress'></Li>);
+                                        case 'react' :      return (<Li title='React'                   key='react'     className='fab fa-react'></Li>);
+                                        case 'rgcal' :      return (<Lib title='React Github Calendar'  key='rgcal'     className='fas fa-code'></Lib>);
+                                        case 'recharts' :   return (<Lib title='Recharts library'       key='recharts'  className='fas fa-code'></Lib>);
+                                        case 'rtl' :        return (<Lib title='React Testing Library'  key='rtl'       className='fas fa-code'></Lib>);
+                                        case 'codepen' :    return (<Lib title='Codepen'                key='codepen'   className='fab fa-codepen'></Lib>);
+                                        case 'nasa' :       return (<Lib title='Nasa API'               key='nasa'      className='fas fa-space-shuttle'></Lib>);
+                                        case 'map' :        return (<Lib title='Google-Map-React'       key='map'       className='far fa-map'></Lib>);
+
+                                        case 'dom' :        return (<Li title='DOM'                 className='iconify' key='dom'      data-icon='file-icons:dom'                   data-inline='false'></Li>);
+                                        case 'axios' :      return (<Li title='axios'               className='iconify' key='axios'    data-icon='bx:bx-transfer-alt'               data-inline='false'></Li>);
+                                        case 'divi' :       return (<Li title='Divi'                className='iconify' key='divi'     data-icon='emojione-monotone:letter-d'       data-inline='false'></Li>);
+                                        case 'reactr' :     return (<Li title='React Router'        className='iconify' key='reactr'   data-icon='simple-icons:reactrouter'         data-inline='false'></Li>);
+                                        case 'styled' :     return (<Li title='Styled Components'   className='iconify' key='styled'   data-icon='simple-icons:styled-components'   data-inline='false'></Li>);
+                                        case 'g-maps' :     return (<Li title='Google Maps API'     className='iconify' key='g-maps'   data-icon='zmdi:google-maps'                 data-inline='false'></Li>);
+                                        case 'iconify' :    return (<Lib title='Iconify'            className='iconify' key='iconify'  data-icon='simple-icons:iconify'             data-inline='false'></Lib>);
+                                        case 'next' :       return (<Lib title='Next.js'            className='iconify' key='next-js'  data-icon='file-icons:nextjs'                data-inline='false'></Lib>);
+                                        case 'netlify' :    return (<Lib title='Netlify Forms'      className='iconify' key='netlify'  data-icon='file-icons:netlify'               data-inline='false'></Lib>);
+                                        case 'firebase' :   return (<Li title='Firebase'            className='iconify' key='firebase' data-icon='devicon-plain:firebase'           data-inline='false'></Li>);
+                                        case 'tw' :         return (<Li title='Tailwind'            className='iconify' key='tw'       data-icon='mdi:tailwind'                     data-inline='false'></Li>);
                                         default: return null
                                     }
                                 })
