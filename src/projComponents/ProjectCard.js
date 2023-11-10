@@ -175,12 +175,12 @@ const ProjectCard = (props) => {
                             <Tech className={project.stack}>{
                                 project.stack.map(item => {
                                     switch (item) {
-                                        case 'html':        return (<Li title='HTML5'                   key='html'      className='fab fa-html5'></Li>);
-                                        case 'css':         return (<Li title='CSS3'                    key='css'       className='fab fa-css3-alt'></Li>);
-                                        case 'less':        return (<Lib title='LESS'                   key='less'      className='fab fa-less'></Lib>);
-                                        case 'js':          return (<Li title='JavaScript'              key='js'        className='fab fa-js-square'></Li>);
-                                        case 'wp':          return (<Li title='WordPress'               key='wp'        className='fab fa-wordpress'></Li>);
-                                        case 'react':       return (<Li title='React'                   key='react'     className='fab fa-react'></Li>);
+                                        case 'html' :       return (<Li title='HTML5'                   key='html'      className='fab fa-html5'></Li>);
+                                        case 'css' :        return (<Li title='CSS3'                    key='css'       className='fab fa-css3-alt'></Li>);
+                                        case 'less' :       return (<Lib title='LESS'                   key='less'      className='fab fa-less'></Lib>);
+                                        case 'js' :         return (<Li title='JavaScript'              key='js'        className='fab fa-js-square'></Li>);
+                                        case 'wp' :         return (<Li title='WordPress'               key='wp'        className='fab fa-wordpress'></Li>);
+                                        case 'react' :      return (<Li title='React'                   key='react'     className='fab fa-react'></Li>);
                                         case 'rgcal' :      return (<Lib title='React Github Calendar'  key='rgcal'     className='fas fa-code'></Lib>);
                                         case 'recharts' :   return (<Lib title='Recharts library'       key='recharts'  className='fas fa-code'></Lib>);
                                         case 'rtl' :        return (<Lib title='React Testing Library'  key='rtl'       className='fas fa-code'></Lib>);
@@ -198,6 +198,7 @@ const ProjectCard = (props) => {
                                         case 'next' :       return (<Lib title='Next.js'            className='iconify' key='next-js'  data-icon='file-icons:nextjs'                data-inline='false'></Lib>);
                                         case 'netlify' :    return (<Lib title='Netlify Forms'      className='iconify' key='netlify'  data-icon='file-icons:netlify'               data-inline='false'></Lib>);
                                         case 'firebase' :   return (<Li title='Firebase'            className='iconify' key='firebase' data-icon='devicon-plain:firebase'           data-inline='false'></Li>);
+                                        case 'tw' :         return (<Li title='Tailwind'            className='iconify' key='tw'       data-icon='mdi:tailwind'                     data-inline='false'></Li>);
                                         default: return null
                                     }
                                 })
